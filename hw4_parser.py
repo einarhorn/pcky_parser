@@ -10,6 +10,12 @@ __authors__ = ['einarh', 'avijitv']
 
 class ProbTreeNode():
     def __init__(self, node, probability):
+        """
+        :param node: a nonterminal node in the parse tree we create
+        :type node: nltk.Nonterminal
+        :param probability: real-value probability of the subtree starting at this node
+        :type node: float
+        """
         self.node = node
         self.probability = probability
     
@@ -77,12 +83,12 @@ class PCKYParser:
                         best_subtree = potential_subtrees[0]
 
                         # Store the most probable subtree in [i,j]
+                        # Note that we are making a *local* decision here,
+                        # this may not correspond to the global optimum
                         if len(table[i][j]) is 0:
                             table[i][j] = [best_subtree]
                         elif table[i][j][0].label() < best_subtree.label():
                             table[i][j] = [best_subtree]
-
-        self.__visualize_table(table)
 
         # Return all top-level valid parses
         top_level_entries = table[0][width-1]
@@ -132,24 +138,32 @@ class PCKYParser:
         cell_contents = list()
 
         # Get contents of the two cells we will be using
-        first_list = table[i][k]
-        second_list = table[k][j]
+        first_tree_list = table[i][k]
+        second_tree_list = table[k][j]
 
         # Calculate every combination of first and second cell
-        for first_list_item in first_list:
-            for second_list_item in second_list:
+        for first_tree in first_tree_list:
+            for second_tree in second_tree_list:
+                # Get reference to the actual nltk nonterminals
+                first_node = self.__get_nltk_nonterminal_from_tree(first_tree)
+                second_node = self.__get_nltk_nonterminal_from_tree(second_tree)
+
+                # Get probabilities of each of the trees
+                first_probability = self.__get_probability_from_tree(first_tree)
+                second_probability = self.__get_probability_from_tree(second_tree)
+
                 # Check whether there is a production A -> B C, where B is first_list_item
                 # and C is second_list_item
-                relevant_productions = self.__get_productions_with_rhs(self.__get_nltk_nonterminal_from_tree(first_list_item),
-                                                                       self.__get_nltk_nonterminal_from_tree(second_list_item))
+                relevant_productions = self.__get_productions_with_rhs(first_node, second_node)
 
-                # Get LHS of each of the productions
-                tree_nodes = [ProbTreeNode(production.lhs(), production.prob()) 
+                # Get LHS of each of the productions as node
+                tree_nodes = [ProbTreeNode(production.lhs(), 
+                                           production.prob() * first_probability * second_probability) 
                               for production in relevant_productions]
 
                 # Convert each LHS entry to a valid subtree
                 subtrees = [Tree(node=tree_node,
-                                 children=[first_list_item, second_list_item])
+                                 children=[first_tree, second_tree])
                             for tree_node in tree_nodes]
 
                 # Add to list of valid subtrees created so far
@@ -175,16 +189,21 @@ class PCKYParser:
         return relevant_productions
     
     def __get_nltk_nonterminal_from_tree(self, tree):
+        """ Helper method to return the nltk nonterminal belonging to the head
+            of the given tree
+        :type tree: nltk.Tree
+        :rtype: nltk.Nonterminal
+        """
         return tree.label().node
+
+    def __get_probability_from_tree(self, tree):
+        """ Helper method to return the probability for the given tree
+        :type tree: nltk.Tree
+        :rtype: float
+        """
+        return tree.label().probability
     
-     # Pretty print the provided 2d list
-    def __visualize_table(self, table):
-        for row in table:
-            row_contents = []
-            for col in row:
-                row_contents.append([cky_entry.label() for cky_entry in list(col)])
-            print(row_contents)
-                
+    
 
 def main(grammar_filename, sentence_filename, output_filename):
     # Load CNF grammar
