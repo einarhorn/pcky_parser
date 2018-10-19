@@ -1,0 +1,21 @@
+%start S
+# Det Productions		Total Probability: 1.000
+Det -> 'the' [0.571429]
+Det -> 'a' [0.428571]
+# P Productions		Total Probability: 1.000
+P -> 'on' [1.000000]
+# VP Productions		Total Probability: 1.000
+VP -> V NP [1.000000]
+# N Productions		Total Probability: 1.000
+N -> 'cat' [0.428571]
+N -> 'dog' [0.428571]
+N -> 'mat' [0.142857]
+# V Productions		Total Probability: 1.000
+V -> 'chased' [1.000000]
+# PP Productions		Total Probability: 1.000
+PP -> P NP [1.000000]
+# S Productions		Total Probability: 1.000
+S -> NP VP [1.000000]
+# NP Productions		Total Probability: 1.000
+NP -> Det N [0.875000]
+NP -> NP PP [0.125000]
