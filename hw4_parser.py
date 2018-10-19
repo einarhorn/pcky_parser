@@ -202,8 +202,7 @@ class PCKYParser:
         :rtype: float
         """
         return tree.label().probability
-    
-    
+
 
 def main(grammar_filename, sentence_filename, output_filename):
     # Load CNF grammar

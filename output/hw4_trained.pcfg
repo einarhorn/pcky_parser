@@ -1,0 +1,1142 @@
+%start TOP
+# NP_NN Productions		Total Probability: 1.000
+NP_NN -> 'cost' [0.016949]
+NP_NN -> 'stay' [0.016949]
+NP_NN -> 'Departure' [0.016949]
+NP_NN -> 'price' [0.016949]
+NP_NN -> 'Price' [0.135593]
+NP_NN -> 'tomorrow' [0.135593]
+NP_NN -> 'airplane' [0.016949]
+NP_NN -> 'Airline' [0.033898]
+NP_NN -> 'breakfast' [0.016949]
+NP_NN -> 'Flight' [0.067797]
+NP_NN -> 'lunch' [0.050847]
+NP_NN -> 'aircraft' [0.050847]
+NP_NN -> 'today' [0.016949]
+NP_NN -> 'dinner' [0.271186]
+NP_NN -> 'flight' [0.050847]
+NP_NN -> 'noon' [0.084746]
+
+
+# WHNP_WDT Productions		Total Probability: 1.000
+WHNP_WDT -> 'Which' [0.645833]
+WHNP_WDT -> 'that' [0.354167]
+
+
+# VP_VBZ Productions		Total Probability: 1.000
+VP_VBZ -> 'has' [1.000000]
+
+
+# PP_PRIME Productions		Total Probability: 1.000
+PP_PRIME -> NP IN [0.200000]
+PP_PRIME -> ADVP_RB IN [0.200000]
+PP_PRIME -> IN CC [0.200000]
+PP_PRIME -> PP_PRIME IN [0.200000]
+PP_PRIME -> PP CC [0.200000]
+
+
+# X_TO Productions		Total Probability: 1.000
+X_TO -> 'to' [1.000000]
+
+
+# QP_PRIME Productions		Total Probability: 1.000
+QP_PRIME -> RBR IN [0.307692]
+QP_PRIME -> RB JJR [0.076923]
+QP_PRIME -> IN JJS [0.153846]
+QP_PRIME -> QP_PRIME IN [0.076923]
+QP_PRIME -> QP_PRIME CD [0.230769]
+QP_PRIME -> CD CD [0.153846]
+
+
+# X Productions		Total Probability: 1.000
+X -> VBZ NP_DT [0.333333]
+X -> WRB IN [0.333333]
+X -> WP IN [0.333333]
+
+
+# RB Productions		Total Probability: 1.000
+RB -> 'much' [0.089286]
+RB -> 'no' [0.017857]
+RB -> 'not' [0.017857]
+RB -> "o'clock" [0.107143]
+RB -> 'back' [0.017857]
+RB -> 'as' [0.017857]
+RB -> 'early' [0.017857]
+RB -> 'a.m' [0.196429]
+RB -> 'around' [0.035714]
+RB -> 'p.m' [0.375000]
+RB -> 'apart' [0.071429]
+RB -> 'only' [0.035714]
+
+
+# VP_VBN Productions		Total Probability: 1.000
+VP_VBN -> 'served' [1.000000]
+
+
+# FRAG_WHNP Productions		Total Probability: 1.000
+FRAG_WHNP -> FRAG_WHNP_PRIME PP [1.000000]
+
+
+# JJS Productions		Total Probability: 1.000
+JJS -> 'latest' [0.162162]
+JJS -> 'Earliest' [0.027027]
+JJS -> 'earliest' [0.108108]
+JJS -> 'longest' [0.027027]
+JJS -> 'Shortest' [0.081081]
+JJS -> 'lowest' [0.054054]
+JJS -> 'Cheapest' [0.351351]
+JJS -> 'cheapest' [0.108108]
+JJS -> 'least' [0.054054]
+JJS -> 'Lowest' [0.027027]
+
+
+# INTJ_UH Productions		Total Probability: 1.000
+INTJ_UH -> 'oops' [0.090909]
+INTJ_UH -> 'oh' [0.090909]
+INTJ_UH -> 'please' [0.181818]
+INTJ_UH -> 'Thanks' [0.181818]
+INTJ_UH -> 'Hi' [0.090909]
+INTJ_UH -> 'Okay' [0.090909]
+INTJ_UH -> 'Please' [0.272727]
+
+
+# FRAG_NP_NNP Productions		Total Probability: 1.000
+FRAG_NP_NNP -> 'Tuesday' [1.000000]
+
+
+# VB Productions		Total Probability: 1.000
+VB -> 'return' [0.011765]
+VB -> 'get' [0.005882]
+VB -> 'make' [0.005882]
+VB -> 'display' [0.005882]
+VB -> 'List' [0.017647]
+VB -> 'have' [0.035294]
+VB -> 'Book' [0.005882]
+VB -> 'Change' [0.005882]
+VB -> 'Explain' [0.023529]
+VB -> 'find' [0.005882]
+VB -> 'show' [0.017647]
+VB -> 'like' [0.088235]
+VB -> 'stop' [0.005882]
+VB -> 'Display' [0.011765]
+VB -> 'fly' [0.041176]
+VB -> 'list' [0.023529]
+VB -> 'visit' [0.005882]
+VB -> 'Thank' [0.011765]
+VB -> 'Give' [0.005882]
+VB -> 'arrive' [0.017647]
+VB -> 'Tell' [0.005882]
+VB -> 'serve' [0.041176]
+VB -> 'travel' [0.011765]
+VB -> 'be' [0.005882]
+VB -> 'Show' [0.558824]
+VB -> 'go' [0.005882]
+VB -> 'leave' [0.017647]
+
+
+# FRAG_NP_PRIME Productions		Total Probability: 1.000
+FRAG_NP_PRIME -> FRAG_NP_PRIME CD [0.035398]
+FRAG_NP_PRIME -> FRAG_NP_PRIME ADVP_RB [0.008850]
+FRAG_NP_PRIME -> JJ NN [0.017699]
+FRAG_NP_PRIME -> FRAG_NP_PRIME SYM [0.026549]
+FRAG_NP_PRIME -> NN NN [0.026549]
+FRAG_NP_PRIME -> NP PP [0.194690]
+FRAG_NP_PRIME -> FRAG_NP_PRIME NN [0.017699]
+FRAG_NP_PRIME -> NP_NN PP [0.035398]
+FRAG_NP_PRIME -> NP_NNS PP [0.380531]
+FRAG_NP_PRIME -> JJS JJ [0.017699]
+FRAG_NP_PRIME -> NP_NNP PP [0.008850]
+FRAG_NP_PRIME -> FRAG_NP_PRIME NP [0.008850]
+FRAG_NP_PRIME -> FRAG_NP_PRIME NNP [0.017699]
+FRAG_NP_PRIME -> FRAG_NP_PRIME PP [0.194690]
+FRAG_NP_PRIME -> NP CC [0.008850]
+
+
+# NP_PRP Productions		Total Probability: 1.000
+NP_PRP -> 'I' [0.274074]
+NP_PRP -> 'it' [0.014815]
+NP_PRP -> 'me' [0.651852]
+NP_PRP -> 'you' [0.051852]
+NP_PRP -> 'they' [0.007407]
+
+
+# VBZ Productions		Total Probability: 1.000
+VBZ -> 'arrives' [0.014925]
+VBZ -> 'Is' [0.089552]
+VBZ -> "'s" [0.044776]
+VBZ -> 'serves' [0.029851]
+VBZ -> 'does' [0.029851]
+VBZ -> 'Does' [0.119403]
+VBZ -> 'is' [0.582090]
+VBZ -> 'leaves' [0.044776]
+VBZ -> 'provides' [0.014925]
+VBZ -> 'has' [0.014925]
+VBZ -> 'departs' [0.014925]
+
+
+# VBN Productions		Total Probability: 1.000
+VBN -> 'used' [0.500000]
+VBN -> 'served' [0.500000]
+
+
+# FRAG_PP Productions		Total Probability: 1.000
+FRAG_PP -> IN NP [0.666667]
+FRAG_PP -> IN NP_NNP [0.333333]
+
+
+# SBAR Productions		Total Probability: 1.000
+SBAR -> WHNP_XXX S_VP [0.052632]
+SBAR -> WHNP SQ [0.052632]
+SBAR -> WHNP_WDT S_VP [0.842105]
+SBAR -> WHNP_WDT S [0.052632]
+
+
+# PRT_RP Productions		Total Probability: 1.000
+PRT_RP -> 'out' [1.000000]
+
+
+# NP_DT Productions		Total Probability: 1.000
+NP_DT -> 'these' [0.444444]
+NP_DT -> 'that' [0.055556]
+NP_DT -> 'any' [0.111111]
+NP_DT -> 'this' [0.111111]
+NP_DT -> 'Any' [0.055556]
+NP_DT -> 'those' [0.222222]
+
+
+# SQ Productions		Total Probability: 1.000
+SQ -> VBP NP [0.045455]
+SQ -> VBZ NP_PRP [0.022727]
+SQ -> VBZ NP [0.340909]
+SQ -> VBP NP_NP_EX [0.011364]
+SQ -> VBZ NP_DT [0.011364]
+SQ -> SQ_PRIME NP [0.079545]
+SQ -> SQ_PRIME VP [0.193182]
+SQ -> SQ_PRIME PP [0.204545]
+SQ -> SQ_PRIME ADJP_JJ [0.011364]
+SQ -> SQ_PRIME VP_NN [0.011364]
+SQ -> SQ_PRIME VP_VB [0.068182]
+
+
+# FRAG_PRIME Productions		Total Probability: 1.000
+FRAG_PRIME -> NP_NNP PP [0.076923]
+FRAG_PRIME -> PP PP [0.230769]
+FRAG_PRIME -> NP_NN PP [0.153846]
+FRAG_PRIME -> WHNP PP [0.076923]
+FRAG_PRIME -> FRAG_PRIME NP [0.076923]
+FRAG_PRIME -> NP NP [0.153846]
+FRAG_PRIME -> FRAG_PRIME PP [0.230769]
+
+
+# RBS Productions		Total Probability: 1.000
+RBS -> 'least' [1.000000]
+
+
+# WDT Productions		Total Probability: 1.000
+WDT -> 'What' [0.885417]
+WDT -> 'which' [0.010417]
+WDT -> 'what' [0.010417]
+WDT -> 'Which' [0.093750]
+
+
+# FRAG_NP_NN Productions		Total Probability: 1.000
+FRAG_NP_NN -> 'Cost' [0.500000]
+FRAG_NP_NN -> 'Tomorrow' [0.500000]
+
+
+# SBARQ_PRIME Productions		Total Probability: 1.000
+SBARQ_PRIME -> PP WHNP_WHNP [1.000000]
+
+
+# CD Productions		Total Probability: 1.000
+CD -> 'one' [0.168831]
+CD -> 'twelve' [0.025974]
+CD -> 'twenty' [0.025974]
+CD -> 'zero' [0.006494]
+CD -> 'thousand' [0.006494]
+CD -> 'six' [0.077922]
+CD -> 'hundred' [0.038961]
+CD -> 'nine' [0.051948]
+CD -> 'five' [0.136364]
+CD -> 'nineteen' [0.006494]
+CD -> 'four' [0.012987]
+CD -> 'forty' [0.012987]
+CD -> 'fifteen' [0.006494]
+CD -> 'oh' [0.012987]
+CD -> 'seventeen' [0.006494]
+CD -> 'three' [0.025974]
+CD -> 'eleven' [0.032468]
+CD -> 'thirty' [0.071429]
+CD -> 'ten' [0.064935]
+CD -> 'seven' [0.097403]
+CD -> 'two' [0.019481]
+CD -> 'fifty' [0.032468]
+CD -> 'eighty' [0.006494]
+CD -> 'fourteen' [0.006494]
+CD -> 'eight' [0.032468]
+CD -> 'eighteen' [0.006494]
+CD -> 'Zero' [0.006494]
+
+
+# VP_VBG Productions		Total Probability: 1.000
+VP_VBG -> 'returning' [1.000000]
+
+
+# FRAG_ADJP_JJ Productions		Total Probability: 1.000
+FRAG_ADJP_JJ -> 'Nonstop' [1.000000]
+
+
+# WHNP Productions		Total Probability: 1.000
+WHNP -> WRB RB [0.047170]
+WHNP -> WHNP ADJP_JJ [0.009434]
+WHNP -> WHADJP NNS [0.009434]
+WHNP -> WDT NN [0.066038]
+WHNP -> WHNP PP [0.047170]
+WHNP -> WHNP_WDT PP [0.169811]
+WHNP -> WDT NNS [0.650943]
+
+
+# WHADVP_WRB Productions		Total Probability: 1.000
+WHADVP_WRB -> 'Where' [1.000000]
+
+
+# VP_NN Productions		Total Probability: 1.000
+VP_NN -> 'mean' [1.000000]
+
+
+# CC Productions		Total Probability: 1.000
+CC -> 'and' [0.861111]
+CC -> 'or' [0.138889]
+
+
+# NP Productions		Total Probability: 1.000
+NP -> CD NN [0.010782]
+NP -> CD JJ [0.001348]
+NP -> JJS NN [0.010782]
+NP -> NNP NNP [0.199461]
+NP -> NN NNS [0.006739]
+NP -> WDT NNS [0.001348]
+NP -> NNP POS [0.004043]
+NP -> JJ NNP [0.004043]
+NP -> NP_PRIME RB [0.009434]
+NP -> NP_PRIME NP_NNP [0.005391]
+NP -> NP_PRIME NP_NN [0.002695]
+NP -> NP ADJP_JJ [0.001348]
+NP -> NP_PRIME CD [0.029650]
+NP -> NP_NNS PP [0.004043]
+NP -> NP_PRIME NNS [0.047170]
+NP -> NN NN [0.010782]
+NP -> DT JJS [0.002695]
+NP -> NP_DT PP [0.004043]
+NP -> NP_NNP NP [0.012129]
+NP -> NNP NNS [0.001348]
+NP -> NP_NNP NP_NNP [0.006739]
+NP -> NP SBAR [0.013477]
+NP -> NP_NN PP [0.002695]
+NP -> CD CD [0.002695]
+NP -> JJ NNS [0.006739]
+NP -> JJ NN [0.013477]
+NP -> CD RB [0.033693]
+NP -> DT NNS [0.092992]
+NP -> NP_PRIME NNP [0.043127]
+NP -> NP PP [0.043127]
+NP -> NP_PRIME SYM [0.004043]
+NP -> NNP NN [0.016173]
+NP -> NP NP_NN [0.001348]
+NP -> DT JJ [0.005391]
+NP -> NP NP [0.002695]
+NP -> QP NNS [0.008086]
+NP -> NP_PRIME NN [0.067385]
+NP -> NNP JJ [0.002695]
+NP -> NP_PRIME ADVP [0.004043]
+NP -> CD NNS [0.001348]
+NP -> NP_PRIME VP [0.010782]
+NP -> DT NN [0.101078]
+NP -> QP RB [0.002695]
+NP -> NP NNS [0.001348]
+NP -> QP NN [0.002695]
+NP -> NP_NNS SBAR [0.002695]
+NP -> NP VP [0.006739]
+NP -> NP_PRIME PP [0.090296]
+NP -> NP_PRIME QP [0.001348]
+NP -> NP_NNS VP [0.002695]
+NP -> NP_PRIME SBAR [0.006739]
+NP -> NP_PRIME NP [0.029650]
+
+
+# DT Productions		Total Probability: 1.000
+DT -> 'that' [0.018433]
+DT -> 'the' [0.626728]
+DT -> 'these' [0.059908]
+DT -> 'any' [0.018433]
+DT -> 'each' [0.004608]
+DT -> 'this' [0.027650]
+DT -> 'Any' [0.004608]
+DT -> 'a' [0.129032]
+DT -> 'those' [0.009217]
+DT -> 'All' [0.013825]
+DT -> 'No' [0.004608]
+DT -> 'The' [0.027650]
+DT -> 'all' [0.055300]
+
+
+# WP Productions		Total Probability: 1.000
+WP -> 'What' [1.000000]
+
+
+# WHNP_XXX Productions		Total Probability: 1.000
+WHNP_XXX -> '0' [1.000000]
+
+
+# WHADJP Productions		Total Probability: 1.000
+WHADJP -> WRB JJ [1.000000]
+
+
+# NP_NNP Productions		Total Probability: 1.000
+NP_NNP -> 'Philadelphia' [0.016913]
+NP_NNP -> 'Memphis' [0.042283]
+NP_NNP -> 'Tennessee' [0.002114]
+NP_NNP -> 'Sunday' [0.021142]
+NP_NNP -> 'Saturday' [0.016913]
+NP_NNP -> 'Montreal' [0.021142]
+NP_NNP -> 'Phoenix' [0.040169]
+NP_NNP -> 'Atlanta' [0.016913]
+NP_NNP -> 'Ontario' [0.012685]
+NP_NNP -> 'Cleveland' [0.063425]
+NP_NNP -> 'Friday' [0.014799]
+NP_NNP -> 'Newark' [0.065539]
+NP_NNP -> 'Burbank' [0.012685]
+NP_NNP -> 'Cincinnati' [0.014799]
+NP_NNP -> 'California' [0.002114]
+NP_NNP -> 'Wednesdays' [0.002114]
+NP_NNP -> 'Toronto' [0.025370]
+NP_NNP -> 'Seattle' [0.010571]
+NP_NNP -> 'Dulles' [0.002114]
+NP_NNP -> 'Nashville' [0.031712]
+NP_NNP -> 'Charlotte' [0.019027]
+NP_NNP -> 'Wednesday' [0.019027]
+NP_NNP -> 'Milwaukee' [0.033827]
+NP_NNP -> 'Detroit' [0.016913]
+NP_NNP -> 'Continental' [0.002114]
+NP_NNP -> 'Tampa' [0.031712]
+NP_NNP -> 'Thursday' [0.008457]
+NP_NNP -> 'Miami' [0.031712]
+NP_NNP -> 'Baltimore' [0.038055]
+NP_NNP -> 'Dallas' [0.035941]
+NP_NNP -> 'Oakland' [0.014799]
+NP_NNP -> 'Delta' [0.002114]
+NP_NNP -> 'Airline' [0.002114]
+NP_NNP -> 'Tacoma' [0.023256]
+NP_NNP -> 'Washington' [0.019027]
+NP_NNP -> 'Minneapolis' [0.021142]
+NP_NNP -> 'Michigan' [0.002114]
+NP_NNP -> 'American' [0.002114]
+NP_NNP -> 'Houston' [0.033827]
+NP_NNP -> 'Alaska' [0.002114]
+NP_NNP -> 'Orlando' [0.027484]
+NP_NNP -> 'Monday' [0.010571]
+NP_NNP -> 'Pittsburgh' [0.033827]
+NP_NNP -> 'Tuesday' [0.010571]
+NP_NNP -> 'Indianapolis' [0.023256]
+NP_NNP -> 'Chicago' [0.014799]
+NP_NNP -> 'Denver' [0.035941]
+NP_NNP -> 'Florida' [0.004228]
+NP_NNP -> 'Boston' [0.012685]
+NP_NNP -> 'Columbus' [0.023256]
+NP_NNP -> 'July' [0.006342]
+NP_NNP -> 'Arrival' [0.002114]
+
+
+# S_PRIME Productions		Total Probability: 1.000
+S_PRIME -> S CC [0.142857]
+S_PRIME -> INTJ_UH NP_PRP [0.142857]
+S_PRIME -> ADVP_RB NP_PRP [0.285714]
+S_PRIME -> PP NP_PRP [0.428571]
+
+
+# ADVP Productions		Total Probability: 1.000
+ADVP -> RB PP [0.166667]
+ADVP -> NP RB [0.666667]
+ADVP -> ADVP_RB PP [0.166667]
+
+
+# NNS Productions		Total Probability: 1.000
+NNS -> 'ones' [0.022422]
+NNS -> 'stops' [0.017937]
+NNS -> 'hours' [0.013453]
+NNS -> 'flights' [0.744395]
+NNS -> 'details' [0.004484]
+NNS -> 'numbers' [0.008969]
+NNS -> 'mornings' [0.004484]
+NNS -> 'codes' [0.008969]
+NNS -> 'meals' [0.013453]
+NNS -> 'trips' [0.004484]
+NNS -> 'stopovers' [0.013453]
+NNS -> 'dollars' [0.013453]
+NNS -> 'restrictions' [0.008969]
+NNS -> 'minutes' [0.022422]
+NNS -> 'fares' [0.085202]
+NNS -> 'airlines' [0.013453]
+
+
+# FRAG Productions		Total Probability: 1.000
+FRAG -> NP INTJ_UH [0.035714]
+FRAG -> NP_NNP PP [0.214286]
+FRAG -> PP PP [0.142857]
+FRAG -> PP VP [0.035714]
+FRAG -> FRAG_PRIME NP [0.107143]
+FRAG -> ADVP_RB NP_NNP [0.035714]
+FRAG -> X NP [0.035714]
+FRAG -> FRAG_PRIME VP [0.035714]
+FRAG -> FRAG_PRIME PP [0.178571]
+FRAG -> NP NP [0.071429]
+FRAG -> X PP [0.035714]
+FRAG -> NP_NNP NP [0.035714]
+FRAG -> WHNP PP [0.035714]
+
+
+# ADVP_RB Productions		Total Probability: 1.000
+ADVP_RB -> 'also' [0.062500]
+ADVP_RB -> 'Now' [0.125000]
+ADVP_RB -> 'early' [0.062500]
+ADVP_RB -> 'first' [0.062500]
+ADVP_RB -> 'anywhere' [0.062500]
+ADVP_RB -> 'Anytime' [0.062500]
+ADVP_RB -> 'here' [0.062500]
+ADVP_RB -> 'last' [0.062500]
+ADVP_RB -> 'home' [0.062500]
+ADVP_RB -> 'Only' [0.125000]
+ADVP_RB -> 'daily' [0.250000]
+
+
+# FRAG_NP_NNS Productions		Total Probability: 1.000
+FRAG_NP_NNS -> 'Fares' [1.000000]
+
+
+# S Productions		Total Probability: 1.000
+S -> ADVP_RB VP [0.040000]
+S -> NP_PRP VP [0.580000]
+S -> S_PRIME VP [0.120000]
+S -> S_PRIME S [0.020000]
+S -> NP_NN VP_VBN [0.020000]
+S -> NP_NNP VP_VBZ [0.020000]
+S -> NP_NN VP [0.020000]
+S -> INTJ_UH VP [0.060000]
+S -> NP VP [0.120000]
+
+
+# S_VP_VBG Productions		Total Probability: 1.000
+S_VP_VBG -> 'arriving' [1.000000]
+
+
+# IN Productions		Total Probability: 1.000
+IN -> 'before' [0.021654]
+IN -> 'as' [0.001969]
+IN -> 'of' [0.086614]
+IN -> 'Of' [0.001969]
+IN -> 'by' [0.005906]
+IN -> 'after' [0.039370]
+IN -> 'on' [0.139764]
+IN -> 'into' [0.001969]
+IN -> 'in' [0.090551]
+IN -> 'via' [0.003937]
+IN -> 'about' [0.005906]
+IN -> 'around' [0.007874]
+IN -> 'without' [0.001969]
+IN -> 'than' [0.011811]
+IN -> 'at' [0.017717]
+IN -> 'with' [0.009843]
+IN -> 'After' [0.001969]
+IN -> 'through' [0.001969]
+IN -> 'within' [0.001969]
+IN -> 'from' [0.472441]
+IN -> 'With' [0.005906]
+IN -> 'On' [0.013780]
+IN -> 'for' [0.013780]
+IN -> 'between' [0.027559]
+IN -> 'From' [0.011811]
+
+
+# VP_PRIME Productions		Total Probability: 1.000
+VP_PRIME -> VP CC [0.031250]
+VP_PRIME -> VP_PRIME PP [0.156250]
+VP_PRIME -> VB ADVP_RB [0.031250]
+VP_PRIME -> VB NP_PRP [0.125000]
+VP_PRIME -> VBP NP_NNP [0.031250]
+VP_PRIME -> VB ADVP [0.031250]
+VP_PRIME -> VBG PP [0.156250]
+VP_PRIME -> VB PP [0.343750]
+VP_PRIME -> VP_PRIME X_TO [0.031250]
+VP_PRIME -> VBP PP [0.031250]
+VP_PRIME -> VB PRT_RP [0.031250]
+
+
+# SBARQ Productions		Total Probability: 1.000
+SBARQ -> WHADVP_WRB SQ [0.016529]
+SBARQ -> WHNP SQ [0.082645]
+SBARQ -> WHNP_WHNP SQ [0.157025]
+SBARQ -> WHNP SQ_VP [0.413223]
+SBARQ -> WHNP_WDT SQ_VP [0.057851]
+SBARQ -> SBARQ_PRIME SQ_VP [0.008264]
+SBARQ -> WHNP_WP SQ [0.214876]
+SBARQ -> WHNP_WDT S_VP [0.008264]
+SBARQ -> WHNP_WDT SQ [0.041322]
+
+
+# VBP Productions		Total Probability: 1.000
+VBP -> 'serve' [0.069565]
+VBP -> 'do' [0.052174]
+VBP -> 'prefer' [0.008696]
+VBP -> 'stop' [0.034783]
+VBP -> 'leave' [0.121739]
+VBP -> 'plan' [0.008696]
+VBP -> 'depart' [0.060870]
+VBP -> 'arrive' [0.043478]
+VBP -> 'Do' [0.034783]
+VBP -> 'want' [0.017391]
+VBP -> 'make' [0.017391]
+VBP -> "'re" [0.008696]
+VBP -> 'go' [0.069565]
+VBP -> 'fly' [0.017391]
+VBP -> 'are' [0.217391]
+VBP -> 'have' [0.043478]
+VBP -> "'m" [0.008696]
+VBP -> 'Are' [0.043478]
+VBP -> 'need' [0.121739]
+
+
+# PDT Productions		Total Probability: 1.000
+PDT -> 'all' [1.000000]
+
+
+# S_VP Productions		Total Probability: 1.000
+S_VP -> S_VP_PRIME VP [0.013793]
+S_VP -> S_VP_PRIME INTJ_UH [0.013793]
+S_VP -> VBZ ADVP_RB [0.006897]
+S_VP -> TO VP_VB [0.006897]
+S_VP -> VBP PP [0.020690]
+S_VP -> VBP ADVP [0.006897]
+S_VP -> VBZ ADJP_JJ [0.006897]
+S_VP -> VB NP [0.137931]
+S_VP -> VBP NP_NN [0.013793]
+S_VP -> VB NP_NNS [0.020690]
+S_VP -> TO VP [0.117241]
+S_VP -> VBZ NP [0.006897]
+S_VP -> VB NP_PRP [0.013793]
+S_VP -> S_VP_PRIME PP [0.027586]
+S_VP -> S_VP_PRIME NP [0.551724]
+S_VP -> MD VP [0.006897]
+S_VP -> VBZ NP_NN [0.006897]
+S_VP -> VBP NP [0.006897]
+S_VP -> VBZ PP [0.013793]
+
+
+# WHNP_WHNP Productions		Total Probability: 1.000
+WHNP_WHNP -> WHADJP NNS [0.050000]
+WHNP_WHNP -> WDT NNS [0.950000]
+
+
+# FRAG_NP Productions		Total Probability: 1.000
+FRAG_NP -> FRAG_NP_PRIME NNS [0.017391]
+FRAG_NP -> NP_NNS PP [0.060870]
+FRAG_NP -> NP_NNS ADJP [0.008696]
+FRAG_NP -> NP VP_VBG [0.008696]
+FRAG_NP -> CD NNS [0.008696]
+FRAG_NP -> FRAG_NP_PRIME NP_NNS [0.008696]
+FRAG_NP -> FRAG_NP_PRIME CD [0.017391]
+FRAG_NP -> NNP NN [0.008696]
+FRAG_NP -> FRAG_NP_PRIME PP [0.504348]
+FRAG_NP -> FRAG_NP_PRIME VP [0.026087]
+FRAG_NP -> FRAG_NP_PRIME SBAR [0.008696]
+FRAG_NP -> FRAG_NP_PRIME ADVP_RB [0.026087]
+FRAG_NP -> FRAG_NP_PRIME NP [0.026087]
+FRAG_NP -> FRAG_NP_PRIME NP_NN [0.017391]
+FRAG_NP -> FRAG_NP_PRIME NN [0.026087]
+FRAG_NP -> JJS NN [0.034783]
+FRAG_NP -> NP_NN PP [0.052174]
+FRAG_NP -> NN NNS [0.008696]
+FRAG_NP -> JJS NNS [0.008696]
+FRAG_NP -> NN NN [0.034783]
+FRAG_NP -> JJ NN [0.008696]
+FRAG_NP -> NP PP [0.052174]
+FRAG_NP -> NP_NNS VP [0.008696]
+FRAG_NP -> DT NNS [0.008696]
+FRAG_NP -> JJ NNS [0.008696]
+
+
+# PP Productions		Total Probability: 1.000
+PP -> TO NP_NNP [0.229932]
+PP -> TO ADVP_RB [0.001361]
+PP -> IN NP_NNP [0.340136]
+PP -> PP_PRIME PP [0.001361]
+PP -> IN NP_DT [0.014966]
+PP -> PP_PRIME S_VP_VBG [0.001361]
+PP -> IN NP_NN [0.013605]
+PP -> TO NP [0.095238]
+PP -> TO INTJ_UH [0.001361]
+PP -> IN NP_NNS [0.002721]
+PP -> PP PP [0.001361]
+PP -> IN ADJP_JJ [0.001361]
+PP -> PP_PRIME NP [0.002721]
+PP -> IN NP [0.291156]
+PP -> IN NP_NNPS [0.001361]
+
+
+# VBG Productions		Total Probability: 1.000
+VBG -> 'Departing' [0.153846]
+VBG -> 'leaving' [0.230769]
+VBG -> 'connecting' [0.025641]
+VBG -> 'making' [0.025641]
+VBG -> 'Leaving' [0.102564]
+VBG -> 'departing' [0.076923]
+VBG -> 'arriving' [0.358974]
+VBG -> 'living' [0.025641]
+
+
+# SQ_VP Productions		Total Probability: 1.000
+SQ_VP -> VBZ VP [0.017241]
+SQ_VP -> VBP VP [0.017241]
+SQ_VP -> SQ_VP_PRIME VP [0.034483]
+SQ_VP -> VBP ADVP_RB [0.017241]
+SQ_VP -> VBZ NP [0.034483]
+SQ_VP -> VBZ ADJP_JJR [0.034483]
+SQ_VP -> VBP NP_NNS [0.017241]
+SQ_VP -> SQ_VP_PRIME NP [0.017241]
+SQ_VP -> VBP NP_NN [0.120690]
+SQ_VP -> SQ_VP_PRIME PP [0.293103]
+SQ_VP -> VBP ADVP_RBS [0.034483]
+SQ_VP -> VBP PP [0.189655]
+SQ_VP -> VBP NP_NNP [0.017241]
+SQ_VP -> VBZ ADJP_JJ [0.051724]
+SQ_VP -> VBZ ADVP_RBS [0.017241]
+SQ_VP -> VBP ADJP_JJ [0.017241]
+SQ_VP -> VBP NP [0.051724]
+SQ_VP -> VBZ NP_NN [0.017241]
+
+
+# ADJP_PRIME Productions		Total Probability: 1.000
+ADJP_PRIME -> RB RB [1.000000]
+
+
+# FRAG_VP_PRIME Productions		Total Probability: 1.000
+FRAG_VP_PRIME -> VBG NP [0.285714]
+FRAG_VP_PRIME -> VBG PP [0.428571]
+FRAG_VP_PRIME -> VBG NP_NNP [0.285714]
+
+
+# NNP Productions		Total Probability: 1.000
+NNP -> 'O' [0.002193]
+NNP -> 'Carolina' [0.002193]
+NNP -> 'Ohio' [0.004386]
+NNP -> 'Friday' [0.004386]
+NNP -> 'N' [0.004386]
+NNP -> 'Diego' [0.019737]
+NNP -> 'Los' [0.026316]
+NNP -> 'July' [0.004386]
+NNP -> 'Vegas' [0.054825]
+NNP -> 'Air' [0.008772]
+NNP -> 'Lake' [0.017544]
+NNP -> 'Jose' [0.013158]
+NNP -> 'Wednesday' [0.006579]
+NNP -> 'Orlando' [0.002193]
+NNP -> 'Westchester' [0.013158]
+NNP -> 'Kansas' [0.039474]
+NNP -> 'Paul' [0.004386]
+NNP -> 'American' [0.024123]
+NNP -> 'P' [0.002193]
+NNP -> 'New' [0.059211]
+NNP -> 'York' [0.050439]
+NNP -> 'June' [0.002193]
+NNP -> 'T' [0.015351]
+NNP -> 'Jersey' [0.008772]
+NNP -> 'Guardia' [0.004386]
+NNP -> 'International' [0.002193]
+NNP -> 'United' [0.010965]
+NNP -> 'Cincinnati' [0.002193]
+NNP -> 'Airlines' [0.037281]
+NNP -> 'Monday' [0.010965]
+NNP -> 'U' [0.010965]
+NNP -> 'S' [0.008772]
+NNP -> 'Louis' [0.004386]
+NNP -> 'City' [0.081140]
+NNP -> 'K' [0.006579]
+NNP -> 'Ontario' [0.002193]
+NNP -> 'Alaska' [0.002193]
+NNP -> 'Southwest' [0.010965]
+NNP -> 'W' [0.019737]
+NNP -> 'Thursday' [0.010965]
+NNP -> 'Angeles' [0.026316]
+NNP -> 'Francisco' [0.043860]
+NNP -> 'D' [0.010965]
+NNP -> 'Tampa' [0.002193]
+NNP -> 'Sunday' [0.004386]
+NNP -> 'Beach' [0.008772]
+NNP -> 'Salt' [0.017544]
+NNP -> 'J' [0.006579]
+NNP -> 'Tuesday' [0.002193]
+NNP -> 'Milwaukee' [0.002193]
+NNP -> 'San' [0.076754]
+NNP -> 'Saint' [0.019737]
+NNP -> 'Saturday' [0.002193]
+NNP -> 'La' [0.004386]
+NNP -> 'Las' [0.054825]
+NNP -> 'A' [0.028509]
+NNP -> 'Newark' [0.004386]
+NNP -> 'Delta' [0.004386]
+NNP -> 'C' [0.013158]
+NNP -> 'Petersburg' [0.010965]
+NNP -> 'F' [0.010965]
+NNP -> 'Long' [0.008772]
+NNP -> 'Cleveland' [0.004386]
+NNP -> 'County' [0.013158]
+NNP -> 'North' [0.002193]
+
+
+# JJR Productions		Total Probability: 1.000
+JJR -> 'less' [0.666667]
+JJR -> 'more' [0.333333]
+
+
+# X_S_VP_PRIME Productions		Total Probability: 1.000
+X_S_VP_PRIME -> VB NP_PRP [1.000000]
+
+
+# SQ_PRIME Productions		Total Probability: 1.000
+SQ_PRIME -> VBP NP_PRP [0.070423]
+SQ_PRIME -> X VBZ [0.014085]
+SQ_PRIME -> VBP NP_NP_EX [0.267606]
+SQ_PRIME -> SQ_PRIME NP [0.028169]
+SQ_PRIME -> SQ_PRIME NP_PRP [0.014085]
+SQ_PRIME -> SQ_PRIME PP [0.253521]
+SQ_PRIME -> VBZ NP [0.140845]
+SQ_PRIME -> VBZ NP_NN [0.014085]
+SQ_PRIME -> MD NP_PRP [0.028169]
+SQ_PRIME -> INTJ_UH MD [0.014085]
+SQ_PRIME -> VBP NP_DT [0.014085]
+SQ_PRIME -> MD NP [0.028169]
+SQ_PRIME -> VBP NP [0.070423]
+SQ_PRIME -> VBZ NP_NP_EX [0.028169]
+SQ_PRIME -> VBZ NP_DT [0.014085]
+
+
+# NN Productions		Total Probability: 1.000
+NN -> 'day' [0.013889]
+NN -> 'cost' [0.006944]
+NN -> 'dinner' [0.013889]
+NN -> 'tomorrow' [0.010417]
+NN -> 'discount' [0.003472]
+NN -> 'transportation' [0.020833]
+NN -> 'Coach' [0.010417]
+NN -> 'Return' [0.003472]
+NN -> 'today' [0.003472]
+NN -> 'code' [0.010417]
+NN -> 'morning' [0.069444]
+NN -> 'number' [0.010417]
+NN -> 'restriction' [0.006944]
+NN -> 'Restriction' [0.003472]
+NN -> 'stopover' [0.003472]
+NN -> 'fare' [0.072917]
+NN -> 'Ground' [0.006944]
+NN -> 'return' [0.010417]
+NN -> 'ground' [0.017361]
+NN -> 'capacity' [0.003472]
+NN -> 'way' [0.027778]
+NN -> 'lunch' [0.006944]
+NN -> 'leg' [0.006944]
+NN -> 'time' [0.006944]
+NN -> 'noon' [0.006944]
+NN -> 'trip' [0.069444]
+NN -> 'one' [0.006944]
+NN -> 'Morning' [0.003472]
+NN -> 'stop' [0.020833]
+NN -> 'nonstop' [0.006944]
+NN -> 'friend' [0.003472]
+NN -> 'coach' [0.006944]
+NN -> 'aircraft' [0.006944]
+NN -> 'meal' [0.003472]
+NN -> 'airfare' [0.020833]
+NN -> 'Flight' [0.010417]
+NN -> 'night' [0.003472]
+NN -> 'type' [0.013889]
+NN -> 'abbreviation' [0.003472]
+NN -> 'flight' [0.260417]
+NN -> 'snack' [0.003472]
+NN -> 'class' [0.048611]
+NN -> 'Business' [0.003472]
+NN -> 'seating' [0.003472]
+NN -> 'afternoon' [0.024306]
+NN -> 'evening' [0.041667]
+NN -> 'price' [0.038194]
+NN -> 'ticket' [0.003472]
+NN -> 'layover' [0.003472]
+NN -> 'business' [0.003472]
+NN -> 'airline' [0.013889]
+NN -> 'kind' [0.003472]
+NN -> 'Weekday' [0.003472]
+NN -> 'reservation' [0.006944]
+
+
+# FRAG_WHNP_PRIME Productions		Total Probability: 1.000
+FRAG_WHNP_PRIME -> WHNP PP [0.596774]
+FRAG_WHNP_PRIME -> NP PP [0.016129]
+FRAG_WHNP_PRIME -> FRAG_WHNP_PRIME PP [0.387097]
+
+
+# MD Productions		Total Probability: 1.000
+MD -> "'d" [0.480000]
+MD -> 'Can' [0.080000]
+MD -> 'should' [0.200000]
+MD -> 'would' [0.200000]
+MD -> 'could' [0.040000]
+
+
+# TOP Productions		Total Probability: 1.000
+TOP -> FRAG_NP PUNC [0.223735]
+TOP -> FRAG_NP_NNP PUNC [0.001946]
+TOP -> FRAG_NP_NNS PUNC [0.001946]
+TOP -> INTJ_UH PUNC [0.003891]
+TOP -> SBAR PUNC [0.001946]
+TOP -> FRAG_NP_NN PUNC [0.003891]
+TOP -> S PUNC [0.089494]
+TOP -> FRAG PUNC [0.054475]
+TOP -> NP PUNC [0.005837]
+TOP -> FRAG_ADJP_JJS PUNC [0.001946]
+TOP -> FRAG_PP PUNC [0.011673]
+TOP -> SBARQ PUNC [0.235409]
+TOP -> SQ PUNC [0.048638]
+TOP -> FRAG_WHNP PUNC [0.073930]
+TOP -> S_VP PUNC [0.214008]
+TOP -> FRAG_ADJP_JJ PUNC [0.003891]
+TOP -> FRAG_VP PUNC [0.019455]
+TOP -> ADJP_JJ PUNC [0.001946]
+TOP -> X_S_VP PUNC [0.001946]
+
+
+# SQ_VP_PRIME Productions		Total Probability: 1.000
+SQ_VP_PRIME -> VP CC [0.068966]
+SQ_VP_PRIME -> VBP NP_NNP [0.172414]
+SQ_VP_PRIME -> VBP PP [0.448276]
+SQ_VP_PRIME -> SQ_VP_PRIME PP [0.310345]
+
+
+# ADJP_JJ Productions		Total Probability: 1.000
+ADJP_JJ -> 'extra' [0.100000]
+ADJP_JJ -> 'possible' [0.100000]
+ADJP_JJ -> 'nonstop' [0.200000]
+ADJP_JJ -> 'Nonstop' [0.100000]
+ADJP_JJ -> 'last' [0.400000]
+ADJP_JJ -> 'available' [0.100000]
+
+
+# ADJP Productions		Total Probability: 1.000
+ADJP -> ADJP_PRIME PP [0.333333]
+ADJP -> JJR PP [0.333333]
+ADJP -> RBS JJ [0.333333]
+
+
+# FRAG_ADJP_JJS Productions		Total Probability: 1.000
+FRAG_ADJP_JJS -> 'Cheapest' [1.000000]
+
+
+# NP_NNS Productions		Total Probability: 1.000
+NP_NNS -> 'Wednesdays' [0.012195]
+NP_NNS -> 'weekdays' [0.024390]
+NP_NNS -> 'flights' [0.256098]
+NP_NNS -> 'Airports' [0.024390]
+NP_NNS -> 'Flights' [0.609756]
+NP_NNS -> 'stops' [0.012195]
+NP_NNS -> 'costs' [0.012195]
+NP_NNS -> 'meals' [0.012195]
+NP_NNS -> 'Fares' [0.024390]
+NP_NNS -> 'fares' [0.012195]
+
+
+# RBR Productions		Total Probability: 1.000
+RBR -> 'less' [1.000000]
+
+
+# VP Productions		Total Probability: 1.000
+VP -> VBP S_VP [0.035971]
+VP -> VBG NP_NNP [0.007194]
+VP -> VP_PRIME PP [0.107914]
+VP -> VB PP [0.043165]
+VP -> VP_PRIME NP [0.043165]
+VP -> VBD NP [0.007194]
+VP -> VB S [0.007194]
+VP -> VB S_VP [0.086331]
+VP -> VBP PP [0.028777]
+VP -> VP_PRIME NP_NN [0.014388]
+VP -> MD VP [0.136691]
+VP -> VBZ NP [0.007194]
+VP -> VBP NP [0.107914]
+VP -> VBG PP [0.115108]
+VP -> VP_PRIME ADJP [0.007194]
+VP -> VB NP [0.100719]
+VP -> VB NP_NNS [0.007194]
+VP -> VBG NP [0.043165]
+VP -> VB NP_NN [0.050360]
+VP -> VP_PRIME ADVP [0.007194]
+VP -> VBN PP [0.028777]
+VP -> VP_PRIME VP [0.007194]
+
+
+# X_S_VP Productions		Total Probability: 1.000
+X_S_VP -> X_S_VP_PRIME NP [1.000000]
+
+
+# S_VP_PRIME Productions		Total Probability: 1.000
+S_VP_PRIME -> VB PP [0.011111]
+S_VP_PRIME -> VB NP [0.011111]
+S_VP_PRIME -> VP CC [0.011111]
+S_VP_PRIME -> S_VP_PRIME NP [0.022222]
+S_VP_PRIME -> VBZ PP [0.011111]
+S_VP_PRIME -> VB NP_PRP [0.922222]
+S_VP_PRIME -> VBP RB [0.011111]
+
+
+# FRAG_VP Productions		Total Probability: 1.000
+FRAG_VP -> FRAG_VP_PRIME PP [0.700000]
+FRAG_VP -> VBG PP [0.300000]
+
+
+# QP Productions		Total Probability: 1.000
+QP -> QP_PRIME CD [0.750000]
+QP -> CC JJR [0.083333]
+QP -> RB CD [0.166667]
+
+
+# ADJP_JJR Productions		Total Probability: 1.000
+ADJP_JJR -> 'better' [1.000000]
+
+
+# WRB Productions		Total Probability: 1.000
+WRB -> 'How' [1.000000]
+
+
+# NP_PRIME Productions		Total Probability: 1.000
+NP_PRIME -> NP_PRIME VP [0.002611]
+NP_PRIME -> JJS JJ [0.005222]
+NP_PRIME -> NP_NNS PP [0.028721]
+NP_PRIME -> DT NN [0.049608]
+NP_PRIME -> PDT DT [0.010444]
+NP_PRIME -> DT JJS [0.036554]
+NP_PRIME -> NP_PRIME JJ [0.007833]
+NP_PRIME -> NP_NN PP [0.010444]
+NP_PRIME -> JJ NN [0.020888]
+NP_PRIME -> SYM SYM [0.005222]
+NP_PRIME -> CD NN [0.007833]
+NP_PRIME -> NP_PRIME NNP [0.046997]
+NP_PRIME -> NN CD [0.005222]
+NP_PRIME -> NP NP [0.005222]
+NP_PRIME -> RB DT [0.002611]
+NP_PRIME -> NP VP [0.002611]
+NP_PRIME -> DT JJ [0.041775]
+NP_PRIME -> NNP CC [0.005222]
+NP_PRIME -> NP_NNP CC [0.020888]
+NP_PRIME -> NNP NNP [0.086162]
+NP_PRIME -> NP_PRIME X_TO [0.002611]
+NP_PRIME -> NP NN [0.005222]
+NP_PRIME -> JJ JJ [0.002611]
+NP_PRIME -> NN NNP [0.015666]
+NP_PRIME -> JJS NN [0.005222]
+NP_PRIME -> JJ NNP [0.002611]
+NP_PRIME -> NN NN [0.007833]
+NP_PRIME -> CD NNS [0.002611]
+NP_PRIME -> NP_PRIME CD [0.099217]
+NP_PRIME -> NP_PRIME ADVP_RB [0.002611]
+NP_PRIME -> NP_NN CC [0.002611]
+NP_PRIME -> DT NNP [0.020888]
+NP_PRIME -> CD CC [0.005222]
+NP_PRIME -> NP CC [0.036554]
+NP_PRIME -> CD RB [0.010444]
+NP_PRIME -> DT ADJP [0.002611]
+NP_PRIME -> NP_NNS VP [0.010444]
+NP_PRIME -> CD CD [0.015666]
+NP_PRIME -> NP_PRIME PP [0.088773]
+NP_PRIME -> NP PP [0.164491]
+NP_PRIME -> DT CD [0.007833]
+NP_PRIME -> NP_PRIME SYM [0.018277]
+NP_PRIME -> NP NP_NN [0.005222]
+NP_PRIME -> NP_PRIME NN [0.049608]
+NP_PRIME -> NNP CD [0.007833]
+NP_PRIME -> RB VBG [0.002611]
+NP_PRIME -> QP NNS [0.002611]
+
+
+# POS Productions		Total Probability: 1.000
+POS -> "'s" [1.000000]
+
+
+# JJ Productions		Total Probability: 1.000
+JJ -> 'many' [0.030303]
+JJ -> 'second' [0.015152]
+JJ -> 'First' [0.075758]
+JJ -> 'eighth' [0.015152]
+JJ -> 'ninth' [0.015152]
+JJ -> 'expensive' [0.015152]
+JJ -> 'sixteenth' [0.015152]
+JJ -> 'Next' [0.015152]
+JJ -> 'round' [0.257576]
+JJ -> 'Daily' [0.015152]
+JJ -> 'seventh' [0.015152]
+JJ -> 'first' [0.106061]
+JJ -> 'nonstop' [0.121212]
+JJ -> 'Early' [0.015152]
+JJ -> 'next' [0.090909]
+JJ -> 'Round' [0.045455]
+JJ -> 'direct' [0.015152]
+JJ -> 'other' [0.045455]
+JJ -> 'same' [0.015152]
+JJ -> 'Last' [0.030303]
+JJ -> 'last' [0.015152]
+JJ -> 'Direct' [0.015152]
+
+
+# TO Productions		Total Probability: 1.000
+TO -> 'to' [1.000000]
+
+
+# WHNP_WP Productions		Total Probability: 1.000
+WHNP_WP -> 'What' [1.000000]
+
+
+# NP_NNPS Productions		Total Probability: 1.000
+NP_NNPS -> 'Wednesdays' [1.000000]
+
+
+# NP_NP_EX Productions		Total Probability: 1.000
+NP_NP_EX -> 'there' [1.000000]
+
+
+# VBD Productions		Total Probability: 1.000
+VBD -> 'meant' [1.000000]
+
+
+# ADVP_RBS Productions		Total Probability: 1.000
+ADVP_RBS -> 'latest' [1.000000]
+
+
+# PUNC Productions		Total Probability: 1.000
+PUNC -> '.' [0.712062]
+PUNC -> '?' [0.287938]
+
+
+# SYM Productions		Total Probability: 1.000
+SYM -> 'B' [0.058824]
+SYM -> 'P' [0.176471]
+SYM -> 'I' [0.058824]
+SYM -> 'A' [0.294118]
+SYM -> 'D' [0.058824]
+SYM -> 'slash' [0.176471]
+SYM -> 'N' [0.058824]
+SYM -> 'M' [0.058824]
+SYM -> 'Q' [0.058824]
+
+
+# VP_VB Productions		Total Probability: 1.000
+VP_VB -> 'use' [0.142857]
+VP_VB -> 'stop' [0.285714]
+VP_VB -> 'leave' [0.142857]
+VP_VB -> 'cost' [0.428571]
+
+
