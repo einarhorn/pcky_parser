@@ -97,12 +97,13 @@ class PCKYParser:
         valid_parses = [entry for entry in top_level_entries
                         if entry.label() == self.grammar.start()]
 
-        # Resort the top level parses
+        # Re-sort the top level parses
         valid_parses.sort(key=lambda x: x.label(), reverse=True)
-
+        
         # Return the highest log probability parse tree
         if len(valid_parses) > 0:
-            return valid_parses[0]
+            # Strip parent annotations
+            return self.__strip_parent_annotation(valid_parses[0])
         else:
             return None
 
@@ -115,6 +116,10 @@ class PCKYParser:
 
         # Search productions to find all lhs nonterminals that have current_word as a rhs terminal
         relevant_productions = self.grammar.productions(rhs=current_word)
+
+        # Pretend this terminal is actually 'UNK' if there is no terminal matching the word
+        if relevant_productions == []:
+            relevant_productions = self.grammar.productions(rhs='UNK')
 
         # Create head nodes (nltk nonterminal + log probability) for each of the trees we will return
         tree_nodes = [ProbTreeNode(production.lhs(), self.__get_log_probability(production.prob())) 
@@ -218,6 +223,18 @@ class PCKYParser:
     
     def __get_log_probability(self, probability):
         return math.log(probability)
+    
+    def __strip_parent_annotation(self, tree_node):
+        for subtree in tree_node.subtrees():
+            if isinstance(subtree.label().node, grammar.Nonterminal):
+                # Fix parent annotation
+                node_symbol = subtree.label().node.symbol()
+                if "_Parent_" in node_symbol:
+                    idx = node_symbol.find("_Parent_")
+                    updated_node = grammar.Nonterminal(node_symbol[:idx])
+                    subtree.set_label(updated_node)
+        return tree_node
+    
 
 
 def main(grammar_filename, sentence_filename, output_filename, beam_search_size):
