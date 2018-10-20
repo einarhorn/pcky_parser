@@ -65,11 +65,16 @@ class ParentAnnotatedPCFG(PCFG):
 
         self._train_corpus = self._corpus
 
-    def parse_productions(self, parse_tree, parent_label=''):
+    def parse_productions(self, parse_tree, parent_label='', parent_annotation_level='non-preterminal'):
         if not parse_tree:
             return []
         elif len(parse_tree) == 1:
-            updated_lhs = Nonterminal(parse_tree.label() + '_Parent_' + parent_label)
+            if parent_annotation_level == 'non-preterminal':
+                updated_lhs = Nonterminal(parse_tree.label())
+            elif parent_annotation_level == 'all':
+                updated_lhs = Nonterminal(parse_tree.label() + '_Parent_' + parent_label)
+            else:
+                updated_lhs = Nonterminal(parse_tree.label())
             rhs = [parse_tree[0]]
             return [Production(lhs=updated_lhs, rhs=rhs)]
 
@@ -144,7 +149,7 @@ def main():
             improved_pcfg_obj = ParentAnnotatedPCFG(treebank_filename)
             improved_pcfg_obj.induce_pcfg()
             improved_pcfg_obj.write_pcfg(output_filename=output_pcfg_filename)
-        elif mode == 'pa+oov':
+        elif mode == 'pa_all+oov':
             oov_pcfg_obj = OOVHandledPCFG(treebank_file=treebank_filename)
             oov_pcfg_obj.induce_pcfg()
             oov_pcfg_obj.write_pcfg(output_filename=output_pcfg_filename)
