@@ -3,21 +3,22 @@ import sys
 from nltk import load, word_tokenize, Tree, grammar
 import numpy as np
 import operator
+import math
 
 
 
 __authors__ = ['einarh', 'avijitv']
 
 class ProbTreeNode():
-    def __init__(self, node, probability):
+    def __init__(self, node, log_probability):
         """
         :param node: a nonterminal node in the parse tree we create
         :type node: nltk.Nonterminal
-        :param probability: real-value probability of the subtree starting at this node
+        :param log_probability: real-value log probability of the subtree starting at this node
         :type node: float
         """
         self.node = node
-        self.probability = probability
+        self.log_probability = log_probability
     
     def __eq__(self, other):
         if isinstance(other, grammar.Nonterminal):
@@ -25,7 +26,7 @@ class ProbTreeNode():
         return self.node == other.node
     
     def __lt__(self, other):
-        return self.probability < other.probability
+        return self.log_probability < other.log_probability
     
     def __str__(self):
         return str(self.node).rstrip()
@@ -77,7 +78,7 @@ class PCKYParser:
             for i in range(j - 1, -1, -1):
                 for k in range(i + 1, j):
                     # Get a list of subtrees that are valid for the current span, 
-                    # sorted by decreasing probability
+                    # sorted by decreasing log probability
                     potential_subtrees = self.__calculate_intermediate_cell(table=table, i=i, j=j, k=k)
 
                     # Prune the number of subtrees in i,j to the top <beam_size> entries
@@ -99,7 +100,7 @@ class PCKYParser:
         # Resort the top level parses
         valid_parses.sort(key=lambda x: x.label(), reverse=True)
 
-        # Return the highest probability parse tree
+        # Return the highest log probability parse tree
         if len(valid_parses) > 0:
             return valid_parses[0]
         else:
@@ -115,12 +116,12 @@ class PCKYParser:
         # Search productions to find all lhs nonterminals that have current_word as a rhs terminal
         relevant_productions = self.grammar.productions(rhs=current_word)
 
-        # Create head nodes (nltk nonterminal + probability) for each of the trees we will return
-        tree_nodes = [ProbTreeNode(production.lhs(), production.prob()) 
+        # Create head nodes (nltk nonterminal + log probability) for each of the trees we will return
+        tree_nodes = [ProbTreeNode(production.lhs(), self.__get_log_probability(production.prob())) 
                        for production in relevant_productions]
 
-        # Sort tree nodes by decreasing probability
-        tree_nodes_sorted = sorted(tree_nodes, key=operator.attrgetter('probability'), reverse=True)
+        # Sort tree nodes by decreasing log probability
+        tree_nodes_sorted = sorted(tree_nodes, key=operator.attrgetter('log_probability'), reverse=True)
 
         # Convert to a list of nltk.Tree objects
         cell_contents = [Tree(node=tree_node, children=[current_word])
@@ -158,8 +159,8 @@ class PCKYParser:
                 second_node = self.__get_nltk_nonterminal_from_tree(second_tree)
 
                 # Get probabilities of each of the trees
-                first_probability = self.__get_probability_from_tree(first_tree)
-                second_probability = self.__get_probability_from_tree(second_tree)
+                first_log_probability = self.__get_log_probability_from_tree(first_tree)
+                second_log_probability = self.__get_log_probability_from_tree(second_tree)
 
                 # Check whether there is a production A -> B C, where B is first_list_item
                 # and C is second_list_item
@@ -167,7 +168,7 @@ class PCKYParser:
 
                 # Get LHS of each of the productions as node
                 tree_nodes = [ProbTreeNode(production.lhs(), 
-                                           production.prob() * first_probability * second_probability) 
+                                           self.__get_log_probability(production.prob()) + first_log_probability + second_log_probability) 
                               for production in relevant_productions]
 
                 # Convert each LHS entry to a valid subtree
@@ -178,7 +179,7 @@ class PCKYParser:
                 # Add to list of valid subtrees created so far
                 cell_contents += subtrees
 
-        # Sort cell_contents by their probabilities
+        # Sort cell_contents by their log probabilities
         cell_contents.sort(key=lambda x: x.label(), reverse=True)
 
         return cell_contents
@@ -208,12 +209,15 @@ class PCKYParser:
         """
         return tree.label().node
 
-    def __get_probability_from_tree(self, tree):
-        """ Helper method to return the probability for the given tree
+    def __get_log_probability_from_tree(self, tree):
+        """ Helper method to return the log probability for the given tree
         :type tree: nltk.Tree
         :rtype: float
         """
-        return tree.label().probability
+        return tree.label().log_probability
+    
+    def __get_log_probability(self, probability):
+        return math.log(probability)
 
 
 def main(grammar_filename, sentence_filename, output_filename, beam_search_size):
@@ -234,7 +238,7 @@ def main(grammar_filename, sentence_filename, output_filename, beam_search_size)
                 valid_parse = parser.parse_sentence(sentence=line)
                 splitted = str(valid_parse).split()
                 flat_tree = ' '.join(splitted)
-                
+
                 if valid_parse is None:
                     print()
                     outfile.write('\n')
