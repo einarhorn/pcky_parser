@@ -257,10 +257,8 @@ def main(grammar_filename, sentence_filename, output_filename, beam_search_size)
                 flat_tree = ' '.join(splitted)
 
                 if valid_parse is None:
-                    print()
                     outfile.write('\n')
                 else:
-                    print(flat_tree)
                     outfile.write(str(flat_tree) + '\n')
 
 
@@ -276,7 +274,7 @@ if __name__ == "__main__":
         beam_search_size = int(sys.argv[4])
     else:
         print("Invalid number of arguments. Expected:", file=sys.stderr)
-        print("hw3_parser.sh <grammar_filename> <test_sentence_filename> <output_filename> <beam_search_size>", file=sys.stderr)
+        print("hw4_parser.sh <grammar_filename> <test_sentence_filename> <output_filename> <beam_search_size>", file=sys.stderr)
         print("If no beam search required, set beam_search_size to -1", file=sys.stderr)
         sys.exit(-1)
     main(grammar_filename, sentence_filename, output_filename, beam_search_size)
