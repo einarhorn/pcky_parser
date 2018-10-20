@@ -1,325 +1,102 @@
 %start TOP_Parent_NULL
-# S_Parent_TOP Productions		Total Probability: 1.000
-S_Parent_TOP -> NP_PRP_Parent_S VP_Parent_S [0.586957]
-S_Parent_TOP -> NP_NN_Parent_S VP_Parent_S [0.021739]
-S_Parent_TOP -> NP_Parent_S VP_Parent_S [0.130435]
-S_Parent_TOP -> INTJ_UH_Parent_S VP_Parent_S [0.065217]
-S_Parent_TOP -> ADVP_RB_Parent_S VP_Parent_S [0.043478]
-S_Parent_TOP -> S_PRIME_Parent_S S_Parent_S [0.021739]
-S_Parent_TOP -> S_PRIME_Parent_S VP_Parent_S [0.130435]
-
-
-# NP_Parent_SQ Productions		Total Probability: 1.000
-NP_Parent_SQ -> NP_Parent_NP PP_Parent_NP [0.219512]
-NP_Parent_SQ -> NP_PRIME_Parent_NP NNP_Parent_NP [0.024390]
-NP_Parent_SQ -> DT_Parent_NP JJS_Parent_NP [0.024390]
-NP_Parent_SQ -> DT_Parent_NP NN_Parent_NP [0.219512]
-NP_Parent_SQ -> NP_PRIME_Parent_NP NNS_Parent_NP [0.048780]
-NP_Parent_SQ -> DT_Parent_NP NNS_Parent_NP [0.024390]
-NP_Parent_SQ -> NP_PRIME_Parent_NP PP_Parent_NP [0.097561]
-NP_Parent_SQ -> NP_PRIME_Parent_NP NP_NN_Parent_NP [0.024390]
-NP_Parent_SQ -> NP_PRIME_Parent_NP SYM_Parent_NP [0.048780]
-NP_Parent_SQ -> NP_Parent_NP SBAR_Parent_NP [0.048780]
-NP_Parent_SQ -> JJ_Parent_NP NNS_Parent_NP [0.024390]
-NP_Parent_SQ -> NP_PRIME_Parent_NP CD_Parent_NP [0.048780]
-NP_Parent_SQ -> NP_Parent_NP VP_Parent_NP [0.048780]
-NP_Parent_SQ -> NP_PRIME_Parent_NP NN_Parent_NP [0.097561]
-
-
-# VP_Parent_NP_PRIME Productions		Total Probability: 1.000
-VP_Parent_NP_PRIME -> VBG_Parent_VP PP_Parent_VP [0.666667]
-VP_Parent_NP_PRIME -> VP_PRIME_Parent_VP PP_Parent_VP [0.333333]
-
-
-# VBZ Productions		Total Probability: 1.000
-VBZ -> 'Does' [0.119403]
-VBZ -> 'leaves' [0.044776]
-VBZ -> 'has' [0.014925]
-VBZ -> 'does' [0.029851]
-VBZ -> "'s" [0.044776]
-VBZ -> 'departs' [0.014925]
-VBZ -> 'Is' [0.089552]
-VBZ -> 'arrives' [0.014925]
-VBZ -> 'is' [0.582090]
-VBZ -> 'serves' [0.029851]
-VBZ -> 'provides' [0.014925]
-
-
-# SYM Productions		Total Probability: 1.000
-SYM -> 'N' [0.058824]
-SYM -> 'M' [0.058824]
-SYM -> 'B' [0.058824]
-SYM -> 'P' [0.176471]
-SYM -> 'A' [0.294118]
-SYM -> 'Q' [0.058824]
-SYM -> 'I' [0.058824]
-SYM -> 'slash' [0.176471]
-SYM -> 'D' [0.058824]
-
-
-# SBAR_Parent_NP Productions		Total Probability: 1.000
-SBAR_Parent_NP -> WHNP_WDT_Parent_SBAR S_Parent_SBAR [0.058824]
-SBAR_Parent_NP -> WHNP_XXX_Parent_SBAR S_VP_Parent_SBAR [0.058824]
-SBAR_Parent_NP -> WHNP_WDT_Parent_SBAR S_VP_Parent_SBAR [0.882353]
-
-
-# TO Productions		Total Probability: 1.000
-TO -> 'to' [1.000000]
-
-
-# WHNP_WHNP_Parent_SBARQ_PRIME Productions		Total Probability: 1.000
-WHNP_WHNP_Parent_SBARQ_PRIME -> WDT_Parent_WHNP_WHNP NNS_Parent_WHNP_WHNP [1.000000]
-
-
-# NP_Parent_ADVP Productions		Total Probability: 1.000
-NP_Parent_ADVP -> QP_Parent_NP NNS_Parent_NP [1.000000]
-
-
-# PP_Parent_VP Productions		Total Probability: 1.000
-PP_Parent_VP -> TO_Parent_PP NP_NNP_Parent_PP [0.044444]
-PP_Parent_VP -> IN_Parent_PP NP_Parent_PP [0.533333]
-PP_Parent_VP -> IN_Parent_PP NP_NN_Parent_PP [0.088889]
-PP_Parent_VP -> IN_Parent_PP NP_NNP_Parent_PP [0.244444]
-PP_Parent_VP -> TO_Parent_PP NP_Parent_PP [0.066667]
-PP_Parent_VP -> PP_PRIME_Parent_PP PP_Parent_PP [0.022222]
-
-
-# PP_Parent_FRAG_WHNP Productions		Total Probability: 1.000
-PP_Parent_FRAG_WHNP -> TO_Parent_PP NP_NNP_Parent_PP [0.394737]
-PP_Parent_FRAG_WHNP -> IN_Parent_PP NP_NNP_Parent_PP [0.263158]
-PP_Parent_FRAG_WHNP -> IN_Parent_PP NP_Parent_PP [0.236842]
-PP_Parent_FRAG_WHNP -> TO_Parent_PP NP_Parent_PP [0.105263]
-
-
-# ADJP_PRIME_Parent_ADJP Productions		Total Probability: 1.000
-ADJP_PRIME_Parent_ADJP -> RB_Parent_ADJP_PRIME RB_Parent_ADJP_PRIME [1.000000]
-
-
-# PP_Parent_FRAG_VP_PRIME Productions		Total Probability: 1.000
-PP_Parent_FRAG_VP_PRIME -> IN_Parent_PP NP_NNS_Parent_PP [0.333333]
-PP_Parent_FRAG_VP_PRIME -> IN_Parent_PP NP_Parent_PP [0.666667]
-
-
-# JJR Productions		Total Probability: 1.000
-JJR -> 'more' [0.333333]
-JJR -> 'less' [0.666667]
-
-
-# RBS Productions		Total Probability: 1.000
-RBS -> 'least' [1.000000]
-
-
 # MD Productions		Total Probability: 1.000
 MD -> 'could' [0.040000]
-MD -> 'would' [0.200000]
-MD -> 'should' [0.200000]
 MD -> "'d" [0.480000]
+MD -> 'should' [0.200000]
 MD -> 'Can' [0.080000]
+MD -> 'would' [0.200000]
 
 
-# CC Productions		Total Probability: 1.000
-CC -> 'and' [0.861111]
-CC -> 'or' [0.138889]
+# TOP_Parent_NULL Productions		Total Probability: 1.000
+TOP_Parent_NULL -> FRAG_Parent_TOP PUNC [0.054475]
+TOP_Parent_NULL -> FRAG_NP_Parent_TOP PUNC [0.223735]
+TOP_Parent_NULL -> NP_Parent_TOP PUNC [0.005837]
+TOP_Parent_NULL -> X_S_VP_Parent_TOP PUNC [0.001946]
+TOP_Parent_NULL -> INTJ_UH PUNC [0.003891]
+TOP_Parent_NULL -> FRAG_ADJP_JJ PUNC [0.003891]
+TOP_Parent_NULL -> SBAR_Parent_TOP PUNC [0.001946]
+TOP_Parent_NULL -> SQ_Parent_TOP PUNC [0.048638]
+TOP_Parent_NULL -> FRAG_NP_NNS PUNC [0.001946]
+TOP_Parent_NULL -> FRAG_NP_NNP PUNC [0.001946]
+TOP_Parent_NULL -> ADJP_JJ PUNC [0.001946]
+TOP_Parent_NULL -> FRAG_WHNP_Parent_TOP PUNC [0.073930]
+TOP_Parent_NULL -> FRAG_PP_Parent_TOP PUNC [0.011673]
+TOP_Parent_NULL -> FRAG_ADJP_JJS PUNC [0.001946]
+TOP_Parent_NULL -> FRAG_VP_Parent_TOP PUNC [0.019455]
+TOP_Parent_NULL -> FRAG_NP_NN PUNC [0.003891]
+TOP_Parent_NULL -> S_Parent_TOP PUNC [0.089494]
+TOP_Parent_NULL -> S_VP_Parent_TOP PUNC [0.214008]
+TOP_Parent_NULL -> SBARQ_Parent_TOP PUNC [0.235409]
 
 
-# FRAG_NP_NN Productions		Total Probability: 1.000
-FRAG_NP_NN -> 'Tomorrow' [0.500000]
-FRAG_NP_NN -> 'Cost' [0.500000]
+# IN Productions		Total Probability: 1.000
+IN -> 'after' [0.039370]
+IN -> 'as' [0.001969]
+IN -> 'via' [0.003937]
+IN -> 'From' [0.011811]
+IN -> 'After' [0.001969]
+IN -> 'with' [0.009843]
+IN -> 'within' [0.001969]
+IN -> 'without' [0.001969]
+IN -> 'around' [0.007874]
+IN -> 'about' [0.005906]
+IN -> 'Of' [0.001969]
+IN -> 'into' [0.001969]
+IN -> 'On' [0.013780]
+IN -> 'With' [0.005906]
+IN -> 'for' [0.013780]
+IN -> 'at' [0.017717]
+IN -> 'between' [0.027559]
+IN -> 'in' [0.090551]
+IN -> 'than' [0.011811]
+IN -> 'before' [0.021654]
+IN -> 'through' [0.001969]
+IN -> 'on' [0.139764]
+IN -> 'from' [0.472441]
+IN -> 'of' [0.086614]
+IN -> 'by' [0.005906]
 
 
-# VBN Productions		Total Probability: 1.000
-VBN -> 'served' [0.500000]
-VBN -> 'used' [0.500000]
+# VBP Productions		Total Probability: 1.000
+VBP -> 'do' [0.052174]
+VBP -> 'are' [0.217391]
+VBP -> 'have' [0.043478]
+VBP -> 'fly' [0.017391]
+VBP -> 'stop' [0.034783]
+VBP -> 'need' [0.121739]
+VBP -> 'arrive' [0.043478]
+VBP -> 'Do' [0.034783]
+VBP -> "'m" [0.008696]
+VBP -> 'want' [0.017391]
+VBP -> 'serve' [0.069565]
+VBP -> 'prefer' [0.008696]
+VBP -> 'plan' [0.008696]
+VBP -> 'leave' [0.121739]
+VBP -> 'Are' [0.043478]
+VBP -> "'re" [0.008696]
+VBP -> 'make' [0.017391]
+VBP -> 'go' [0.069565]
+VBP -> 'depart' [0.060870]
 
 
-# VP_Parent_NP Productions		Total Probability: 1.000
-VP_Parent_NP -> VBG_Parent_VP NP_Parent_VP [0.333333]
-VP_Parent_NP -> VP_PRIME_Parent_VP VP_Parent_VP [0.066667]
-VP_Parent_NP -> VBG_Parent_VP NP_NNP_Parent_VP [0.066667]
-VP_Parent_NP -> VP_PRIME_Parent_VP PP_Parent_VP [0.133333]
-VP_Parent_NP -> VBG_Parent_VP PP_Parent_VP [0.333333]
-VP_Parent_NP -> VBN_Parent_VP PP_Parent_VP [0.066667]
+# VP_PRIME_Parent_VP Productions		Total Probability: 1.000
+VP_PRIME_Parent_VP -> VBP NP_NNP [0.038462]
+VP_PRIME_Parent_VP -> VP_PRIME_Parent_VP_PRIME PP_Parent_VP_PRIME [0.192308]
+VP_PRIME_Parent_VP -> VB ADVP_Parent_VP_PRIME [0.038462]
+VP_PRIME_Parent_VP -> VP_PRIME_Parent_VP_PRIME X_TO [0.038462]
+VP_PRIME_Parent_VP -> VB PP_Parent_VP_PRIME [0.307692]
+VP_PRIME_Parent_VP -> VBG PP_Parent_VP_PRIME [0.115385]
+VP_PRIME_Parent_VP -> VP_Parent_VP_PRIME CC [0.038462]
+VP_PRIME_Parent_VP -> VB PRT_RP [0.038462]
+VP_PRIME_Parent_VP -> VB NP_PRP [0.153846]
+VP_PRIME_Parent_VP -> VBP PP_Parent_VP_PRIME [0.038462]
 
 
-# S_PRIME_Parent_S Productions		Total Probability: 1.000
-S_PRIME_Parent_S -> PP_Parent_S_PRIME NP_PRP_Parent_S_PRIME [0.428571]
-S_PRIME_Parent_S -> ADVP_RB_Parent_S_PRIME NP_PRP_Parent_S_PRIME [0.285714]
-S_PRIME_Parent_S -> INTJ_UH_Parent_S_PRIME NP_PRP_Parent_S_PRIME [0.142857]
-S_PRIME_Parent_S -> S_Parent_S_PRIME CC_Parent_S_PRIME [0.142857]
-
-
-# NP_Parent_FRAG_PRIME Productions		Total Probability: 1.000
-NP_Parent_FRAG_PRIME -> NP_NN_Parent_NP PP_Parent_NP [0.200000]
-NP_Parent_FRAG_PRIME -> NP_PRIME_Parent_NP NNP_Parent_NP [0.200000]
-NP_Parent_FRAG_PRIME -> JJ_Parent_NP NNP_Parent_NP [0.200000]
-NP_Parent_FRAG_PRIME -> NP_PRIME_Parent_NP NP_Parent_NP [0.200000]
-NP_Parent_FRAG_PRIME -> JJ_Parent_NP NN_Parent_NP [0.200000]
-
-
-# ADVP_RBS Productions		Total Probability: 1.000
-ADVP_RBS -> 'latest' [1.000000]
-
-
-# RB Productions		Total Probability: 1.000
-RB -> 'no' [0.017857]
-RB -> 'only' [0.035714]
-RB -> 'a.m' [0.196429]
-RB -> 'early' [0.017857]
-RB -> 'p.m' [0.375000]
-RB -> 'as' [0.017857]
-RB -> 'apart' [0.071429]
-RB -> 'back' [0.017857]
-RB -> 'much' [0.089286]
-RB -> 'around' [0.035714]
-RB -> 'not' [0.017857]
-RB -> "o'clock" [0.107143]
-
-
-# S_Parent_S_PRIME Productions		Total Probability: 1.000
-S_Parent_S_PRIME -> NP_PRP_Parent_S VP_Parent_S [1.000000]
-
-
-# PP_PRIME_Parent_PP_PRIME Productions		Total Probability: 1.000
-PP_PRIME_Parent_PP_PRIME -> IN_Parent_PP_PRIME CC_Parent_PP_PRIME [1.000000]
-
-
-# VP_Parent_VP Productions		Total Probability: 1.000
-VP_Parent_VP -> VP_PRIME_Parent_VP NP_NN_Parent_VP [0.100000]
-VP_Parent_VP -> VB_Parent_VP PP_Parent_VP [0.100000]
-VP_Parent_VP -> VB_Parent_VP NP_Parent_VP [0.200000]
-VP_Parent_VP -> VBG_Parent_VP PP_Parent_VP [0.050000]
-VP_Parent_VP -> VB_Parent_VP S_VP_Parent_VP [0.550000]
-
-
-# QP_PRIME_Parent_QP_PRIME Productions		Total Probability: 1.000
-QP_PRIME_Parent_QP_PRIME -> CD_Parent_QP_PRIME CD_Parent_QP_PRIME [0.250000]
-QP_PRIME_Parent_QP_PRIME -> QP_PRIME_Parent_QP_PRIME IN_Parent_QP_PRIME [0.250000]
-QP_PRIME_Parent_QP_PRIME -> QP_PRIME_Parent_QP_PRIME CD_Parent_QP_PRIME [0.250000]
-QP_PRIME_Parent_QP_PRIME -> RB_Parent_QP_PRIME JJR_Parent_QP_PRIME [0.250000]
-
-
-# SQ_PRIME_Parent_SQ Productions		Total Probability: 1.000
-SQ_PRIME_Parent_SQ -> VBP_Parent_SQ_PRIME NP_DT_Parent_SQ_PRIME [0.020000]
-SQ_PRIME_Parent_SQ -> VBP_Parent_SQ_PRIME NP_Parent_SQ_PRIME [0.100000]
-SQ_PRIME_Parent_SQ -> VBZ_Parent_SQ_PRIME NP_Parent_SQ_PRIME [0.200000]
-SQ_PRIME_Parent_SQ -> VBZ_Parent_SQ_PRIME NP_NP_EX_Parent_SQ_PRIME [0.040000]
-SQ_PRIME_Parent_SQ -> MD_Parent_SQ_PRIME NP_PRP_Parent_SQ_PRIME [0.040000]
-SQ_PRIME_Parent_SQ -> MD_Parent_SQ_PRIME NP_Parent_SQ_PRIME [0.040000]
-SQ_PRIME_Parent_SQ -> SQ_PRIME_Parent_SQ_PRIME NP_Parent_SQ_PRIME [0.020000]
-SQ_PRIME_Parent_SQ -> SQ_PRIME_Parent_SQ_PRIME NP_PRP_Parent_SQ_PRIME [0.020000]
-SQ_PRIME_Parent_SQ -> SQ_PRIME_Parent_SQ_PRIME PP_Parent_SQ_PRIME [0.320000]
-SQ_PRIME_Parent_SQ -> VBZ_Parent_SQ_PRIME NP_NN_Parent_SQ_PRIME [0.020000]
-SQ_PRIME_Parent_SQ -> VBP_Parent_SQ_PRIME NP_NP_EX_Parent_SQ_PRIME [0.060000]
-SQ_PRIME_Parent_SQ -> VBZ_Parent_SQ_PRIME NP_DT_Parent_SQ_PRIME [0.020000]
-SQ_PRIME_Parent_SQ -> VBP_Parent_SQ_PRIME NP_PRP_Parent_SQ_PRIME [0.100000]
-
-
-# FRAG_VP_PRIME_Parent_FRAG_VP Productions		Total Probability: 1.000
-FRAG_VP_PRIME_Parent_FRAG_VP -> VBG_Parent_FRAG_VP_PRIME NP_NNP_Parent_FRAG_VP_PRIME [0.285714]
-FRAG_VP_PRIME_Parent_FRAG_VP -> VBG_Parent_FRAG_VP_PRIME NP_Parent_FRAG_VP_PRIME [0.285714]
-FRAG_VP_PRIME_Parent_FRAG_VP -> VBG_Parent_FRAG_VP_PRIME PP_Parent_FRAG_VP_PRIME [0.428571]
-
-
-# PP_Parent_FRAG_NP Productions		Total Probability: 1.000
-PP_Parent_FRAG_NP -> TO_Parent_PP NP_NNP_Parent_PP [0.493506]
-PP_Parent_FRAG_NP -> IN_Parent_PP NP_Parent_PP [0.311688]
-PP_Parent_FRAG_NP -> IN_Parent_PP NP_NNP_Parent_PP [0.051948]
-PP_Parent_FRAG_NP -> TO_Parent_PP NP_Parent_PP [0.142857]
-
-
-# NNP Productions		Total Probability: 1.000
-NNP -> 'Ohio' [0.004386]
-NNP -> 'P' [0.002193]
-NNP -> 'Milwaukee' [0.002193]
-NNP -> 'Jersey' [0.008772]
-NNP -> 'Delta' [0.004386]
-NNP -> 'City' [0.081140]
-NNP -> 'C' [0.013158]
-NNP -> 'Monday' [0.010965]
-NNP -> 'Las' [0.054825]
-NNP -> 'Wednesday' [0.006579]
-NNP -> 'County' [0.013158]
-NNP -> 'International' [0.002193]
-NNP -> 'Carolina' [0.002193]
-NNP -> 'Saint' [0.019737]
-NNP -> 'Westchester' [0.013158]
-NNP -> 'Alaska' [0.002193]
-NNP -> 'A' [0.028509]
-NNP -> 'Tampa' [0.002193]
-NNP -> 'Newark' [0.004386]
-NNP -> 'F' [0.010965]
-NNP -> 'Cleveland' [0.004386]
-NNP -> 'S' [0.008772]
-NNP -> 'N' [0.004386]
-NNP -> 'United' [0.010965]
-NNP -> 'Friday' [0.004386]
-NNP -> 'La' [0.004386]
-NNP -> 'Beach' [0.008772]
-NNP -> 'Salt' [0.017544]
-NNP -> 'Guardia' [0.004386]
-NNP -> 'Saturday' [0.002193]
-NNP -> 'J' [0.006579]
-NNP -> 'Southwest' [0.010965]
-NNP -> 'T' [0.015351]
-NNP -> 'Los' [0.026316]
-NNP -> 'Jose' [0.013158]
-NNP -> 'American' [0.024123]
-NNP -> 'New' [0.059211]
-NNP -> 'North' [0.002193]
-NNP -> 'Lake' [0.017544]
-NNP -> 'Vegas' [0.054825]
-NNP -> 'Paul' [0.004386]
-NNP -> 'Diego' [0.019737]
-NNP -> 'July' [0.004386]
-NNP -> 'U' [0.010965]
-NNP -> 'Sunday' [0.004386]
-NNP -> 'San' [0.076754]
-NNP -> 'Francisco' [0.043860]
-NNP -> 'Louis' [0.004386]
-NNP -> 'Kansas' [0.039474]
-NNP -> 'W' [0.019737]
-NNP -> 'K' [0.006579]
-NNP -> 'June' [0.002193]
-NNP -> 'Angeles' [0.026316]
-NNP -> 'Petersburg' [0.010965]
-NNP -> 'Air' [0.008772]
-NNP -> 'Long' [0.008772]
-NNP -> 'D' [0.010965]
-NNP -> 'Tuesday' [0.002193]
-NNP -> 'Thursday' [0.010965]
-NNP -> 'O' [0.002193]
-NNP -> 'York' [0.050439]
-NNP -> 'Cincinnati' [0.002193]
-NNP -> 'Ontario' [0.002193]
-NNP -> 'Orlando' [0.002193]
-NNP -> 'Airlines' [0.037281]
-
-
-# VBD Productions		Total Probability: 1.000
-VBD -> 'meant' [1.000000]
-
-
-# VP_Parent_S_VP_PRIME Productions		Total Probability: 1.000
-VP_Parent_S_VP_PRIME -> VBP_Parent_VP PP_Parent_VP [1.000000]
-
-
-# WHNP_WDT Productions		Total Probability: 1.000
-WHNP_WDT -> 'Which' [0.645833]
-WHNP_WDT -> 'that' [0.354167]
-
-
-# SBAR_Parent_TOP Productions		Total Probability: 1.000
-SBAR_Parent_TOP -> WHNP_Parent_SBAR SQ_Parent_SBAR [1.000000]
-
-
-# NP_Parent_S_VP_PRIME Productions		Total Probability: 1.000
-NP_Parent_S_VP_PRIME -> NNP_Parent_NP NNP_Parent_NP [0.333333]
-NP_Parent_S_VP_PRIME -> NP_PRIME_Parent_NP PP_Parent_NP [0.666667]
-
-
-# FRAG_VP_Parent_TOP Productions		Total Probability: 1.000
-FRAG_VP_Parent_TOP -> VBG_Parent_FRAG_VP PP_Parent_FRAG_VP [0.300000]
-FRAG_VP_Parent_TOP -> FRAG_VP_PRIME_Parent_FRAG_VP PP_Parent_FRAG_VP [0.700000]
+# NP_Parent_FRAG_PP Productions		Total Probability: 1.000
+NP_Parent_FRAG_PP -> NP_NNS PP_Parent_NP [0.250000]
+NP_Parent_FRAG_PP -> NP_PRIME_Parent_NP NN [0.250000]
+NP_Parent_FRAG_PP -> CD RB [0.250000]
+NP_Parent_FRAG_PP -> NP_PRIME_Parent_NP NNS [0.250000]
 
 
 # ADJP_Parent_VP Productions		Total Probability: 1.000
@@ -327,1356 +104,1579 @@ ADJP_Parent_VP -> ADJP_PRIME_Parent_ADJP PP_Parent_ADJP [1.000000]
 
 
 # NN Productions		Total Probability: 1.000
-NN -> 'Flight' [0.010417]
-NN -> 'stop' [0.020833]
-NN -> 'airline' [0.013889]
 NN -> 'Restriction' [0.003472]
-NN -> 'leg' [0.006944]
-NN -> 'noon' [0.006944]
-NN -> 'restriction' [0.006944]
-NN -> 'trip' [0.069444]
-NN -> 'flight' [0.260417]
-NN -> 'ticket' [0.003472]
-NN -> 'airfare' [0.020833]
-NN -> 'Return' [0.003472]
-NN -> 'afternoon' [0.024306]
-NN -> 'aircraft' [0.006944]
-NN -> 'cost' [0.006944]
-NN -> 'nonstop' [0.006944]
-NN -> 'ground' [0.017361]
-NN -> 'price' [0.038194]
-NN -> 'class' [0.048611]
-NN -> 'capacity' [0.003472]
-NN -> 'abbreviation' [0.003472]
-NN -> 'layover' [0.003472]
-NN -> 'transportation' [0.020833]
-NN -> 'one' [0.006944]
-NN -> 'tomorrow' [0.010417]
-NN -> 'coach' [0.006944]
-NN -> 'morning' [0.069444]
-NN -> 'day' [0.013889]
-NN -> 'Morning' [0.003472]
 NN -> 'today' [0.003472]
-NN -> 'friend' [0.003472]
-NN -> 'seating' [0.003472]
-NN -> 'Weekday' [0.003472]
-NN -> 'meal' [0.003472]
-NN -> 'Ground' [0.006944]
-NN -> 'Coach' [0.010417]
 NN -> 'way' [0.027778]
-NN -> 'evening' [0.041667]
-NN -> 'time' [0.006944]
-NN -> 'lunch' [0.006944]
-NN -> 'return' [0.010417]
-NN -> 'number' [0.010417]
-NN -> 'fare' [0.072917]
-NN -> 'dinner' [0.013889]
-NN -> 'stopover' [0.003472]
-NN -> 'night' [0.003472]
-NN -> 'snack' [0.003472]
-NN -> 'kind' [0.003472]
-NN -> 'Business' [0.003472]
-NN -> 'business' [0.003472]
-NN -> 'reservation' [0.006944]
+NN -> 'tomorrow' [0.010417]
+NN -> 'Ground' [0.006944]
 NN -> 'discount' [0.003472]
+NN -> 'seating' [0.003472]
+NN -> 'stopover' [0.003472]
+NN -> 'abbreviation' [0.003472]
+NN -> 'Coach' [0.010417]
+NN -> 'kind' [0.003472]
+NN -> 'snack' [0.003472]
+NN -> 'fare' [0.072917]
+NN -> 'night' [0.003472]
 NN -> 'type' [0.013889]
+NN -> 'airfare' [0.020833]
+NN -> 'stop' [0.020833]
+NN -> 'Weekday' [0.003472]
+NN -> 'morning' [0.069444]
+NN -> 'trip' [0.069444]
+NN -> 'capacity' [0.003472]
+NN -> 'noon' [0.006944]
+NN -> 'reservation' [0.006944]
+NN -> 'afternoon' [0.024306]
+NN -> 'friend' [0.003472]
 NN -> 'code' [0.010417]
+NN -> 'nonstop' [0.006944]
+NN -> 'flight' [0.260417]
+NN -> 'class' [0.048611]
+NN -> 'restriction' [0.006944]
+NN -> 'aircraft' [0.006944]
+NN -> 'day' [0.013889]
+NN -> 'lunch' [0.006944]
+NN -> 'Morning' [0.003472]
+NN -> 'return' [0.010417]
+NN -> 'airline' [0.013889]
+NN -> 'business' [0.003472]
+NN -> 'transportation' [0.020833]
+NN -> 'evening' [0.041667]
+NN -> 'layover' [0.003472]
+NN -> 'dinner' [0.013889]
+NN -> 'Return' [0.003472]
+NN -> 'ground' [0.017361]
+NN -> 'leg' [0.006944]
+NN -> 'ticket' [0.003472]
+NN -> 'price' [0.038194]
+NN -> 'one' [0.006944]
+NN -> 'number' [0.010417]
+NN -> 'meal' [0.003472]
+NN -> 'Business' [0.003472]
+NN -> 'cost' [0.006944]
+NN -> 'time' [0.006944]
+NN -> 'coach' [0.006944]
+NN -> 'Flight' [0.010417]
 
 
-# NP_Parent_S_VP Productions		Total Probability: 1.000
-NP_Parent_S_VP -> NP_NN_Parent_NP PP_Parent_NP [0.009804]
-NP_Parent_S_VP -> NP_Parent_NP ADJP_JJ_Parent_NP [0.009804]
-NP_Parent_S_VP -> NP_Parent_NP SBAR_Parent_NP [0.058824]
-NP_Parent_S_VP -> NP_PRIME_Parent_NP ADVP_Parent_NP [0.029412]
-NP_Parent_S_VP -> JJ_Parent_NP NN_Parent_NP [0.009804]
-NP_Parent_S_VP -> NP_NNS_Parent_NP SBAR_Parent_NP [0.019608]
-NP_Parent_S_VP -> NP_PRIME_Parent_NP PP_Parent_NP [0.362745]
-NP_Parent_S_VP -> DT_Parent_NP NNS_Parent_NP [0.137255]
-NP_Parent_S_VP -> NP_PRIME_Parent_NP VP_Parent_NP [0.019608]
-NP_Parent_S_VP -> DT_Parent_NP NN_Parent_NP [0.049020]
-NP_Parent_S_VP -> NP_NNS_Parent_NP VP_Parent_NP [0.009804]
-NP_Parent_S_VP -> NP_Parent_NP PP_Parent_NP [0.058824]
-NP_Parent_S_VP -> NP_PRIME_Parent_NP SYM_Parent_NP [0.009804]
-NP_Parent_S_VP -> NP_PRIME_Parent_NP NP_Parent_NP [0.029412]
-NP_Parent_S_VP -> NP_PRIME_Parent_NP NNS_Parent_NP [0.068627]
-NP_Parent_S_VP -> NP_NNS_Parent_NP PP_Parent_NP [0.019608]
-NP_Parent_S_VP -> NP_Parent_NP VP_Parent_NP [0.029412]
-NP_Parent_S_VP -> NP_PRIME_Parent_NP SBAR_Parent_NP [0.029412]
-NP_Parent_S_VP -> NP_PRIME_Parent_NP NN_Parent_NP [0.029412]
-NP_Parent_S_VP -> NP_PRIME_Parent_NP CD_Parent_NP [0.009804]
+# JJ Productions		Total Probability: 1.000
+JJ -> 'Direct' [0.015152]
+JJ -> 'next' [0.090909]
+JJ -> 'second' [0.015152]
+JJ -> 'last' [0.015152]
+JJ -> 'Daily' [0.015152]
+JJ -> 'First' [0.075758]
+JJ -> 'many' [0.030303]
+JJ -> 'sixteenth' [0.015152]
+JJ -> 'ninth' [0.015152]
+JJ -> 'Last' [0.030303]
+JJ -> 'expensive' [0.015152]
+JJ -> 'direct' [0.015152]
+JJ -> 'seventh' [0.015152]
+JJ -> 'Round' [0.045455]
+JJ -> 'other' [0.045455]
+JJ -> 'nonstop' [0.121212]
+JJ -> 'round' [0.257576]
+JJ -> 'same' [0.015152]
+JJ -> 'eighth' [0.015152]
+JJ -> 'Early' [0.015152]
+JJ -> 'first' [0.106061]
+JJ -> 'Next' [0.015152]
 
 
-# PP_Parent_FRAG_WHNP_PRIME Productions		Total Probability: 1.000
-PP_Parent_FRAG_WHNP_PRIME -> TO_Parent_PP NP_Parent_PP [0.080645]
-PP_Parent_FRAG_WHNP_PRIME -> IN_Parent_PP NP_NNP_Parent_PP [0.564516]
-PP_Parent_FRAG_WHNP_PRIME -> IN_Parent_PP NP_Parent_PP [0.129032]
-PP_Parent_FRAG_WHNP_PRIME -> TO_Parent_PP NP_NNP_Parent_PP [0.225806]
+# S_PRIME_Parent_S Productions		Total Probability: 1.000
+S_PRIME_Parent_S -> S_Parent_S_PRIME CC [0.142857]
+S_PRIME_Parent_S -> PP_Parent_S_PRIME NP_PRP [0.428571]
+S_PRIME_Parent_S -> ADVP_RB NP_PRP [0.285714]
+S_PRIME_Parent_S -> INTJ_UH NP_PRP [0.142857]
 
 
-# WHNP_Parent_FRAG Productions		Total Probability: 1.000
-WHNP_Parent_FRAG -> WHNP_Parent_WHNP PP_Parent_WHNP [1.000000]
+# S_VP_PRIME_Parent_S_VP_PRIME Productions		Total Probability: 1.000
+S_VP_PRIME_Parent_S_VP_PRIME -> VB NP_PRP [1.000000]
 
 
-# FRAG_NP_PRIME_Parent_FRAG_NP Productions		Total Probability: 1.000
-FRAG_NP_PRIME_Parent_FRAG_NP -> FRAG_NP_PRIME_Parent_FRAG_NP_PRIME NP_Parent_FRAG_NP_PRIME [0.012821]
-FRAG_NP_PRIME_Parent_FRAG_NP -> NP_NNS_Parent_FRAG_NP_PRIME PP_Parent_FRAG_NP_PRIME [0.371795]
-FRAG_NP_PRIME_Parent_FRAG_NP -> FRAG_NP_PRIME_Parent_FRAG_NP_PRIME NN_Parent_FRAG_NP_PRIME [0.025641]
-FRAG_NP_PRIME_Parent_FRAG_NP -> JJ_Parent_FRAG_NP_PRIME NN_Parent_FRAG_NP_PRIME [0.025641]
-FRAG_NP_PRIME_Parent_FRAG_NP -> NP_Parent_FRAG_NP_PRIME PP_Parent_FRAG_NP_PRIME [0.217949]
-FRAG_NP_PRIME_Parent_FRAG_NP -> FRAG_NP_PRIME_Parent_FRAG_NP_PRIME CD_Parent_FRAG_NP_PRIME [0.025641]
-FRAG_NP_PRIME_Parent_FRAG_NP -> NN_Parent_FRAG_NP_PRIME NN_Parent_FRAG_NP_PRIME [0.012821]
-FRAG_NP_PRIME_Parent_FRAG_NP -> NP_NN_Parent_FRAG_NP_PRIME PP_Parent_FRAG_NP_PRIME [0.025641]
-FRAG_NP_PRIME_Parent_FRAG_NP -> FRAG_NP_PRIME_Parent_FRAG_NP_PRIME PP_Parent_FRAG_NP_PRIME [0.243590]
-FRAG_NP_PRIME_Parent_FRAG_NP -> NP_NNP_Parent_FRAG_NP_PRIME PP_Parent_FRAG_NP_PRIME [0.012821]
-FRAG_NP_PRIME_Parent_FRAG_NP -> NP_Parent_FRAG_NP_PRIME CC_Parent_FRAG_NP_PRIME [0.012821]
-FRAG_NP_PRIME_Parent_FRAG_NP -> FRAG_NP_PRIME_Parent_FRAG_NP_PRIME ADVP_RB_Parent_FRAG_NP_PRIME [0.012821]
+# S_Parent_TOP Productions		Total Probability: 1.000
+S_Parent_TOP -> NP_PRP VP_Parent_S [0.586957]
+S_Parent_TOP -> INTJ_UH VP_Parent_S [0.065217]
+S_Parent_TOP -> S_PRIME_Parent_S S_Parent_S [0.021739]
+S_Parent_TOP -> S_PRIME_Parent_S VP_Parent_S [0.130435]
+S_Parent_TOP -> NP_NN VP_Parent_S [0.021739]
+S_Parent_TOP -> NP_Parent_S VP_Parent_S [0.130435]
+S_Parent_TOP -> ADVP_RB VP_Parent_S [0.043478]
 
 
-# FRAG_WHNP_Parent_TOP Productions		Total Probability: 1.000
-FRAG_WHNP_Parent_TOP -> FRAG_WHNP_PRIME_Parent_FRAG_WHNP PP_Parent_FRAG_WHNP [1.000000]
-
-
-# FRAG_PP_Parent_TOP Productions		Total Probability: 1.000
-FRAG_PP_Parent_TOP -> IN_Parent_FRAG_PP NP_NNP_Parent_FRAG_PP [0.333333]
-FRAG_PP_Parent_TOP -> IN_Parent_FRAG_PP NP_Parent_FRAG_PP [0.666667]
-
-
-# QP_PRIME_Parent_QP Productions		Total Probability: 1.000
-QP_PRIME_Parent_QP -> RBR_Parent_QP_PRIME IN_Parent_QP_PRIME [0.444444]
-QP_PRIME_Parent_QP -> IN_Parent_QP_PRIME JJS_Parent_QP_PRIME [0.222222]
-QP_PRIME_Parent_QP -> QP_PRIME_Parent_QP_PRIME CD_Parent_QP_PRIME [0.222222]
-QP_PRIME_Parent_QP -> CD_Parent_QP_PRIME CD_Parent_QP_PRIME [0.111111]
-
-
-# SQ_VP_Parent_SBARQ Productions		Total Probability: 1.000
-SQ_VP_Parent_SBARQ -> VBZ_Parent_SQ_VP ADJP_JJ_Parent_SQ_VP [0.051724]
-SQ_VP_Parent_SBARQ -> VBP_Parent_SQ_VP ADJP_JJ_Parent_SQ_VP [0.017241]
-SQ_VP_Parent_SBARQ -> VBP_Parent_SQ_VP NP_Parent_SQ_VP [0.051724]
-SQ_VP_Parent_SBARQ -> VBZ_Parent_SQ_VP NP_NN_Parent_SQ_VP [0.017241]
-SQ_VP_Parent_SBARQ -> VBZ_Parent_SQ_VP ADVP_RBS_Parent_SQ_VP [0.017241]
-SQ_VP_Parent_SBARQ -> VBP_Parent_SQ_VP ADVP_RBS_Parent_SQ_VP [0.034483]
-SQ_VP_Parent_SBARQ -> VBP_Parent_SQ_VP PP_Parent_SQ_VP [0.189655]
-SQ_VP_Parent_SBARQ -> SQ_VP_PRIME_Parent_SQ_VP PP_Parent_SQ_VP [0.293103]
-SQ_VP_Parent_SBARQ -> VBP_Parent_SQ_VP NP_NN_Parent_SQ_VP [0.120690]
-SQ_VP_Parent_SBARQ -> VBP_Parent_SQ_VP ADVP_RB_Parent_SQ_VP [0.017241]
-SQ_VP_Parent_SBARQ -> SQ_VP_PRIME_Parent_SQ_VP NP_Parent_SQ_VP [0.017241]
-SQ_VP_Parent_SBARQ -> VBZ_Parent_SQ_VP ADJP_JJR_Parent_SQ_VP [0.034483]
-SQ_VP_Parent_SBARQ -> SQ_VP_PRIME_Parent_SQ_VP VP_Parent_SQ_VP [0.034483]
-SQ_VP_Parent_SBARQ -> VBP_Parent_SQ_VP NP_NNP_Parent_SQ_VP [0.017241]
-SQ_VP_Parent_SBARQ -> VBP_Parent_SQ_VP NP_NNS_Parent_SQ_VP [0.017241]
-SQ_VP_Parent_SBARQ -> VBZ_Parent_SQ_VP NP_Parent_SQ_VP [0.034483]
-SQ_VP_Parent_SBARQ -> VBZ_Parent_SQ_VP VP_Parent_SQ_VP [0.017241]
-SQ_VP_Parent_SBARQ -> VBP_Parent_SQ_VP VP_Parent_SQ_VP [0.017241]
-
-
-# FRAG_PRIME_Parent_FRAG_PRIME Productions		Total Probability: 1.000
-FRAG_PRIME_Parent_FRAG_PRIME -> NP_Parent_FRAG_PRIME NP_Parent_FRAG_PRIME [0.500000]
-FRAG_PRIME_Parent_FRAG_PRIME -> NP_NN_Parent_FRAG_PRIME PP_Parent_FRAG_PRIME [0.500000]
-
-
-# NP_NN Productions		Total Probability: 1.000
-NP_NN -> 'noon' [0.084746]
-NP_NN -> 'Departure' [0.016949]
-NP_NN -> 'stay' [0.016949]
-NP_NN -> 'airplane' [0.016949]
-NP_NN -> 'Airline' [0.033898]
-NP_NN -> 'price' [0.016949]
-NP_NN -> 'tomorrow' [0.135593]
-NP_NN -> 'flight' [0.050847]
-NP_NN -> 'lunch' [0.050847]
-NP_NN -> 'cost' [0.016949]
-NP_NN -> 'Flight' [0.067797]
-NP_NN -> 'dinner' [0.271186]
-NP_NN -> 'aircraft' [0.050847]
-NP_NN -> 'today' [0.016949]
-NP_NN -> 'breakfast' [0.016949]
-NP_NN -> 'Price' [0.135593]
-
-
-# VP_NN Productions		Total Probability: 1.000
-VP_NN -> 'mean' [1.000000]
-
-
-# RBR Productions		Total Probability: 1.000
-RBR -> 'less' [1.000000]
-
-
-# NP_Parent_SQ_PRIME Productions		Total Probability: 1.000
-NP_Parent_SQ_PRIME -> DT_Parent_NP NN_Parent_NP [0.368421]
-NP_Parent_SQ_PRIME -> NP_DT_Parent_NP PP_Parent_NP [0.105263]
-NP_Parent_SQ_PRIME -> DT_Parent_NP NNS_Parent_NP [0.157895]
-NP_Parent_SQ_PRIME -> NP_PRIME_Parent_NP NN_Parent_NP [0.210526]
-NP_Parent_SQ_PRIME -> NP_PRIME_Parent_NP CD_Parent_NP [0.105263]
-NP_Parent_SQ_PRIME -> CD_Parent_NP NN_Parent_NP [0.052632]
-
-
-# VP_Parent_SQ Productions		Total Probability: 1.000
-VP_Parent_SQ -> VP_PRIME_Parent_VP NP_Parent_VP [0.058824]
-VP_Parent_SQ -> VB_Parent_VP NP_Parent_VP [0.176471]
-VP_Parent_SQ -> VP_PRIME_Parent_VP PP_Parent_VP [0.117647]
-VP_Parent_SQ -> VB_Parent_VP NP_NNS_Parent_VP [0.058824]
-VP_Parent_SQ -> VBN_Parent_VP PP_Parent_VP [0.058824]
-VP_Parent_SQ -> VB_Parent_VP NP_NN_Parent_VP [0.411765]
-VP_Parent_SQ -> VB_Parent_VP PP_Parent_VP [0.117647]
-
-
-# PP_Parent_FRAG_VP Productions		Total Probability: 1.000
-PP_Parent_FRAG_VP -> IN_Parent_PP NP_NNPS_Parent_PP [0.100000]
-PP_Parent_FRAG_VP -> IN_Parent_PP NP_Parent_PP [0.900000]
-
-
-# PP_Parent_VP_PRIME Productions		Total Probability: 1.000
-PP_Parent_VP_PRIME -> IN_Parent_PP NP_Parent_PP [0.500000]
-PP_Parent_VP_PRIME -> IN_Parent_PP NP_NNP_Parent_PP [0.318182]
-PP_Parent_VP_PRIME -> TO_Parent_PP NP_Parent_PP [0.090909]
-PP_Parent_VP_PRIME -> TO_Parent_PP NP_NNP_Parent_PP [0.090909]
-
-
-# S_VP_PRIME_Parent_S_VP Productions		Total Probability: 1.000
-S_VP_PRIME_Parent_S_VP -> VB_Parent_S_VP_PRIME PP_Parent_S_VP_PRIME [0.011364]
-S_VP_PRIME_Parent_S_VP -> VB_Parent_S_VP_PRIME NP_Parent_S_VP_PRIME [0.011364]
-S_VP_PRIME_Parent_S_VP -> VP_Parent_S_VP_PRIME CC_Parent_S_VP_PRIME [0.011364]
-S_VP_PRIME_Parent_S_VP -> VBZ_Parent_S_VP_PRIME PP_Parent_S_VP_PRIME [0.011364]
-S_VP_PRIME_Parent_S_VP -> VBP_Parent_S_VP_PRIME RB_Parent_S_VP_PRIME [0.011364]
-S_VP_PRIME_Parent_S_VP -> S_VP_PRIME_Parent_S_VP_PRIME NP_Parent_S_VP_PRIME [0.022727]
-S_VP_PRIME_Parent_S_VP -> VB_Parent_S_VP_PRIME NP_PRP_Parent_S_VP_PRIME [0.920455]
-
-
-# NP_Parent_S Productions		Total Probability: 1.000
-NP_Parent_S -> NP_DT_Parent_NP PP_Parent_NP [0.166667]
-NP_Parent_S -> DT_Parent_NP NN_Parent_NP [0.666667]
-NP_Parent_S -> NP_PRIME_Parent_NP NN_Parent_NP [0.166667]
-
-
-# NP_Parent_PP_PRIME Productions		Total Probability: 1.000
-NP_Parent_PP_PRIME -> CD_Parent_NP NNS_Parent_NP [1.000000]
-
-
-# VP_PRIME_Parent_VP Productions		Total Probability: 1.000
-VP_PRIME_Parent_VP -> VB_Parent_VP_PRIME PP_Parent_VP_PRIME [0.307692]
-VP_PRIME_Parent_VP -> VP_Parent_VP_PRIME CC_Parent_VP_PRIME [0.038462]
-VP_PRIME_Parent_VP -> VB_Parent_VP_PRIME PRT_RP_Parent_VP_PRIME [0.038462]
-VP_PRIME_Parent_VP -> VB_Parent_VP_PRIME ADVP_Parent_VP_PRIME [0.038462]
-VP_PRIME_Parent_VP -> VP_PRIME_Parent_VP_PRIME PP_Parent_VP_PRIME [0.192308]
-VP_PRIME_Parent_VP -> VBG_Parent_VP_PRIME PP_Parent_VP_PRIME [0.115385]
-VP_PRIME_Parent_VP -> VBP_Parent_VP_PRIME PP_Parent_VP_PRIME [0.038462]
-VP_PRIME_Parent_VP -> VP_PRIME_Parent_VP_PRIME X_TO_Parent_VP_PRIME [0.038462]
-VP_PRIME_Parent_VP -> VBP_Parent_VP_PRIME NP_NNP_Parent_VP_PRIME [0.038462]
-VP_PRIME_Parent_VP -> VB_Parent_VP_PRIME NP_PRP_Parent_VP_PRIME [0.153846]
-
-
-# WHNP_Parent_FRAG_PRIME Productions		Total Probability: 1.000
-WHNP_Parent_FRAG_PRIME -> WDT_Parent_WHNP NNS_Parent_WHNP [1.000000]
-
-
-# NP_Parent_FRAG_NP Productions		Total Probability: 1.000
-NP_Parent_FRAG_NP -> CD_Parent_NP NN_Parent_NP [0.100000]
-NP_Parent_FRAG_NP -> JJ_Parent_NP NN_Parent_NP [0.100000]
-NP_Parent_FRAG_NP -> NN_Parent_NP NN_Parent_NP [0.100000]
-NP_Parent_FRAG_NP -> DT_Parent_NP JJ_Parent_NP [0.100000]
-NP_Parent_FRAG_NP -> DT_Parent_NP NNS_Parent_NP [0.100000]
-NP_Parent_FRAG_NP -> NP_PRIME_Parent_NP NNS_Parent_NP [0.300000]
-NP_Parent_FRAG_NP -> NNP_Parent_NP NN_Parent_NP [0.100000]
-NP_Parent_FRAG_NP -> NP_PRIME_Parent_NP RB_Parent_NP [0.100000]
-
-
-# SQ_PRIME_Parent_SQ_PRIME Productions		Total Probability: 1.000
-SQ_PRIME_Parent_SQ_PRIME -> SQ_PRIME_Parent_SQ_PRIME NP_Parent_SQ_PRIME [0.047619]
-SQ_PRIME_Parent_SQ_PRIME -> VBP_Parent_SQ_PRIME NP_NP_EX_Parent_SQ_PRIME [0.761905]
-SQ_PRIME_Parent_SQ_PRIME -> X_Parent_SQ_PRIME VBZ_Parent_SQ_PRIME [0.047619]
-SQ_PRIME_Parent_SQ_PRIME -> SQ_PRIME_Parent_SQ_PRIME PP_Parent_SQ_PRIME [0.095238]
-SQ_PRIME_Parent_SQ_PRIME -> INTJ_UH_Parent_SQ_PRIME MD_Parent_SQ_PRIME [0.047619]
+# NP_NNP Productions		Total Probability: 1.000
+NP_NNP -> 'California' [0.002114]
+NP_NNP -> 'Charlotte' [0.019027]
+NP_NNP -> 'Seattle' [0.010571]
+NP_NNP -> 'Tacoma' [0.023256]
+NP_NNP -> 'Orlando' [0.027484]
+NP_NNP -> 'Tennessee' [0.002114]
+NP_NNP -> 'Airline' [0.002114]
+NP_NNP -> 'Atlanta' [0.016913]
+NP_NNP -> 'Houston' [0.033827]
+NP_NNP -> 'Continental' [0.002114]
+NP_NNP -> 'Columbus' [0.023256]
+NP_NNP -> 'Michigan' [0.002114]
+NP_NNP -> 'Sunday' [0.021142]
+NP_NNP -> 'Dulles' [0.002114]
+NP_NNP -> 'Detroit' [0.016913]
+NP_NNP -> 'Delta' [0.002114]
+NP_NNP -> 'Tuesday' [0.010571]
+NP_NNP -> 'Cincinnati' [0.014799]
+NP_NNP -> 'Minneapolis' [0.021142]
+NP_NNP -> 'Florida' [0.004228]
+NP_NNP -> 'Denver' [0.035941]
+NP_NNP -> 'Oakland' [0.014799]
+NP_NNP -> 'Montreal' [0.021142]
+NP_NNP -> 'Dallas' [0.035941]
+NP_NNP -> 'Memphis' [0.042283]
+NP_NNP -> 'Saturday' [0.016913]
+NP_NNP -> 'Wednesdays' [0.002114]
+NP_NNP -> 'Tampa' [0.031712]
+NP_NNP -> 'Phoenix' [0.040169]
+NP_NNP -> 'Burbank' [0.012685]
+NP_NNP -> 'Boston' [0.012685]
+NP_NNP -> 'Thursday' [0.008457]
+NP_NNP -> 'Alaska' [0.002114]
+NP_NNP -> 'Chicago' [0.014799]
+NP_NNP -> 'Washington' [0.019027]
+NP_NNP -> 'Wednesday' [0.019027]
+NP_NNP -> 'Milwaukee' [0.033827]
+NP_NNP -> 'Ontario' [0.012685]
+NP_NNP -> 'Newark' [0.065539]
+NP_NNP -> 'Indianapolis' [0.023256]
+NP_NNP -> 'Cleveland' [0.063425]
+NP_NNP -> 'Nashville' [0.031712]
+NP_NNP -> 'Friday' [0.014799]
+NP_NNP -> 'July' [0.006342]
+NP_NNP -> 'Baltimore' [0.038055]
+NP_NNP -> 'Philadelphia' [0.016913]
+NP_NNP -> 'Miami' [0.031712]
+NP_NNP -> 'American' [0.002114]
+NP_NNP -> 'Monday' [0.010571]
+NP_NNP -> 'Toronto' [0.025370]
+NP_NNP -> 'Pittsburgh' [0.033827]
+NP_NNP -> 'Arrival' [0.002114]
 
 
 # NP_Parent_PP Productions		Total Probability: 1.000
-NP_Parent_PP -> NP_PRIME_Parent_NP RB_Parent_NP [0.010490]
-NP_Parent_PP -> NP_NNP_Parent_NP NP_NNP_Parent_NP [0.013986]
-NP_Parent_PP -> NP_Parent_NP PP_Parent_NP [0.038462]
-NP_Parent_PP -> NNP_Parent_NP NNP_Parent_NP [0.423077]
-NP_Parent_PP -> QP_Parent_NP NNS_Parent_NP [0.006993]
-NP_Parent_PP -> QP_Parent_NP NN_Parent_NP [0.003497]
-NP_Parent_PP -> CD_Parent_NP CD_Parent_NP [0.003497]
-NP_Parent_PP -> NP_PRIME_Parent_NP NN_Parent_NP [0.006993]
-NP_Parent_PP -> NP_Parent_NP SBAR_Parent_NP [0.003497]
-NP_Parent_PP -> DT_Parent_NP JJ_Parent_NP [0.003497]
-NP_Parent_PP -> QP_Parent_NP RB_Parent_NP [0.006993]
-NP_Parent_PP -> NP_PRIME_Parent_NP NNS_Parent_NP [0.010490]
-NP_Parent_PP -> NNP_Parent_NP JJ_Parent_NP [0.003497]
-NP_Parent_PP -> CD_Parent_NP RB_Parent_NP [0.076923]
-NP_Parent_PP -> DT_Parent_NP NNS_Parent_NP [0.041958]
-NP_Parent_PP -> CD_Parent_NP JJ_Parent_NP [0.003497]
-NP_Parent_PP -> NP_PRIME_Parent_NP NNP_Parent_NP [0.076923]
-NP_Parent_PP -> NP_PRIME_Parent_NP NP_Parent_NP [0.055944]
-NP_Parent_PP -> DT_Parent_NP NN_Parent_NP [0.062937]
-NP_Parent_PP -> NP_PRIME_Parent_NP CD_Parent_NP [0.041958]
-NP_Parent_PP -> NP_NNP_Parent_NP NP_Parent_NP [0.031469]
-NP_Parent_PP -> NP_PRIME_Parent_NP NP_NNP_Parent_NP [0.013986]
-NP_Parent_PP -> CD_Parent_NP NN_Parent_NP [0.003497]
-NP_Parent_PP -> NNP_Parent_NP NN_Parent_NP [0.017483]
-NP_Parent_PP -> NN_Parent_NP NN_Parent_NP [0.003497]
-NP_Parent_PP -> NP_PRIME_Parent_NP QP_Parent_NP [0.003497]
+NP_Parent_PP -> DT NN [0.062937]
+NP_Parent_PP -> NP_PRIME_Parent_NP NP_NNP [0.013986]
+NP_Parent_PP -> NNP JJ [0.003497]
 NP_Parent_PP -> NP_Parent_NP NP_Parent_NP [0.006993]
+NP_Parent_PP -> NP_NNP NP_NNP [0.013986]
+NP_Parent_PP -> DT JJ [0.003497]
+NP_Parent_PP -> CD JJ [0.003497]
+NP_Parent_PP -> NP_PRIME_Parent_NP RB [0.010490]
+NP_Parent_PP -> NP_PRIME_Parent_NP NNP [0.076923]
+NP_Parent_PP -> QP_Parent_NP RB [0.006993]
+NP_Parent_PP -> NP_PRIME_Parent_NP NP_Parent_NP [0.055944]
+NP_Parent_PP -> QP_Parent_NP NN [0.003497]
+NP_Parent_PP -> CD RB [0.076923]
+NP_Parent_PP -> NP_Parent_NP PP_Parent_NP [0.038462]
+NP_Parent_PP -> NP_Parent_NP SBAR_Parent_NP [0.003497]
+NP_Parent_PP -> NP_NNP NP_Parent_NP [0.031469]
+NP_Parent_PP -> NNP NN [0.017483]
+NP_Parent_PP -> NP_PRIME_Parent_NP QP_Parent_NP [0.003497]
+NP_Parent_PP -> CD CD [0.003497]
+NP_Parent_PP -> DT NNS [0.041958]
+NP_Parent_PP -> NNP NNP [0.423077]
 NP_Parent_PP -> NP_PRIME_Parent_NP PP_Parent_NP [0.024476]
-
-
-# X_Parent_FRAG Productions		Total Probability: 1.000
-X_Parent_FRAG -> WP_Parent_X IN_Parent_X [0.500000]
-X_Parent_FRAG -> WRB_Parent_X IN_Parent_X [0.500000]
-
-
-# VP_VBN Productions		Total Probability: 1.000
-VP_VBN -> 'served' [1.000000]
-
-
-# SBARQ_PRIME_Parent_SBARQ Productions		Total Probability: 1.000
-SBARQ_PRIME_Parent_SBARQ -> PP_Parent_SBARQ_PRIME WHNP_WHNP_Parent_SBARQ_PRIME [1.000000]
-
-
-# NP_NNPS Productions		Total Probability: 1.000
-NP_NNPS -> 'Wednesdays' [1.000000]
-
-
-# X_Parent_SQ_PRIME Productions		Total Probability: 1.000
-X_Parent_SQ_PRIME -> VBZ_Parent_X NP_DT_Parent_X [1.000000]
-
-
-# SQ_VP_PRIME_Parent_SQ_VP_PRIME Productions		Total Probability: 1.000
-SQ_VP_PRIME_Parent_SQ_VP_PRIME -> VBP_Parent_SQ_VP_PRIME PP_Parent_SQ_VP_PRIME [0.777778]
-SQ_VP_PRIME_Parent_SQ_VP_PRIME -> VBP_Parent_SQ_VP_PRIME NP_NNP_Parent_SQ_VP_PRIME [0.222222]
-
-
-# NP_Parent_X_S_VP Productions		Total Probability: 1.000
-NP_Parent_X_S_VP -> NP_PRIME_Parent_NP PP_Parent_NP [1.000000]
-
-
-# PP_Parent_FRAG_PRIME Productions		Total Probability: 1.000
-PP_Parent_FRAG_PRIME -> TO_Parent_PP NP_Parent_PP [0.153846]
-PP_Parent_FRAG_PRIME -> TO_Parent_PP NP_NNP_Parent_PP [0.230769]
-PP_Parent_FRAG_PRIME -> IN_Parent_PP NP_NNP_Parent_PP [0.461538]
-PP_Parent_FRAG_PRIME -> IN_Parent_PP NP_Parent_PP [0.153846]
-
-
-# ADVP_Parent_NP Productions		Total Probability: 1.000
-ADVP_Parent_NP -> NP_Parent_ADVP RB_Parent_ADVP [1.000000]
-
-
-# PP_Parent_SQ_PRIME Productions		Total Probability: 1.000
-PP_Parent_SQ_PRIME -> IN_Parent_PP NP_NNP_Parent_PP [0.666667]
-PP_Parent_SQ_PRIME -> IN_Parent_PP NP_Parent_PP [0.222222]
-PP_Parent_SQ_PRIME -> TO_Parent_PP NP_NNP_Parent_PP [0.111111]
-
-
-# NP_PRIME_Parent_NP Productions		Total Probability: 1.000
-NP_PRIME_Parent_NP -> NP_NNP_Parent_NP_PRIME CC_Parent_NP_PRIME [0.030651]
-NP_PRIME_Parent_NP -> NP_PRIME_Parent_NP_PRIME NN_Parent_NP_PRIME [0.065134]
-NP_PRIME_Parent_NP -> NNP_Parent_NP_PRIME CD_Parent_NP_PRIME [0.003831]
-NP_PRIME_Parent_NP -> NP_Parent_NP_PRIME VP_Parent_NP_PRIME [0.003831]
-NP_PRIME_Parent_NP -> CD_Parent_NP_PRIME NNS_Parent_NP_PRIME [0.003831]
-NP_PRIME_Parent_NP -> JJ_Parent_NP_PRIME NN_Parent_NP_PRIME [0.022989]
-NP_PRIME_Parent_NP -> DT_Parent_NP_PRIME JJS_Parent_NP_PRIME [0.042146]
-NP_PRIME_Parent_NP -> SYM_Parent_NP_PRIME SYM_Parent_NP_PRIME [0.007663]
-NP_PRIME_Parent_NP -> NP_PRIME_Parent_NP_PRIME NNP_Parent_NP_PRIME [0.026820]
-NP_PRIME_Parent_NP -> NP_NN_Parent_NP_PRIME CC_Parent_NP_PRIME [0.003831]
-NP_PRIME_Parent_NP -> NP_PRIME_Parent_NP_PRIME VP_Parent_NP_PRIME [0.003831]
-NP_PRIME_Parent_NP -> JJ_Parent_NP_PRIME NNP_Parent_NP_PRIME [0.003831]
-NP_PRIME_Parent_NP -> QP_Parent_NP_PRIME NNS_Parent_NP_PRIME [0.003831]
-NP_PRIME_Parent_NP -> NP_PRIME_Parent_NP_PRIME SYM_Parent_NP_PRIME [0.003831]
-NP_PRIME_Parent_NP -> NP_Parent_NP_PRIME CC_Parent_NP_PRIME [0.045977]
-NP_PRIME_Parent_NP -> NP_PRIME_Parent_NP_PRIME X_TO_Parent_NP_PRIME [0.003831]
-NP_PRIME_Parent_NP -> CD_Parent_NP_PRIME NN_Parent_NP_PRIME [0.011494]
-NP_PRIME_Parent_NP -> RB_Parent_NP_PRIME VBG_Parent_NP_PRIME [0.003831]
-NP_PRIME_Parent_NP -> DT_Parent_NP_PRIME ADJP_Parent_NP_PRIME [0.003831]
-NP_PRIME_Parent_NP -> NP_PRIME_Parent_NP_PRIME CD_Parent_NP_PRIME [0.088123]
-NP_PRIME_Parent_NP -> NP_PRIME_Parent_NP_PRIME ADVP_RB_Parent_NP_PRIME [0.003831]
-NP_PRIME_Parent_NP -> NP_Parent_NP_PRIME PP_Parent_NP_PRIME [0.145594]
-NP_PRIME_Parent_NP -> CD_Parent_NP_PRIME RB_Parent_NP_PRIME [0.015326]
-NP_PRIME_Parent_NP -> PDT_Parent_NP_PRIME DT_Parent_NP_PRIME [0.015326]
-NP_PRIME_Parent_NP -> NNP_Parent_NP_PRIME NNP_Parent_NP_PRIME [0.111111]
-NP_PRIME_Parent_NP -> DT_Parent_NP_PRIME NNP_Parent_NP_PRIME [0.007663]
-NP_PRIME_Parent_NP -> NP_NNS_Parent_NP_PRIME PP_Parent_NP_PRIME [0.030651]
-NP_PRIME_Parent_NP -> NP_PRIME_Parent_NP_PRIME PP_Parent_NP_PRIME [0.118774]
-NP_PRIME_Parent_NP -> NP_NN_Parent_NP_PRIME PP_Parent_NP_PRIME [0.015326]
-NP_PRIME_Parent_NP -> JJS_Parent_NP_PRIME NN_Parent_NP_PRIME [0.007663]
-NP_PRIME_Parent_NP -> DT_Parent_NP_PRIME NN_Parent_NP_PRIME [0.053640]
-NP_PRIME_Parent_NP -> NN_Parent_NP_PRIME NN_Parent_NP_PRIME [0.007663]
-NP_PRIME_Parent_NP -> NP_NNS_Parent_NP_PRIME VP_Parent_NP_PRIME [0.015326]
-NP_PRIME_Parent_NP -> DT_Parent_NP_PRIME JJ_Parent_NP_PRIME [0.034483]
-NP_PRIME_Parent_NP -> JJ_Parent_NP_PRIME JJ_Parent_NP_PRIME [0.003831]
-NP_PRIME_Parent_NP -> CD_Parent_NP_PRIME CD_Parent_NP_PRIME [0.019157]
-NP_PRIME_Parent_NP -> NN_Parent_NP_PRIME NNP_Parent_NP_PRIME [0.003831]
-NP_PRIME_Parent_NP -> NNP_Parent_NP_PRIME CC_Parent_NP_PRIME [0.007663]
-
-
-# ADVP_Parent_VP Productions		Total Probability: 1.000
-ADVP_Parent_VP -> ADVP_RB_Parent_ADVP PP_Parent_ADVP [1.000000]
+NP_Parent_PP -> NP_PRIME_Parent_NP CD [0.041958]
+NP_Parent_PP -> NN NN [0.003497]
+NP_Parent_PP -> NP_PRIME_Parent_NP NN [0.006993]
+NP_Parent_PP -> CD NN [0.003497]
+NP_Parent_PP -> NP_PRIME_Parent_NP NNS [0.010490]
+NP_Parent_PP -> QP_Parent_NP NNS [0.006993]
 
 
 # WHADVP_WRB Productions		Total Probability: 1.000
 WHADVP_WRB -> 'Where' [1.000000]
 
 
-# ADJP_Parent_FRAG_NP Productions		Total Probability: 1.000
-ADJP_Parent_FRAG_NP -> JJR_Parent_ADJP PP_Parent_ADJP [1.000000]
+# FRAG_NP_Parent_TOP Productions		Total Probability: 1.000
+FRAG_NP_Parent_TOP -> NP_Parent_FRAG_NP VP_VBG [0.008696]
+FRAG_NP_Parent_TOP -> NP_NNS PP_Parent_FRAG_NP [0.060870]
+FRAG_NP_Parent_TOP -> NN NNS [0.008696]
+FRAG_NP_Parent_TOP -> NP_NNS VP_Parent_FRAG_NP [0.008696]
+FRAG_NP_Parent_TOP -> JJS NN [0.034783]
+FRAG_NP_Parent_TOP -> FRAG_NP_PRIME_Parent_FRAG_NP NNS [0.017391]
+FRAG_NP_Parent_TOP -> FRAG_NP_PRIME_Parent_FRAG_NP NP_Parent_FRAG_NP [0.026087]
+FRAG_NP_Parent_TOP -> FRAG_NP_PRIME_Parent_FRAG_NP ADVP_RB [0.026087]
+FRAG_NP_Parent_TOP -> CD NNS [0.008696]
+FRAG_NP_Parent_TOP -> FRAG_NP_PRIME_Parent_FRAG_NP CD [0.017391]
+FRAG_NP_Parent_TOP -> JJ NN [0.008696]
+FRAG_NP_Parent_TOP -> FRAG_NP_PRIME_Parent_FRAG_NP NP_NNS [0.008696]
+FRAG_NP_Parent_TOP -> NP_NNS ADJP_Parent_FRAG_NP [0.008696]
+FRAG_NP_Parent_TOP -> FRAG_NP_PRIME_Parent_FRAG_NP PP_Parent_FRAG_NP [0.504348]
+FRAG_NP_Parent_TOP -> FRAG_NP_PRIME_Parent_FRAG_NP SBAR_Parent_FRAG_NP [0.008696]
+FRAG_NP_Parent_TOP -> DT NNS [0.008696]
+FRAG_NP_Parent_TOP -> NN NN [0.034783]
+FRAG_NP_Parent_TOP -> FRAG_NP_PRIME_Parent_FRAG_NP NP_NN [0.017391]
+FRAG_NP_Parent_TOP -> FRAG_NP_PRIME_Parent_FRAG_NP NN [0.026087]
+FRAG_NP_Parent_TOP -> JJ NNS [0.008696]
+FRAG_NP_Parent_TOP -> FRAG_NP_PRIME_Parent_FRAG_NP VP_Parent_FRAG_NP [0.026087]
+FRAG_NP_Parent_TOP -> NNP NN [0.008696]
+FRAG_NP_Parent_TOP -> NP_Parent_FRAG_NP PP_Parent_FRAG_NP [0.052174]
+FRAG_NP_Parent_TOP -> NP_NN PP_Parent_FRAG_NP [0.052174]
+FRAG_NP_Parent_TOP -> JJS NNS [0.008696]
 
 
-# NP_Parent_FRAG_VP_PRIME Productions		Total Probability: 1.000
-NP_Parent_FRAG_VP_PRIME -> JJ_Parent_NP NN_Parent_NP [0.500000]
-NP_Parent_FRAG_VP_PRIME -> NNP_Parent_NP NNS_Parent_NP [0.500000]
+# FRAG_NP_NN Productions		Total Probability: 1.000
+FRAG_NP_NN -> 'Tomorrow' [0.500000]
+FRAG_NP_NN -> 'Cost' [0.500000]
 
 
-# FRAG_WHNP_PRIME_Parent_FRAG_WHNP_PRIME Productions		Total Probability: 1.000
-FRAG_WHNP_PRIME_Parent_FRAG_WHNP_PRIME -> FRAG_WHNP_PRIME_Parent_FRAG_WHNP_PRIME PP_Parent_FRAG_WHNP_PRIME [0.208333]
-FRAG_WHNP_PRIME_Parent_FRAG_WHNP_PRIME -> NP_Parent_FRAG_WHNP_PRIME PP_Parent_FRAG_WHNP_PRIME [0.041667]
-FRAG_WHNP_PRIME_Parent_FRAG_WHNP_PRIME -> WHNP_Parent_FRAG_WHNP_PRIME PP_Parent_FRAG_WHNP_PRIME [0.750000]
-
-
-# NP_NP_EX Productions		Total Probability: 1.000
-NP_NP_EX -> 'there' [1.000000]
-
-
-# PP_Parent_S_VP_PRIME Productions		Total Probability: 1.000
-PP_Parent_S_VP_PRIME -> IN_Parent_PP NP_NNP_Parent_PP [0.500000]
-PP_Parent_S_VP_PRIME -> IN_Parent_PP NP_Parent_PP [0.500000]
-
-
-# SQ_Parent_SBARQ Productions		Total Probability: 1.000
-SQ_Parent_SBARQ -> SQ_PRIME_Parent_SQ VP_VB_Parent_SQ [0.096774]
-SQ_Parent_SBARQ -> VBZ_Parent_SQ NP_DT_Parent_SQ [0.016129]
-SQ_Parent_SBARQ -> SQ_PRIME_Parent_SQ VP_Parent_SQ [0.048387]
-SQ_Parent_SBARQ -> VBZ_Parent_SQ NP_PRP_Parent_SQ [0.032258]
-SQ_Parent_SBARQ -> VBZ_Parent_SQ NP_Parent_SQ [0.467742]
-SQ_Parent_SBARQ -> SQ_PRIME_Parent_SQ VP_NN_Parent_SQ [0.016129]
-SQ_Parent_SBARQ -> SQ_PRIME_Parent_SQ PP_Parent_SQ [0.258065]
-SQ_Parent_SBARQ -> VBP_Parent_SQ NP_Parent_SQ [0.064516]
-
-
-# VP_Parent_FRAG Productions		Total Probability: 1.000
-VP_Parent_FRAG -> VBG_Parent_VP PP_Parent_VP [1.000000]
-
-
-# FRAG_WHNP_PRIME_Parent_FRAG_WHNP Productions		Total Probability: 1.000
-FRAG_WHNP_PRIME_Parent_FRAG_WHNP -> WHNP_Parent_FRAG_WHNP_PRIME PP_Parent_FRAG_WHNP_PRIME [0.500000]
-FRAG_WHNP_PRIME_Parent_FRAG_WHNP -> FRAG_WHNP_PRIME_Parent_FRAG_WHNP_PRIME PP_Parent_FRAG_WHNP_PRIME [0.500000]
-
-
-# VP_VB Productions		Total Probability: 1.000
-VP_VB -> 'leave' [0.142857]
-VP_VB -> 'cost' [0.428571]
-VP_VB -> 'stop' [0.285714]
-VP_VB -> 'use' [0.142857]
-
-
-# PP_Parent_SQ_VP Productions		Total Probability: 1.000
-PP_Parent_SQ_VP -> TO_Parent_PP ADVP_RB_Parent_PP [0.035714]
-PP_Parent_SQ_VP -> TO_Parent_PP NP_Parent_PP [0.035714]
-PP_Parent_SQ_VP -> TO_Parent_PP NP_NNP_Parent_PP [0.107143]
-PP_Parent_SQ_VP -> PP_Parent_PP PP_Parent_PP [0.035714]
-PP_Parent_SQ_VP -> IN_Parent_PP NP_Parent_PP [0.357143]
-PP_Parent_SQ_VP -> IN_Parent_PP NP_NNP_Parent_PP [0.392857]
-PP_Parent_SQ_VP -> PP_PRIME_Parent_PP NP_Parent_PP [0.035714]
-
-
-# VP_Parent_S_VP Productions		Total Probability: 1.000
-VP_Parent_S_VP -> VP_PRIME_Parent_VP ADVP_Parent_VP [0.050000]
-VP_Parent_S_VP -> VP_PRIME_Parent_VP PP_Parent_VP [0.300000]
-VP_Parent_S_VP -> VB_Parent_VP NP_Parent_VP [0.150000]
-VP_Parent_S_VP -> VB_Parent_VP S_VP_Parent_VP [0.050000]
-VP_Parent_S_VP -> VB_Parent_VP S_Parent_VP [0.050000]
-VP_Parent_S_VP -> VP_PRIME_Parent_VP NP_Parent_VP [0.200000]
-VP_Parent_S_VP -> VP_PRIME_Parent_VP ADJP_Parent_VP [0.050000]
-VP_Parent_S_VP -> VB_Parent_VP PP_Parent_VP [0.100000]
-VP_Parent_S_VP -> VBP_Parent_VP NP_Parent_VP [0.050000]
-
-
-# S_VP_Parent_SBARQ Productions		Total Probability: 1.000
-S_VP_Parent_SBARQ -> VBZ_Parent_S_VP ADJP_JJ_Parent_S_VP [1.000000]
-
-
-# PP_Parent_S_PRIME Productions		Total Probability: 1.000
-PP_Parent_S_PRIME -> IN_Parent_PP NP_NNP_Parent_PP [1.000000]
-
-
-# S_VP_Parent_SBAR Productions		Total Probability: 1.000
-S_VP_Parent_SBAR -> S_VP_PRIME_Parent_S_VP PP_Parent_S_VP [0.117647]
-S_VP_Parent_SBAR -> VBZ_Parent_S_VP PP_Parent_S_VP [0.117647]
-S_VP_Parent_SBAR -> TO_Parent_S_VP VP_VB_Parent_S_VP [0.058824]
-S_VP_Parent_SBAR -> VBP_Parent_S_VP PP_Parent_S_VP [0.176471]
-S_VP_Parent_SBAR -> MD_Parent_S_VP VP_Parent_S_VP [0.058824]
-S_VP_Parent_SBAR -> VBZ_Parent_S_VP ADVP_RB_Parent_S_VP [0.058824]
-S_VP_Parent_SBAR -> VBP_Parent_S_VP NP_NN_Parent_S_VP [0.117647]
-S_VP_Parent_SBAR -> VBZ_Parent_S_VP NP_Parent_S_VP [0.058824]
-S_VP_Parent_SBAR -> VBZ_Parent_S_VP NP_NN_Parent_S_VP [0.058824]
-S_VP_Parent_SBAR -> VBP_Parent_S_VP NP_Parent_S_VP [0.058824]
-S_VP_Parent_SBAR -> VBP_Parent_S_VP ADVP_Parent_S_VP [0.058824]
-S_VP_Parent_SBAR -> S_VP_PRIME_Parent_S_VP VP_Parent_S_VP [0.058824]
-
-
-# NP_PRP Productions		Total Probability: 1.000
-NP_PRP -> 'you' [0.051852]
-NP_PRP -> 'it' [0.014815]
-NP_PRP -> 'I' [0.274074]
-NP_PRP -> 'they' [0.007407]
-NP_PRP -> 'me' [0.651852]
-
-
-# VBG Productions		Total Probability: 1.000
-VBG -> 'arriving' [0.358974]
-VBG -> 'making' [0.025641]
-VBG -> 'living' [0.025641]
-VBG -> 'leaving' [0.230769]
-VBG -> 'Leaving' [0.102564]
-VBG -> 'connecting' [0.025641]
-VBG -> 'departing' [0.076923]
-VBG -> 'Departing' [0.153846]
-
-
-# S_Parent_S Productions		Total Probability: 1.000
-S_Parent_S -> NP_PRP_Parent_S VP_Parent_S [1.000000]
+# DT Productions		Total Probability: 1.000
+DT -> 'All' [0.013825]
+DT -> 'the' [0.626728]
+DT -> 'Any' [0.004608]
+DT -> 'each' [0.004608]
+DT -> 'these' [0.059908]
+DT -> 'those' [0.009217]
+DT -> 'this' [0.027650]
+DT -> 'No' [0.004608]
+DT -> 'The' [0.027650]
+DT -> 'any' [0.018433]
+DT -> 'all' [0.055300]
+DT -> 'a' [0.129032]
+DT -> 'that' [0.018433]
 
 
 # SBAR_Parent_FRAG_NP Productions		Total Probability: 1.000
-SBAR_Parent_FRAG_NP -> WHNP_WDT_Parent_SBAR S_VP_Parent_SBAR [1.000000]
-
-
-# VB Productions		Total Probability: 1.000
-VB -> 'show' [0.017647]
-VB -> 'list' [0.023529]
-VB -> 'Tell' [0.005882]
-VB -> 'Display' [0.011765]
-VB -> 'Show' [0.558824]
-VB -> 'Give' [0.005882]
-VB -> 'get' [0.005882]
-VB -> 'Change' [0.005882]
-VB -> 'arrive' [0.017647]
-VB -> 'have' [0.035294]
-VB -> 'like' [0.088235]
-VB -> 'fly' [0.041176]
-VB -> 'Explain' [0.023529]
-VB -> 'return' [0.011765]
-VB -> 'List' [0.017647]
-VB -> 'travel' [0.011765]
-VB -> 'serve' [0.041176]
-VB -> 'be' [0.005882]
-VB -> 'Book' [0.005882]
-VB -> 'leave' [0.017647]
-VB -> 'stop' [0.005882]
-VB -> 'go' [0.005882]
-VB -> 'Thank' [0.011765]
-VB -> 'find' [0.005882]
-VB -> 'visit' [0.005882]
-VB -> 'make' [0.005882]
-VB -> 'display' [0.005882]
-
-
-# PP_Parent_WHNP Productions		Total Probability: 1.000
-PP_Parent_WHNP -> IN_Parent_PP NP_DT_Parent_PP [0.391304]
-PP_Parent_WHNP -> IN_Parent_PP NP_Parent_PP [0.434783]
-PP_Parent_WHNP -> IN_Parent_PP NP_NN_Parent_PP [0.173913]
-
-
-# S_VP_Parent_TOP Productions		Total Probability: 1.000
-S_VP_Parent_TOP -> S_VP_PRIME_Parent_S_VP PP_Parent_S_VP [0.018182]
-S_VP_Parent_TOP -> VB_Parent_S_VP NP_Parent_S_VP [0.181818]
-S_VP_Parent_TOP -> VB_Parent_S_VP NP_NNS_Parent_S_VP [0.027273]
-S_VP_Parent_TOP -> S_VP_PRIME_Parent_S_VP INTJ_UH_Parent_S_VP [0.018182]
-S_VP_Parent_TOP -> S_VP_PRIME_Parent_S_VP NP_Parent_S_VP [0.727273]
-S_VP_Parent_TOP -> VB_Parent_S_VP NP_PRP_Parent_S_VP [0.018182]
-S_VP_Parent_TOP -> S_VP_PRIME_Parent_S_VP VP_Parent_S_VP [0.009091]
-
-
-# JJS Productions		Total Probability: 1.000
-JJS -> 'cheapest' [0.108108]
-JJS -> 'earliest' [0.108108]
-JJS -> 'Shortest' [0.081081]
-JJS -> 'lowest' [0.054054]
-JJS -> 'Earliest' [0.027027]
-JJS -> 'Lowest' [0.027027]
-JJS -> 'longest' [0.027027]
-JJS -> 'Cheapest' [0.351351]
-JJS -> 'least' [0.054054]
-JJS -> 'latest' [0.162162]
-
-
-# SQ_Parent_TOP Productions		Total Probability: 1.000
-SQ_Parent_TOP -> SQ_PRIME_Parent_SQ NP_Parent_SQ [0.280000]
-SQ_Parent_TOP -> SQ_PRIME_Parent_SQ VP_Parent_SQ [0.560000]
-SQ_Parent_TOP -> SQ_PRIME_Parent_SQ PP_Parent_SQ [0.080000]
-SQ_Parent_TOP -> VBZ_Parent_SQ NP_Parent_SQ [0.040000]
-SQ_Parent_TOP -> SQ_PRIME_Parent_SQ ADJP_JJ_Parent_SQ [0.040000]
-
-
-# SBARQ_Parent_TOP Productions		Total Probability: 1.000
-SBARQ_Parent_TOP -> WHNP_Parent_SBARQ SQ_Parent_SBARQ [0.082645]
-SBARQ_Parent_TOP -> WHADVP_WRB_Parent_SBARQ SQ_Parent_SBARQ [0.016529]
-SBARQ_Parent_TOP -> WHNP_WDT_Parent_SBARQ SQ_VP_Parent_SBARQ [0.057851]
-SBARQ_Parent_TOP -> WHNP_WDT_Parent_SBARQ S_VP_Parent_SBARQ [0.008264]
-SBARQ_Parent_TOP -> WHNP_Parent_SBARQ SQ_VP_Parent_SBARQ [0.413223]
-SBARQ_Parent_TOP -> SBARQ_PRIME_Parent_SBARQ SQ_VP_Parent_SBARQ [0.008264]
-SBARQ_Parent_TOP -> WHNP_WHNP_Parent_SBARQ SQ_Parent_SBARQ [0.157025]
-SBARQ_Parent_TOP -> WHNP_WDT_Parent_SBARQ SQ_Parent_SBARQ [0.041322]
-SBARQ_Parent_TOP -> WHNP_WP_Parent_SBARQ SQ_Parent_SBARQ [0.214876]
-
-
-# VP_VBZ Productions		Total Probability: 1.000
-VP_VBZ -> 'has' [1.000000]
-
-
-# S_VP_VBG Productions		Total Probability: 1.000
-S_VP_VBG -> 'arriving' [1.000000]
-
-
-# PRT_RP Productions		Total Probability: 1.000
-PRT_RP -> 'out' [1.000000]
-
-
-# NP_Parent_FRAG_WHNP_PRIME Productions		Total Probability: 1.000
-NP_Parent_FRAG_WHNP_PRIME -> WDT_Parent_NP NNS_Parent_NP [1.000000]
+SBAR_Parent_FRAG_NP -> WHNP_WDT S_VP_Parent_SBAR [1.000000]
 
 
 # S_VP_Parent_VP Productions		Total Probability: 1.000
-S_VP_Parent_VP -> TO_Parent_S_VP VP_Parent_S_VP [1.000000]
+S_VP_Parent_VP -> TO VP_Parent_S_VP [1.000000]
 
 
-# PDT Productions		Total Probability: 1.000
-PDT -> 'all' [1.000000]
+# PUNC Productions		Total Probability: 1.000
+PUNC -> '.' [0.712062]
+PUNC -> '?' [0.287938]
 
 
-# PP_PRIME_Parent_PP Productions		Total Probability: 1.000
-PP_PRIME_Parent_PP -> ADVP_RB_Parent_PP_PRIME IN_Parent_PP_PRIME [0.250000]
-PP_PRIME_Parent_PP -> PP_PRIME_Parent_PP_PRIME IN_Parent_PP_PRIME [0.250000]
-PP_PRIME_Parent_PP -> NP_Parent_PP_PRIME IN_Parent_PP_PRIME [0.250000]
-PP_PRIME_Parent_PP -> PP_Parent_PP_PRIME CC_Parent_PP_PRIME [0.250000]
+# NNS Productions		Total Probability: 1.000
+NNS -> 'codes' [0.008969]
+NNS -> 'stops' [0.017937]
+NNS -> 'trips' [0.004484]
+NNS -> 'airlines' [0.013453]
+NNS -> 'hours' [0.013453]
+NNS -> 'details' [0.004484]
+NNS -> 'flights' [0.744395]
+NNS -> 'fares' [0.085202]
+NNS -> 'restrictions' [0.008969]
+NNS -> 'ones' [0.022422]
+NNS -> 'stopovers' [0.013453]
+NNS -> 'minutes' [0.022422]
+NNS -> 'numbers' [0.008969]
+NNS -> 'meals' [0.013453]
+NNS -> 'dollars' [0.013453]
+NNS -> 'mornings' [0.004484]
+
+
+# NP_Parent_FRAG_NP Productions		Total Probability: 1.000
+NP_Parent_FRAG_NP -> JJ NN [0.100000]
+NP_Parent_FRAG_NP -> NP_PRIME_Parent_NP RB [0.100000]
+NP_Parent_FRAG_NP -> DT JJ [0.100000]
+NP_Parent_FRAG_NP -> NP_PRIME_Parent_NP NNS [0.300000]
+NP_Parent_FRAG_NP -> NNP NN [0.100000]
+NP_Parent_FRAG_NP -> NN NN [0.100000]
+NP_Parent_FRAG_NP -> DT NNS [0.100000]
+NP_Parent_FRAG_NP -> CD NN [0.100000]
+
+
+# VP_Parent_SQ_VP Productions		Total Probability: 1.000
+VP_Parent_SQ_VP -> VP_PRIME_Parent_VP PP_Parent_VP [0.250000]
+VP_Parent_SQ_VP -> VBP PP_Parent_VP [0.250000]
+VP_Parent_SQ_VP -> VBN PP_Parent_VP [0.500000]
+
+
+# RB Productions		Total Probability: 1.000
+RB -> 'much' [0.089286]
+RB -> 'back' [0.017857]
+RB -> 'a.m' [0.196429]
+RB -> 'around' [0.035714]
+RB -> 'no' [0.017857]
+RB -> 'apart' [0.071429]
+RB -> 'early' [0.017857]
+RB -> 'p.m' [0.375000]
+RB -> 'not' [0.017857]
+RB -> 'only' [0.035714]
+RB -> 'as' [0.017857]
+RB -> "o'clock" [0.107143]
+
+
+# X_S_VP_PRIME_Parent_X_S_VP Productions		Total Probability: 1.000
+X_S_VP_PRIME_Parent_X_S_VP -> VB NP_PRP [1.000000]
+
+
+# PP_Parent_FRAG_WHNP Productions		Total Probability: 1.000
+PP_Parent_FRAG_WHNP -> TO NP_NNP [0.394737]
+PP_Parent_FRAG_WHNP -> TO NP_Parent_PP [0.105263]
+PP_Parent_FRAG_WHNP -> IN NP_NNP [0.263158]
+PP_Parent_FRAG_WHNP -> IN NP_Parent_PP [0.236842]
+
+
+# FRAG_WHNP_PRIME_Parent_FRAG_WHNP Productions		Total Probability: 1.000
+FRAG_WHNP_PRIME_Parent_FRAG_WHNP -> FRAG_WHNP_PRIME_Parent_FRAG_WHNP_PRIME PP_Parent_FRAG_WHNP_PRIME [0.500000]
+FRAG_WHNP_PRIME_Parent_FRAG_WHNP -> WHNP_Parent_FRAG_WHNP_PRIME PP_Parent_FRAG_WHNP_PRIME [0.500000]
+
+
+# ADJP_Parent_NP_PRIME Productions		Total Probability: 1.000
+ADJP_Parent_NP_PRIME -> RBS JJ [1.000000]
+
+
+# FRAG_PP_Parent_TOP Productions		Total Probability: 1.000
+FRAG_PP_Parent_TOP -> IN NP_NNP [0.333333]
+FRAG_PP_Parent_TOP -> IN NP_Parent_FRAG_PP [0.666667]
+
+
+# ADVP_Parent_S_VP Productions		Total Probability: 1.000
+ADVP_Parent_S_VP -> NP_Parent_ADVP RB [1.000000]
+
+
+# ADVP_Parent_VP Productions		Total Probability: 1.000
+ADVP_Parent_VP -> ADVP_RB PP_Parent_ADVP [1.000000]
 
 
 # WRB Productions		Total Probability: 1.000
 WRB -> 'How' [1.000000]
 
 
-# PP_Parent_ADVP Productions		Total Probability: 1.000
-PP_Parent_ADVP -> IN_Parent_PP NP_Parent_PP [0.500000]
-PP_Parent_ADVP -> TO_Parent_PP NP_Parent_PP [0.500000]
-
-
-# FRAG_NP_Parent_TOP Productions		Total Probability: 1.000
-FRAG_NP_Parent_TOP -> NP_NN_Parent_FRAG_NP PP_Parent_FRAG_NP [0.052174]
-FRAG_NP_Parent_TOP -> FRAG_NP_PRIME_Parent_FRAG_NP NNS_Parent_FRAG_NP [0.017391]
-FRAG_NP_Parent_TOP -> NP_Parent_FRAG_NP VP_VBG_Parent_FRAG_NP [0.008696]
-FRAG_NP_Parent_TOP -> NP_NNS_Parent_FRAG_NP PP_Parent_FRAG_NP [0.060870]
-FRAG_NP_Parent_TOP -> CD_Parent_FRAG_NP NNS_Parent_FRAG_NP [0.008696]
-FRAG_NP_Parent_TOP -> DT_Parent_FRAG_NP NNS_Parent_FRAG_NP [0.008696]
-FRAG_NP_Parent_TOP -> FRAG_NP_PRIME_Parent_FRAG_NP PP_Parent_FRAG_NP [0.504348]
-FRAG_NP_Parent_TOP -> NP_Parent_FRAG_NP PP_Parent_FRAG_NP [0.052174]
-FRAG_NP_Parent_TOP -> FRAG_NP_PRIME_Parent_FRAG_NP SBAR_Parent_FRAG_NP [0.008696]
-FRAG_NP_Parent_TOP -> NNP_Parent_FRAG_NP NN_Parent_FRAG_NP [0.008696]
-FRAG_NP_Parent_TOP -> FRAG_NP_PRIME_Parent_FRAG_NP VP_Parent_FRAG_NP [0.026087]
-FRAG_NP_Parent_TOP -> NN_Parent_FRAG_NP NNS_Parent_FRAG_NP [0.008696]
-FRAG_NP_Parent_TOP -> NP_NNS_Parent_FRAG_NP VP_Parent_FRAG_NP [0.008696]
-FRAG_NP_Parent_TOP -> FRAG_NP_PRIME_Parent_FRAG_NP NN_Parent_FRAG_NP [0.026087]
-FRAG_NP_Parent_TOP -> FRAG_NP_PRIME_Parent_FRAG_NP NP_NNS_Parent_FRAG_NP [0.008696]
-FRAG_NP_Parent_TOP -> FRAG_NP_PRIME_Parent_FRAG_NP NP_NN_Parent_FRAG_NP [0.017391]
-FRAG_NP_Parent_TOP -> NP_NNS_Parent_FRAG_NP ADJP_Parent_FRAG_NP [0.008696]
-FRAG_NP_Parent_TOP -> FRAG_NP_PRIME_Parent_FRAG_NP NP_Parent_FRAG_NP [0.026087]
-FRAG_NP_Parent_TOP -> NN_Parent_FRAG_NP NN_Parent_FRAG_NP [0.034783]
-FRAG_NP_Parent_TOP -> JJ_Parent_FRAG_NP NN_Parent_FRAG_NP [0.008696]
-FRAG_NP_Parent_TOP -> JJS_Parent_FRAG_NP NN_Parent_FRAG_NP [0.034783]
-FRAG_NP_Parent_TOP -> JJS_Parent_FRAG_NP NNS_Parent_FRAG_NP [0.008696]
-FRAG_NP_Parent_TOP -> JJ_Parent_FRAG_NP NNS_Parent_FRAG_NP [0.008696]
-FRAG_NP_Parent_TOP -> FRAG_NP_PRIME_Parent_FRAG_NP CD_Parent_FRAG_NP [0.017391]
-FRAG_NP_Parent_TOP -> FRAG_NP_PRIME_Parent_FRAG_NP ADVP_RB_Parent_FRAG_NP [0.026087]
-
-
-# S_Parent_SBAR Productions		Total Probability: 1.000
-S_Parent_SBAR -> NP_NNP_Parent_S VP_VBZ_Parent_S [1.000000]
-
-
-# ADVP_RB Productions		Total Probability: 1.000
-ADVP_RB -> 'home' [0.062500]
-ADVP_RB -> 'here' [0.062500]
-ADVP_RB -> 'anywhere' [0.062500]
-ADVP_RB -> 'last' [0.062500]
-ADVP_RB -> 'also' [0.062500]
-ADVP_RB -> 'Only' [0.125000]
-ADVP_RB -> 'daily' [0.250000]
-ADVP_RB -> 'first' [0.062500]
-ADVP_RB -> 'early' [0.062500]
-ADVP_RB -> 'Now' [0.125000]
-ADVP_RB -> 'Anytime' [0.062500]
-
-
-# WHNP_WHNP_Parent_SBARQ Productions		Total Probability: 1.000
-WHNP_WHNP_Parent_SBARQ -> WHADJP_Parent_WHNP_WHNP NNS_Parent_WHNP_WHNP [0.052632]
-WHNP_WHNP_Parent_SBARQ -> WDT_Parent_WHNP_WHNP NNS_Parent_WHNP_WHNP [0.947368]
-
-
-# DT Productions		Total Probability: 1.000
-DT -> 'The' [0.027650]
-DT -> 'Any' [0.004608]
-DT -> 'All' [0.013825]
-DT -> 'the' [0.626728]
-DT -> 'all' [0.055300]
-DT -> 'each' [0.004608]
-DT -> 'that' [0.018433]
-DT -> 'No' [0.004608]
-DT -> 'this' [0.027650]
-DT -> 'any' [0.018433]
-DT -> 'a' [0.129032]
-DT -> 'those' [0.009217]
-DT -> 'these' [0.059908]
-
-
-# WHNP_Parent_WHNP Productions		Total Probability: 1.000
-WHNP_Parent_WHNP -> WDT_Parent_WHNP NNS_Parent_WHNP [0.166667]
-WHNP_Parent_WHNP -> WRB_Parent_WHNP RB_Parent_WHNP [0.166667]
-WHNP_Parent_WHNP -> WDT_Parent_WHNP NN_Parent_WHNP [0.666667]
-
-
-# PP_Parent_SQ_VP_PRIME Productions		Total Probability: 1.000
-PP_Parent_SQ_VP_PRIME -> PP_PRIME_Parent_PP NP_Parent_PP [0.045455]
-PP_Parent_SQ_VP_PRIME -> IN_Parent_PP NP_Parent_PP [0.045455]
-PP_Parent_SQ_VP_PRIME -> TO_Parent_PP NP_NNP_Parent_PP [0.227273]
-PP_Parent_SQ_VP_PRIME -> IN_Parent_PP NP_NNP_Parent_PP [0.636364]
-PP_Parent_SQ_VP_PRIME -> TO_Parent_PP NP_Parent_PP [0.045455]
-
-
-# ADVP_Parent_VP_PRIME Productions		Total Probability: 1.000
-ADVP_Parent_VP_PRIME -> RB_Parent_ADVP PP_Parent_ADVP [1.000000]
-
-
-# JJ Productions		Total Probability: 1.000
-JJ -> 'second' [0.015152]
-JJ -> 'same' [0.015152]
-JJ -> 'expensive' [0.015152]
-JJ -> 'many' [0.030303]
-JJ -> 'round' [0.257576]
-JJ -> 'Last' [0.030303]
-JJ -> 'seventh' [0.015152]
-JJ -> 'sixteenth' [0.015152]
-JJ -> 'First' [0.075758]
-JJ -> 'last' [0.015152]
-JJ -> 'next' [0.090909]
-JJ -> 'other' [0.045455]
-JJ -> 'ninth' [0.015152]
-JJ -> 'first' [0.106061]
-JJ -> 'Next' [0.015152]
-JJ -> 'Round' [0.045455]
-JJ -> 'eighth' [0.015152]
-JJ -> 'Direct' [0.015152]
-JJ -> 'Early' [0.015152]
-JJ -> 'direct' [0.015152]
-JJ -> 'Daily' [0.015152]
-JJ -> 'nonstop' [0.121212]
-
-
-# VBP Productions		Total Probability: 1.000
-VBP -> 'leave' [0.121739]
-VBP -> 'arrive' [0.043478]
-VBP -> "'re" [0.008696]
-VBP -> 'fly' [0.017391]
-VBP -> 'have' [0.043478]
-VBP -> 'prefer' [0.008696]
-VBP -> 'plan' [0.008696]
-VBP -> 'stop' [0.034783]
-VBP -> 'do' [0.052174]
-VBP -> 'Do' [0.034783]
-VBP -> "'m" [0.008696]
-VBP -> 'go' [0.069565]
-VBP -> 'want' [0.017391]
-VBP -> 'are' [0.217391]
-VBP -> 'serve' [0.069565]
-VBP -> 'depart' [0.060870]
-VBP -> 'need' [0.121739]
-VBP -> 'make' [0.017391]
-VBP -> 'Are' [0.043478]
-
-
-# NP_Parent_FRAG Productions		Total Probability: 1.000
-NP_Parent_FRAG -> CD_Parent_NP NN_Parent_NP [0.100000]
-NP_Parent_FRAG -> NP_PRIME_Parent_NP NNP_Parent_NP [0.100000]
-NP_Parent_FRAG -> NNP_Parent_NP JJ_Parent_NP [0.100000]
-NP_Parent_FRAG -> JJS_Parent_NP NN_Parent_NP [0.200000]
-NP_Parent_FRAG -> NP_Parent_NP SBAR_Parent_NP [0.100000]
-NP_Parent_FRAG -> JJ_Parent_NP NN_Parent_NP [0.400000]
-
-
-# PP_Parent_FRAG Productions		Total Probability: 1.000
-PP_Parent_FRAG -> TO_Parent_PP NP_NNP_Parent_PP [0.363636]
-PP_Parent_FRAG -> IN_Parent_PP NP_NN_Parent_PP [0.045455]
-PP_Parent_FRAG -> IN_Parent_PP NP_NNP_Parent_PP [0.227273]
-PP_Parent_FRAG -> TO_Parent_PP NP_Parent_PP [0.136364]
-PP_Parent_FRAG -> IN_Parent_PP NP_Parent_PP [0.227273]
-
-
-# NNS Productions		Total Probability: 1.000
-NNS -> 'fares' [0.085202]
-NNS -> 'trips' [0.004484]
-NNS -> 'minutes' [0.022422]
-NNS -> 'airlines' [0.013453]
-NNS -> 'stopovers' [0.013453]
-NNS -> 'codes' [0.008969]
-NNS -> 'restrictions' [0.008969]
-NNS -> 'ones' [0.022422]
-NNS -> 'details' [0.004484]
-NNS -> 'hours' [0.013453]
-NNS -> 'flights' [0.744395]
-NNS -> 'stops' [0.017937]
-NNS -> 'mornings' [0.004484]
-NNS -> 'meals' [0.013453]
-NNS -> 'dollars' [0.013453]
-NNS -> 'numbers' [0.008969]
+# PP_Parent_NP Productions		Total Probability: 1.000
+PP_Parent_NP -> TO NP_NNP [0.373832]
+PP_Parent_NP -> TO NP_Parent_PP [0.130841]
+PP_Parent_NP -> IN NP_NNP [0.140187]
+PP_Parent_NP -> IN NP_NNS [0.009346]
+PP_Parent_NP -> IN NP_Parent_PP [0.317757]
+PP_Parent_NP -> TO INTJ_UH [0.009346]
+PP_Parent_NP -> IN NP_DT [0.018692]
 
 
 # FRAG_PRIME_Parent_FRAG Productions		Total Probability: 1.000
-FRAG_PRIME_Parent_FRAG -> PP_Parent_FRAG_PRIME PP_Parent_FRAG_PRIME [0.333333]
-FRAG_PRIME_Parent_FRAG -> FRAG_PRIME_Parent_FRAG_PRIME PP_Parent_FRAG_PRIME [0.333333]
-FRAG_PRIME_Parent_FRAG -> NP_NNP_Parent_FRAG_PRIME PP_Parent_FRAG_PRIME [0.111111]
-FRAG_PRIME_Parent_FRAG -> FRAG_PRIME_Parent_FRAG_PRIME NP_Parent_FRAG_PRIME [0.111111]
 FRAG_PRIME_Parent_FRAG -> WHNP_Parent_FRAG_PRIME PP_Parent_FRAG_PRIME [0.111111]
+FRAG_PRIME_Parent_FRAG -> PP_Parent_FRAG_PRIME PP_Parent_FRAG_PRIME [0.333333]
+FRAG_PRIME_Parent_FRAG -> FRAG_PRIME_Parent_FRAG_PRIME NP_Parent_FRAG_PRIME [0.111111]
+FRAG_PRIME_Parent_FRAG -> FRAG_PRIME_Parent_FRAG_PRIME PP_Parent_FRAG_PRIME [0.333333]
+FRAG_PRIME_Parent_FRAG -> NP_NNP PP_Parent_FRAG_PRIME [0.111111]
 
 
-# PP_Parent_PP Productions		Total Probability: 1.000
-PP_Parent_PP -> IN_Parent_PP NP_NNP_Parent_PP [0.333333]
-PP_Parent_PP -> TO_Parent_PP NP_Parent_PP [0.333333]
-PP_Parent_PP -> IN_Parent_PP NP_Parent_PP [0.333333]
-
-
-# FRAG_NP_NNP Productions		Total Probability: 1.000
-FRAG_NP_NNP -> 'Tuesday' [1.000000]
+# CC Productions		Total Probability: 1.000
+CC -> 'or' [0.138889]
+CC -> 'and' [0.861111]
 
 
 # CD Productions		Total Probability: 1.000
-CD -> 'seven' [0.097403]
-CD -> 'eleven' [0.032468]
-CD -> 'hundred' [0.038961]
-CD -> 'two' [0.019481]
-CD -> 'fifteen' [0.006494]
 CD -> 'oh' [0.012987]
-CD -> 'three' [0.025974]
-CD -> 'eight' [0.032468]
-CD -> 'nineteen' [0.006494]
-CD -> 'eighteen' [0.006494]
-CD -> 'thousand' [0.006494]
-CD -> 'seventeen' [0.006494]
-CD -> 'four' [0.012987]
-CD -> 'nine' [0.051948]
-CD -> 'fifty' [0.032468]
+CD -> 'seven' [0.097403]
 CD -> 'ten' [0.064935]
-CD -> 'one' [0.168831]
-CD -> 'Zero' [0.006494]
+CD -> 'two' [0.019481]
 CD -> 'eighty' [0.006494]
-CD -> 'six' [0.077922]
-CD -> 'five' [0.136364]
-CD -> 'twenty' [0.025974]
-CD -> 'thirty' [0.071429]
-CD -> 'zero' [0.006494]
-CD -> 'forty' [0.012987]
-CD -> 'twelve' [0.025974]
 CD -> 'fourteen' [0.006494]
+CD -> 'nine' [0.051948]
+CD -> 'Zero' [0.006494]
+CD -> 'twenty' [0.025974]
+CD -> 'eight' [0.032468]
+CD -> 'fifty' [0.032468]
+CD -> 'fifteen' [0.006494]
+CD -> 'four' [0.012987]
+CD -> 'eighteen' [0.006494]
+CD -> 'eleven' [0.032468]
+CD -> 'zero' [0.006494]
+CD -> 'one' [0.168831]
+CD -> 'six' [0.077922]
+CD -> 'three' [0.025974]
+CD -> 'twelve' [0.025974]
+CD -> 'thirty' [0.071429]
+CD -> 'thousand' [0.006494]
+CD -> 'five' [0.136364]
+CD -> 'forty' [0.012987]
+CD -> 'seventeen' [0.006494]
+CD -> 'nineteen' [0.006494]
+CD -> 'hundred' [0.038961]
 
 
-# WHNP_XXX Productions		Total Probability: 1.000
-WHNP_XXX -> '0' [1.000000]
+# PP_Parent_PP_PRIME Productions		Total Probability: 1.000
+PP_Parent_PP_PRIME -> IN NP_NNP [1.000000]
 
 
-# VP_Parent_S Productions		Total Probability: 1.000
-VP_Parent_S -> VBG_Parent_VP PP_Parent_VP [0.021277]
-VP_Parent_S -> MD_Parent_VP VP_Parent_VP [0.404255]
-VP_Parent_S -> VBZ_Parent_VP NP_Parent_VP [0.021277]
-VP_Parent_S -> VBP_Parent_VP S_VP_Parent_VP [0.106383]
-VP_Parent_S -> VBP_Parent_VP NP_Parent_VP [0.297872]
-VP_Parent_S -> VB_Parent_VP NP_Parent_VP [0.085106]
-VP_Parent_S -> VBP_Parent_VP PP_Parent_VP [0.021277]
-VP_Parent_S -> VP_PRIME_Parent_VP NP_Parent_VP [0.021277]
-VP_Parent_S -> VBD_Parent_VP NP_Parent_VP [0.021277]
+# S_VP_PRIME_Parent_S_VP Productions		Total Probability: 1.000
+S_VP_PRIME_Parent_S_VP -> VB NP_PRP [0.920455]
+S_VP_PRIME_Parent_S_VP -> VB NP_Parent_S_VP_PRIME [0.011364]
+S_VP_PRIME_Parent_S_VP -> VP_Parent_S_VP_PRIME CC [0.011364]
+S_VP_PRIME_Parent_S_VP -> VB PP_Parent_S_VP_PRIME [0.011364]
+S_VP_PRIME_Parent_S_VP -> VBZ PP_Parent_S_VP_PRIME [0.011364]
+S_VP_PRIME_Parent_S_VP -> VBP RB [0.011364]
+S_VP_PRIME_Parent_S_VP -> S_VP_PRIME_Parent_S_VP_PRIME NP_Parent_S_VP_PRIME [0.022727]
 
 
 # FRAG_ADJP_JJ Productions		Total Probability: 1.000
 FRAG_ADJP_JJ -> 'Nonstop' [1.000000]
 
 
-# ADJP_Parent_NP_PRIME Productions		Total Probability: 1.000
-ADJP_Parent_NP_PRIME -> RBS_Parent_ADJP JJ_Parent_ADJP [1.000000]
+# PP_Parent_VP Productions		Total Probability: 1.000
+PP_Parent_VP -> TO NP_NNP [0.044444]
+PP_Parent_VP -> TO NP_Parent_PP [0.066667]
+PP_Parent_VP -> IN NP_NN [0.088889]
+PP_Parent_VP -> IN NP_Parent_PP [0.533333]
+PP_Parent_VP -> IN NP_NNP [0.244444]
+PP_Parent_VP -> PP_PRIME_Parent_PP PP_Parent_PP [0.022222]
 
 
-# INTJ_UH Productions		Total Probability: 1.000
-INTJ_UH -> 'Please' [0.272727]
-INTJ_UH -> 'Hi' [0.090909]
-INTJ_UH -> 'oh' [0.090909]
-INTJ_UH -> 'please' [0.181818]
-INTJ_UH -> 'Okay' [0.090909]
-INTJ_UH -> 'oops' [0.090909]
-INTJ_UH -> 'Thanks' [0.181818]
+# VBN Productions		Total Probability: 1.000
+VBN -> 'used' [0.500000]
+VBN -> 'served' [0.500000]
 
 
-# S_VP_PRIME_Parent_S_VP_PRIME Productions		Total Probability: 1.000
-S_VP_PRIME_Parent_S_VP_PRIME -> VB_Parent_S_VP_PRIME NP_PRP_Parent_S_VP_PRIME [1.000000]
+# PDT Productions		Total Probability: 1.000
+PDT -> 'all' [1.000000]
 
 
-# WHADJP_Parent_WHNP_WHNP Productions		Total Probability: 1.000
-WHADJP_Parent_WHNP_WHNP -> WRB_Parent_WHADJP JJ_Parent_WHADJP [1.000000]
+# RBR Productions		Total Probability: 1.000
+RBR -> 'less' [1.000000]
 
 
-# NP_Parent_FRAG_NP_PRIME Productions		Total Probability: 1.000
-NP_Parent_FRAG_NP_PRIME -> NP_PRIME_Parent_NP NN_Parent_NP [0.250000]
-NP_Parent_FRAG_NP_PRIME -> NP_PRIME_Parent_NP PP_Parent_NP [0.041667]
-NP_Parent_FRAG_NP_PRIME -> DT_Parent_NP NNS_Parent_NP [0.125000]
-NP_Parent_FRAG_NP_PRIME -> NP_PRIME_Parent_NP NNS_Parent_NP [0.083333]
-NP_Parent_FRAG_NP_PRIME -> JJS_Parent_NP NN_Parent_NP [0.208333]
-NP_Parent_FRAG_NP_PRIME -> JJ_Parent_NP NNS_Parent_NP [0.041667]
-NP_Parent_FRAG_NP_PRIME -> NN_Parent_NP NNS_Parent_NP [0.125000]
-NP_Parent_FRAG_NP_PRIME -> NP_PRIME_Parent_NP RB_Parent_NP [0.041667]
-NP_Parent_FRAG_NP_PRIME -> NP_PRIME_Parent_NP NP_Parent_NP [0.041667]
-NP_Parent_FRAG_NP_PRIME -> JJ_Parent_NP NN_Parent_NP [0.041667]
+# VP_VBN Productions		Total Probability: 1.000
+VP_VBN -> 'served' [1.000000]
 
 
-# PP_Parent_PP_PRIME Productions		Total Probability: 1.000
-PP_Parent_PP_PRIME -> IN_Parent_PP NP_NNP_Parent_PP [1.000000]
+# NP_Parent_SQ Productions		Total Probability: 1.000
+NP_Parent_SQ -> NP_PRIME_Parent_NP NN [0.097561]
+NP_Parent_SQ -> NP_PRIME_Parent_NP CD [0.048780]
+NP_Parent_SQ -> JJ NNS [0.024390]
+NP_Parent_SQ -> NP_PRIME_Parent_NP PP_Parent_NP [0.097561]
+NP_Parent_SQ -> NP_Parent_NP SBAR_Parent_NP [0.048780]
+NP_Parent_SQ -> NP_PRIME_Parent_NP NP_NN [0.024390]
+NP_Parent_SQ -> NP_PRIME_Parent_NP NNS [0.048780]
+NP_Parent_SQ -> NP_Parent_NP PP_Parent_NP [0.219512]
+NP_Parent_SQ -> DT NNS [0.024390]
+NP_Parent_SQ -> NP_PRIME_Parent_NP SYM [0.048780]
+NP_Parent_SQ -> DT NN [0.219512]
+NP_Parent_SQ -> NP_PRIME_Parent_NP NNP [0.024390]
+NP_Parent_SQ -> NP_Parent_NP VP_Parent_NP [0.048780]
+NP_Parent_SQ -> DT JJS [0.024390]
+
+
+# PP_Parent_SBARQ_PRIME Productions		Total Probability: 1.000
+PP_Parent_SBARQ_PRIME -> IN NP_Parent_PP [1.000000]
+
+
+# FRAG_VP_Parent_TOP Productions		Total Probability: 1.000
+FRAG_VP_Parent_TOP -> VBG PP_Parent_FRAG_VP [0.300000]
+FRAG_VP_Parent_TOP -> FRAG_VP_PRIME_Parent_FRAG_VP PP_Parent_FRAG_VP [0.700000]
+
+
+# VBZ Productions		Total Probability: 1.000
+VBZ -> 'provides' [0.014925]
+VBZ -> 'has' [0.014925]
+VBZ -> 'Does' [0.119403]
+VBZ -> 'arrives' [0.014925]
+VBZ -> 'departs' [0.014925]
+VBZ -> "'s" [0.044776]
+VBZ -> 'serves' [0.029851]
+VBZ -> 'does' [0.029851]
+VBZ -> 'Is' [0.089552]
+VBZ -> 'is' [0.582090]
+VBZ -> 'leaves' [0.044776]
+
+
+# S_VP_Parent_SBARQ Productions		Total Probability: 1.000
+S_VP_Parent_SBARQ -> VBZ ADJP_JJ [1.000000]
+
+
+# VP_Parent_NP_PRIME Productions		Total Probability: 1.000
+VP_Parent_NP_PRIME -> VBG PP_Parent_VP [0.666667]
+VP_Parent_NP_PRIME -> VP_PRIME_Parent_VP PP_Parent_VP [0.333333]
+
+
+# NP_PRP Productions		Total Probability: 1.000
+NP_PRP -> 'they' [0.007407]
+NP_PRP -> 'me' [0.651852]
+NP_PRP -> 'you' [0.051852]
+NP_PRP -> 'it' [0.014815]
+NP_PRP -> 'I' [0.274074]
+
+
+# PP_Parent_ADVP Productions		Total Probability: 1.000
+PP_Parent_ADVP -> TO NP_Parent_PP [0.500000]
+PP_Parent_ADVP -> IN NP_Parent_PP [0.500000]
+
+
+# SYM Productions		Total Probability: 1.000
+SYM -> 'slash' [0.176471]
+SYM -> 'P' [0.176471]
+SYM -> 'Q' [0.058824]
+SYM -> 'B' [0.058824]
+SYM -> 'I' [0.058824]
+SYM -> 'D' [0.058824]
+SYM -> 'A' [0.294118]
+SYM -> 'M' [0.058824]
+SYM -> 'N' [0.058824]
+
+
+# PP_Parent_FRAG_NP Productions		Total Probability: 1.000
+PP_Parent_FRAG_NP -> IN NP_Parent_PP [0.311688]
+PP_Parent_FRAG_NP -> TO NP_NNP [0.493506]
+PP_Parent_FRAG_NP -> TO NP_Parent_PP [0.142857]
+PP_Parent_FRAG_NP -> IN NP_NNP [0.051948]
+
+
+# VP_NN Productions		Total Probability: 1.000
+VP_NN -> 'mean' [1.000000]
 
 
 # WHNP_Parent_SBARQ Productions		Total Probability: 1.000
-WHNP_Parent_SBARQ -> WDT_Parent_WHNP NNS_Parent_WHNP [0.500000]
-WHNP_Parent_SBARQ -> WDT_Parent_WHNP NN_Parent_WHNP [0.050000]
-WHNP_Parent_SBARQ -> WHNP_Parent_WHNP ADJP_JJ_Parent_WHNP [0.016667]
+WHNP_Parent_SBARQ -> WHNP_Parent_WHNP ADJP_JJ [0.016667]
+WHNP_Parent_SBARQ -> WRB RB [0.066667]
+WHNP_Parent_SBARQ -> WHNP_WDT PP_Parent_WHNP [0.300000]
+WHNP_Parent_SBARQ -> WDT NN [0.050000]
 WHNP_Parent_SBARQ -> WHNP_Parent_WHNP PP_Parent_WHNP [0.066667]
-WHNP_Parent_SBARQ -> WRB_Parent_WHNP RB_Parent_WHNP [0.066667]
-WHNP_Parent_SBARQ -> WHNP_WDT_Parent_WHNP PP_Parent_WHNP [0.300000]
+WHNP_Parent_SBARQ -> WDT NNS [0.500000]
 
 
-# X_TO Productions		Total Probability: 1.000
-X_TO -> 'to' [1.000000]
+# WHNP_Parent_FRAG Productions		Total Probability: 1.000
+WHNP_Parent_FRAG -> WHNP_Parent_WHNP PP_Parent_WHNP [1.000000]
 
 
-# NP_Parent_VP Productions		Total Probability: 1.000
-NP_Parent_VP -> NP_PRIME_Parent_NP VP_Parent_NP [0.139535]
-NP_Parent_VP -> NP_Parent_NP PP_Parent_NP [0.093023]
-NP_Parent_VP -> NP_PRIME_Parent_NP SBAR_Parent_NP [0.046512]
-NP_Parent_VP -> NP_PRIME_Parent_NP NP_NN_Parent_NP [0.023256]
-NP_Parent_VP -> NNP_Parent_NP NN_Parent_NP [0.069767]
-NP_Parent_VP -> NP_PRIME_Parent_NP NP_Parent_NP [0.023256]
-NP_Parent_VP -> NP_PRIME_Parent_NP RB_Parent_NP [0.046512]
-NP_Parent_VP -> NP_PRIME_Parent_NP PP_Parent_NP [0.255814]
-NP_Parent_VP -> NP_PRIME_Parent_NP NN_Parent_NP [0.069767]
-NP_Parent_VP -> NP_PRIME_Parent_NP NNS_Parent_NP [0.069767]
-NP_Parent_VP -> NP_Parent_NP NP_NN_Parent_NP [0.023256]
-NP_Parent_VP -> JJ_Parent_NP NNS_Parent_NP [0.046512]
-NP_Parent_VP -> NN_Parent_NP NN_Parent_NP [0.069767]
-NP_Parent_VP -> NP_PRIME_Parent_NP NNP_Parent_NP [0.023256]
-
-
-# IN Productions		Total Probability: 1.000
-IN -> 'at' [0.017717]
-IN -> 'With' [0.005906]
-IN -> 'about' [0.005906]
-IN -> 'before' [0.021654]
-IN -> 'in' [0.090551]
-IN -> 'from' [0.472441]
-IN -> 'around' [0.007874]
-IN -> 'for' [0.013780]
-IN -> 'into' [0.001969]
-IN -> 'as' [0.001969]
-IN -> 'On' [0.013780]
-IN -> 'on' [0.139764]
-IN -> 'by' [0.005906]
-IN -> 'After' [0.001969]
-IN -> 'via' [0.003937]
-IN -> 'through' [0.001969]
-IN -> 'with' [0.009843]
-IN -> 'within' [0.001969]
-IN -> 'between' [0.027559]
-IN -> 'of' [0.086614]
-IN -> 'after' [0.039370]
-IN -> 'From' [0.011811]
-IN -> 'Of' [0.001969]
-IN -> 'without' [0.001969]
-IN -> 'than' [0.011811]
-
-
-# PP_Parent_FRAG_NP_PRIME Productions		Total Probability: 1.000
-PP_Parent_FRAG_NP_PRIME -> IN_Parent_PP NP_Parent_PP [0.239130]
-PP_Parent_FRAG_NP_PRIME -> TO_Parent_PP NP_NNP_Parent_PP [0.141304]
-PP_Parent_FRAG_NP_PRIME -> IN_Parent_PP NP_NNP_Parent_PP [0.565217]
-PP_Parent_FRAG_NP_PRIME -> TO_Parent_PP NP_Parent_PP [0.054348]
-
-
-# VP_PRIME_Parent_VP_PRIME Productions		Total Probability: 1.000
-VP_PRIME_Parent_VP_PRIME -> VB_Parent_VP_PRIME PP_Parent_VP_PRIME [0.500000]
-VP_PRIME_Parent_VP_PRIME -> VBG_Parent_VP_PRIME PP_Parent_VP_PRIME [0.333333]
-VP_PRIME_Parent_VP_PRIME -> VB_Parent_VP_PRIME ADVP_RB_Parent_VP_PRIME [0.166667]
-
-
-# VP_VBG Productions		Total Probability: 1.000
-VP_VBG -> 'returning' [1.000000]
-
-
-# VP_Parent_SQ_VP_PRIME Productions		Total Probability: 1.000
-VP_Parent_SQ_VP_PRIME -> VP_PRIME_Parent_VP PP_Parent_VP [0.500000]
-VP_Parent_SQ_VP_PRIME -> VBP_Parent_VP PP_Parent_VP [0.500000]
-
-
-# FRAG_NP_PRIME_Parent_FRAG_NP_PRIME Productions		Total Probability: 1.000
-FRAG_NP_PRIME_Parent_FRAG_NP_PRIME -> NP_NNS_Parent_FRAG_NP_PRIME PP_Parent_FRAG_NP_PRIME [0.400000]
-FRAG_NP_PRIME_Parent_FRAG_NP_PRIME -> FRAG_NP_PRIME_Parent_FRAG_NP_PRIME PP_Parent_FRAG_NP_PRIME [0.085714]
-FRAG_NP_PRIME_Parent_FRAG_NP_PRIME -> JJS_Parent_FRAG_NP_PRIME JJ_Parent_FRAG_NP_PRIME [0.057143]
-FRAG_NP_PRIME_Parent_FRAG_NP_PRIME -> NP_NN_Parent_FRAG_NP_PRIME PP_Parent_FRAG_NP_PRIME [0.057143]
-FRAG_NP_PRIME_Parent_FRAG_NP_PRIME -> NN_Parent_FRAG_NP_PRIME NN_Parent_FRAG_NP_PRIME [0.057143]
-FRAG_NP_PRIME_Parent_FRAG_NP_PRIME -> FRAG_NP_PRIME_Parent_FRAG_NP_PRIME NNP_Parent_FRAG_NP_PRIME [0.057143]
-FRAG_NP_PRIME_Parent_FRAG_NP_PRIME -> FRAG_NP_PRIME_Parent_FRAG_NP_PRIME SYM_Parent_FRAG_NP_PRIME [0.085714]
-FRAG_NP_PRIME_Parent_FRAG_NP_PRIME -> NP_Parent_FRAG_NP_PRIME PP_Parent_FRAG_NP_PRIME [0.142857]
-FRAG_NP_PRIME_Parent_FRAG_NP_PRIME -> FRAG_NP_PRIME_Parent_FRAG_NP_PRIME CD_Parent_FRAG_NP_PRIME [0.057143]
-
-
-# PP_Parent_S_VP Productions		Total Probability: 1.000
-PP_Parent_S_VP -> IN_Parent_PP NP_Parent_PP [0.666667]
-PP_Parent_S_VP -> PP_PRIME_Parent_PP S_VP_VBG_Parent_PP [0.111111]
-PP_Parent_S_VP -> TO_Parent_PP NP_NNP_Parent_PP [0.111111]
-PP_Parent_S_VP -> TO_Parent_PP NP_Parent_PP [0.111111]
-
-
-# NP_Parent_SQ_VP Productions		Total Probability: 1.000
-NP_Parent_SQ_VP -> NNP_Parent_NP NN_Parent_NP [0.166667]
-NP_Parent_SQ_VP -> QP_Parent_NP NN_Parent_NP [0.166667]
-NP_Parent_SQ_VP -> DT_Parent_NP JJS_Parent_NP [0.166667]
-NP_Parent_SQ_VP -> NP_Parent_NP PP_Parent_NP [0.333333]
-NP_Parent_SQ_VP -> NN_Parent_NP NNS_Parent_NP [0.166667]
-
-
-# NP_NNS Productions		Total Probability: 1.000
-NP_NNS -> 'Wednesdays' [0.012195]
-NP_NNS -> 'Airports' [0.024390]
-NP_NNS -> 'meals' [0.012195]
-NP_NNS -> 'costs' [0.012195]
-NP_NNS -> 'Flights' [0.609756]
-NP_NNS -> 'weekdays' [0.024390]
-NP_NNS -> 'stops' [0.012195]
-NP_NNS -> 'flights' [0.256098]
-NP_NNS -> 'Fares' [0.024390]
-NP_NNS -> 'fares' [0.012195]
-
-
-# VP_Parent_FRAG_NP Productions		Total Probability: 1.000
-VP_Parent_FRAG_NP -> VBG_Parent_VP PP_Parent_VP [0.500000]
-VP_Parent_FRAG_NP -> VP_PRIME_Parent_VP PP_Parent_VP [0.250000]
-VP_Parent_FRAG_NP -> VBG_Parent_VP NP_Parent_VP [0.250000]
-
-
-# TOP_Parent_NULL Productions		Total Probability: 1.000
-TOP_Parent_NULL -> FRAG_ADJP_JJS_Parent_TOP PUNC_Parent_TOP [0.001946]
-TOP_Parent_NULL -> S_VP_Parent_TOP PUNC_Parent_TOP [0.214008]
-TOP_Parent_NULL -> SBARQ_Parent_TOP PUNC_Parent_TOP [0.235409]
-TOP_Parent_NULL -> SBAR_Parent_TOP PUNC_Parent_TOP [0.001946]
-TOP_Parent_NULL -> FRAG_ADJP_JJ_Parent_TOP PUNC_Parent_TOP [0.003891]
-TOP_Parent_NULL -> FRAG_VP_Parent_TOP PUNC_Parent_TOP [0.019455]
-TOP_Parent_NULL -> NP_Parent_TOP PUNC_Parent_TOP [0.005837]
-TOP_Parent_NULL -> INTJ_UH_Parent_TOP PUNC_Parent_TOP [0.003891]
-TOP_Parent_NULL -> S_Parent_TOP PUNC_Parent_TOP [0.089494]
-TOP_Parent_NULL -> X_S_VP_Parent_TOP PUNC_Parent_TOP [0.001946]
-TOP_Parent_NULL -> FRAG_NP_Parent_TOP PUNC_Parent_TOP [0.223735]
-TOP_Parent_NULL -> ADJP_JJ_Parent_TOP PUNC_Parent_TOP [0.001946]
-TOP_Parent_NULL -> SQ_Parent_TOP PUNC_Parent_TOP [0.048638]
-TOP_Parent_NULL -> FRAG_WHNP_Parent_TOP PUNC_Parent_TOP [0.073930]
-TOP_Parent_NULL -> FRAG_NP_NNS_Parent_TOP PUNC_Parent_TOP [0.001946]
-TOP_Parent_NULL -> FRAG_NP_NNP_Parent_TOP PUNC_Parent_TOP [0.001946]
-TOP_Parent_NULL -> FRAG_PP_Parent_TOP PUNC_Parent_TOP [0.011673]
-TOP_Parent_NULL -> FRAG_NP_NN_Parent_TOP PUNC_Parent_TOP [0.003891]
-TOP_Parent_NULL -> FRAG_Parent_TOP PUNC_Parent_TOP [0.054475]
-
-
-# QP_Parent_NP_PRIME Productions		Total Probability: 1.000
-QP_Parent_NP_PRIME -> QP_PRIME_Parent_QP CD_Parent_QP [1.000000]
-
-
-# SQ_Parent_SBAR Productions		Total Probability: 1.000
-SQ_Parent_SBAR -> VBP_Parent_SQ NP_NP_EX_Parent_SQ [1.000000]
-
-
-# WHNP_Parent_SBAR Productions		Total Probability: 1.000
-WHNP_Parent_SBAR -> WHADJP_Parent_WHNP NNS_Parent_WHNP [1.000000]
+# SQ_VP_Parent_SBARQ Productions		Total Probability: 1.000
+SQ_VP_Parent_SBARQ -> VBZ ADJP_JJR [0.034483]
+SQ_VP_Parent_SBARQ -> VBP NP_NNP [0.017241]
+SQ_VP_Parent_SBARQ -> SQ_VP_PRIME_Parent_SQ_VP NP_Parent_SQ_VP [0.017241]
+SQ_VP_Parent_SBARQ -> VBP ADVP_RB [0.017241]
+SQ_VP_Parent_SBARQ -> VBZ NP_NN [0.017241]
+SQ_VP_Parent_SBARQ -> VBP ADVP_RBS [0.034483]
+SQ_VP_Parent_SBARQ -> VBP ADJP_JJ [0.017241]
+SQ_VP_Parent_SBARQ -> VBP NP_Parent_SQ_VP [0.051724]
+SQ_VP_Parent_SBARQ -> VBZ NP_Parent_SQ_VP [0.034483]
+SQ_VP_Parent_SBARQ -> VBP NP_NN [0.120690]
+SQ_VP_Parent_SBARQ -> VBP PP_Parent_SQ_VP [0.189655]
+SQ_VP_Parent_SBARQ -> SQ_VP_PRIME_Parent_SQ_VP VP_Parent_SQ_VP [0.034483]
+SQ_VP_Parent_SBARQ -> VBZ ADVP_RBS [0.017241]
+SQ_VP_Parent_SBARQ -> VBZ VP_Parent_SQ_VP [0.017241]
+SQ_VP_Parent_SBARQ -> VBP VP_Parent_SQ_VP [0.017241]
+SQ_VP_Parent_SBARQ -> VBP NP_NNS [0.017241]
+SQ_VP_Parent_SBARQ -> SQ_VP_PRIME_Parent_SQ_VP PP_Parent_SQ_VP [0.293103]
+SQ_VP_Parent_SBARQ -> VBZ ADJP_JJ [0.051724]
 
 
 # ADJP_JJR Productions		Total Probability: 1.000
 ADJP_JJR -> 'better' [1.000000]
 
 
-# FRAG_ADJP_JJS Productions		Total Probability: 1.000
-FRAG_ADJP_JJS -> 'Cheapest' [1.000000]
+# VP_Parent_VP Productions		Total Probability: 1.000
+VP_Parent_VP -> VB NP_Parent_VP [0.200000]
+VP_Parent_VP -> VP_PRIME_Parent_VP NP_NN [0.100000]
+VP_Parent_VP -> VB S_VP_Parent_VP [0.550000]
+VP_Parent_VP -> VBG PP_Parent_VP [0.050000]
+VP_Parent_VP -> VB PP_Parent_VP [0.100000]
 
 
-# PP_Parent_SBARQ_PRIME Productions		Total Probability: 1.000
-PP_Parent_SBARQ_PRIME -> IN_Parent_PP NP_Parent_PP [1.000000]
+# X_Parent_SQ_PRIME Productions		Total Probability: 1.000
+X_Parent_SQ_PRIME -> VBZ NP_DT [1.000000]
 
 
-# ADVP_Parent_S_VP Productions		Total Probability: 1.000
-ADVP_Parent_S_VP -> NP_Parent_ADVP RB_Parent_ADVP [1.000000]
+# WHNP_Parent_FRAG_PRIME Productions		Total Probability: 1.000
+WHNP_Parent_FRAG_PRIME -> WDT NNS [1.000000]
 
 
-# VP_Parent_VP_PRIME Productions		Total Probability: 1.000
-VP_Parent_VP_PRIME -> VBG_Parent_VP PP_Parent_VP [1.000000]
-
-
-# QP_Parent_NP Productions		Total Probability: 1.000
-QP_Parent_NP -> RB_Parent_QP CD_Parent_QP [0.181818]
-QP_Parent_NP -> CC_Parent_QP JJR_Parent_QP [0.090909]
-QP_Parent_NP -> QP_PRIME_Parent_QP CD_Parent_QP [0.727273]
-
-
-# SQ_VP_PRIME_Parent_SQ_VP Productions		Total Probability: 1.000
-SQ_VP_PRIME_Parent_SQ_VP -> SQ_VP_PRIME_Parent_SQ_VP_PRIME PP_Parent_SQ_VP_PRIME [0.450000]
-SQ_VP_PRIME_Parent_SQ_VP -> VP_Parent_SQ_VP_PRIME CC_Parent_SQ_VP_PRIME [0.100000]
-SQ_VP_PRIME_Parent_SQ_VP -> VBP_Parent_SQ_VP_PRIME PP_Parent_SQ_VP_PRIME [0.300000]
-SQ_VP_PRIME_Parent_SQ_VP -> VBP_Parent_SQ_VP_PRIME NP_NNP_Parent_SQ_VP_PRIME [0.150000]
-
-
-# WHNP_Parent_FRAG_WHNP_PRIME Productions		Total Probability: 1.000
-WHNP_Parent_FRAG_WHNP_PRIME -> WDT_Parent_WHNP NNS_Parent_WHNP [1.000000]
-
-
-# X_S_VP_PRIME_Parent_X_S_VP Productions		Total Probability: 1.000
-X_S_VP_PRIME_Parent_X_S_VP -> VB_Parent_X_S_VP_PRIME NP_PRP_Parent_X_S_VP_PRIME [1.000000]
-
-
-# S_Parent_VP Productions		Total Probability: 1.000
-S_Parent_VP -> NP_NN_Parent_S VP_VBN_Parent_S [1.000000]
-
-
-# WDT Productions		Total Probability: 1.000
-WDT -> 'What' [0.885417]
-WDT -> 'which' [0.010417]
-WDT -> 'Which' [0.093750]
-WDT -> 'what' [0.010417]
-
-
-# WHADJP_Parent_WHNP Productions		Total Probability: 1.000
-WHADJP_Parent_WHNP -> WRB_Parent_WHADJP JJ_Parent_WHADJP [1.000000]
-
-
-# PP_Parent_NP Productions		Total Probability: 1.000
-PP_Parent_NP -> IN_Parent_PP NP_NNP_Parent_PP [0.140187]
-PP_Parent_NP -> IN_Parent_PP NP_DT_Parent_PP [0.018692]
-PP_Parent_NP -> TO_Parent_PP NP_Parent_PP [0.130841]
-PP_Parent_NP -> TO_Parent_PP INTJ_UH_Parent_PP [0.009346]
-PP_Parent_NP -> TO_Parent_PP NP_NNP_Parent_PP [0.373832]
-PP_Parent_NP -> IN_Parent_PP NP_NNS_Parent_PP [0.009346]
-PP_Parent_NP -> IN_Parent_PP NP_Parent_PP [0.317757]
-
-
-# ADJP_JJ Productions		Total Probability: 1.000
-ADJP_JJ -> 'nonstop' [0.200000]
-ADJP_JJ -> 'extra' [0.100000]
-ADJP_JJ -> 'Nonstop' [0.100000]
-ADJP_JJ -> 'possible' [0.100000]
-ADJP_JJ -> 'available' [0.100000]
-ADJP_JJ -> 'last' [0.400000]
-
-
-# FRAG_Parent_TOP Productions		Total Probability: 1.000
-FRAG_Parent_TOP -> NP_Parent_FRAG NP_Parent_FRAG [0.071429]
-FRAG_Parent_TOP -> FRAG_PRIME_Parent_FRAG VP_Parent_FRAG [0.035714]
-FRAG_Parent_TOP -> FRAG_PRIME_Parent_FRAG PP_Parent_FRAG [0.178571]
-FRAG_Parent_TOP -> PP_Parent_FRAG VP_Parent_FRAG [0.035714]
-FRAG_Parent_TOP -> FRAG_PRIME_Parent_FRAG NP_Parent_FRAG [0.107143]
-FRAG_Parent_TOP -> NP_NNP_Parent_FRAG NP_Parent_FRAG [0.035714]
-FRAG_Parent_TOP -> NP_NNP_Parent_FRAG PP_Parent_FRAG [0.214286]
-FRAG_Parent_TOP -> WHNP_Parent_FRAG PP_Parent_FRAG [0.035714]
-FRAG_Parent_TOP -> NP_Parent_FRAG INTJ_UH_Parent_FRAG [0.035714]
-FRAG_Parent_TOP -> X_Parent_FRAG NP_Parent_FRAG [0.035714]
-FRAG_Parent_TOP -> ADVP_RB_Parent_FRAG NP_NNP_Parent_FRAG [0.035714]
-FRAG_Parent_TOP -> X_Parent_FRAG PP_Parent_FRAG [0.035714]
-FRAG_Parent_TOP -> PP_Parent_FRAG PP_Parent_FRAG [0.142857]
-
-
-# PP_Parent_SQ Productions		Total Probability: 1.000
-PP_Parent_SQ -> IN_Parent_PP NP_NNP_Parent_PP [0.111111]
-PP_Parent_SQ -> IN_Parent_PP NP_NN_Parent_PP [0.055556]
-PP_Parent_SQ -> IN_Parent_PP NP_Parent_PP [0.055556]
-PP_Parent_SQ -> TO_Parent_PP NP_NNP_Parent_PP [0.444444]
-PP_Parent_SQ -> TO_Parent_PP NP_Parent_PP [0.333333]
-
-
-# NP_Parent_FRAG_PP Productions		Total Probability: 1.000
-NP_Parent_FRAG_PP -> CD_Parent_NP RB_Parent_NP [0.250000]
-NP_Parent_FRAG_PP -> NP_PRIME_Parent_NP NNS_Parent_NP [0.250000]
-NP_Parent_FRAG_PP -> NP_NNS_Parent_NP PP_Parent_NP [0.250000]
-NP_Parent_FRAG_PP -> NP_PRIME_Parent_NP NN_Parent_NP [0.250000]
-
-
-# NP_NNP Productions		Total Probability: 1.000
-NP_NNP -> 'Alaska' [0.002114]
-NP_NNP -> 'Tuesday' [0.010571]
-NP_NNP -> 'Pittsburgh' [0.033827]
-NP_NNP -> 'Arrival' [0.002114]
-NP_NNP -> 'Toronto' [0.025370]
-NP_NNP -> 'Newark' [0.065539]
-NP_NNP -> 'Philadelphia' [0.016913]
-NP_NNP -> 'Florida' [0.004228]
-NP_NNP -> 'Ontario' [0.012685]
-NP_NNP -> 'Atlanta' [0.016913]
-NP_NNP -> 'Cleveland' [0.063425]
-NP_NNP -> 'American' [0.002114]
-NP_NNP -> 'Columbus' [0.023256]
-NP_NNP -> 'Milwaukee' [0.033827]
-NP_NNP -> 'Memphis' [0.042283]
-NP_NNP -> 'Continental' [0.002114]
-NP_NNP -> 'Chicago' [0.014799]
-NP_NNP -> 'Wednesday' [0.019027]
-NP_NNP -> 'Cincinnati' [0.014799]
-NP_NNP -> 'Nashville' [0.031712]
-NP_NNP -> 'Houston' [0.033827]
-NP_NNP -> 'California' [0.002114]
-NP_NNP -> 'Tampa' [0.031712]
-NP_NNP -> 'Burbank' [0.012685]
-NP_NNP -> 'Detroit' [0.016913]
-NP_NNP -> 'Indianapolis' [0.023256]
-NP_NNP -> 'Delta' [0.002114]
-NP_NNP -> 'Seattle' [0.010571]
-NP_NNP -> 'Minneapolis' [0.021142]
-NP_NNP -> 'July' [0.006342]
-NP_NNP -> 'Thursday' [0.008457]
-NP_NNP -> 'Friday' [0.014799]
-NP_NNP -> 'Baltimore' [0.038055]
-NP_NNP -> 'Wednesdays' [0.002114]
-NP_NNP -> 'Denver' [0.035941]
-NP_NNP -> 'Orlando' [0.027484]
-NP_NNP -> 'Michigan' [0.002114]
-NP_NNP -> 'Miami' [0.031712]
-NP_NNP -> 'Dallas' [0.035941]
-NP_NNP -> 'Sunday' [0.021142]
-NP_NNP -> 'Tennessee' [0.002114]
-NP_NNP -> 'Montreal' [0.021142]
-NP_NNP -> 'Phoenix' [0.040169]
-NP_NNP -> 'Charlotte' [0.019027]
-NP_NNP -> 'Saturday' [0.016913]
-NP_NNP -> 'Washington' [0.019027]
-NP_NNP -> 'Boston' [0.012685]
-NP_NNP -> 'Airline' [0.002114]
-NP_NNP -> 'Tacoma' [0.023256]
-NP_NNP -> 'Monday' [0.010571]
-NP_NNP -> 'Oakland' [0.014799]
-NP_NNP -> 'Dulles' [0.002114]
-
-
-# NP_Parent_NP_PRIME Productions		Total Probability: 1.000
-NP_Parent_NP_PRIME -> NP_PRIME_Parent_NP CD_Parent_NP [0.023256]
-NP_Parent_NP_PRIME -> DT_Parent_NP NN_Parent_NP [0.232558]
-NP_Parent_NP_PRIME -> NP_PRIME_Parent_NP NNP_Parent_NP [0.034884]
-NP_Parent_NP_PRIME -> NP_NNP_Parent_NP NP_NNP_Parent_NP [0.011628]
-NP_Parent_NP_PRIME -> DT_Parent_NP NNS_Parent_NP [0.313953]
-NP_Parent_NP_PRIME -> NP_PRIME_Parent_NP PP_Parent_NP [0.023256]
-NP_Parent_NP_PRIME -> JJ_Parent_NP NNS_Parent_NP [0.011628]
-NP_Parent_NP_PRIME -> NP_PRIME_Parent_NP NNS_Parent_NP [0.104651]
-NP_Parent_NP_PRIME -> NNP_Parent_NP POS_Parent_NP [0.023256]
-NP_Parent_NP_PRIME -> NN_Parent_NP NNS_Parent_NP [0.011628]
-NP_Parent_NP_PRIME -> NN_Parent_NP NN_Parent_NP [0.011628]
-NP_Parent_NP_PRIME -> NP_PRIME_Parent_NP NN_Parent_NP [0.127907]
-NP_Parent_NP_PRIME -> CD_Parent_NP NN_Parent_NP [0.011628]
-NP_Parent_NP_PRIME -> NNP_Parent_NP NNP_Parent_NP [0.058140]
-
-
-# VP_Parent_SQ_VP Productions		Total Probability: 1.000
-VP_Parent_SQ_VP -> VP_PRIME_Parent_VP PP_Parent_VP [0.250000]
-VP_Parent_SQ_VP -> VBN_Parent_VP PP_Parent_VP [0.500000]
-VP_Parent_SQ_VP -> VBP_Parent_VP PP_Parent_VP [0.250000]
-
-
-# NP_DT Productions		Total Probability: 1.000
-NP_DT -> 'that' [0.055556]
-NP_DT -> 'this' [0.111111]
-NP_DT -> 'these' [0.444444]
-NP_DT -> 'those' [0.222222]
-NP_DT -> 'Any' [0.055556]
-NP_DT -> 'any' [0.111111]
+# RBS Productions		Total Probability: 1.000
+RBS -> 'least' [1.000000]
 
 
 # FRAG_NP_NNS Productions		Total Probability: 1.000
 FRAG_NP_NNS -> 'Fares' [1.000000]
 
 
-# WP Productions		Total Probability: 1.000
-WP -> 'What' [1.000000]
+# NNP Productions		Total Probability: 1.000
+NNP -> 'Long' [0.008772]
+NNP -> 'Diego' [0.019737]
+NNP -> 'York' [0.050439]
+NNP -> 'Vegas' [0.054825]
+NNP -> 'Sunday' [0.004386]
+NNP -> 'Paul' [0.004386]
+NNP -> 'Angeles' [0.026316]
+NNP -> 'Monday' [0.010965]
+NNP -> 'Kansas' [0.039474]
+NNP -> 'American' [0.024123]
+NNP -> 'Los' [0.026316]
+NNP -> 'Guardia' [0.004386]
+NNP -> 'U' [0.010965]
+NNP -> 'A' [0.028509]
+NNP -> 'Beach' [0.008772]
+NNP -> 'Ohio' [0.004386]
+NNP -> 'Southwest' [0.010965]
+NNP -> 'K' [0.006579]
+NNP -> 'Air' [0.008772]
+NNP -> 'D' [0.010965]
+NNP -> 'O' [0.002193]
+NNP -> 'Petersburg' [0.010965]
+NNP -> 'San' [0.076754]
+NNP -> 'Cleveland' [0.004386]
+NNP -> 'Thursday' [0.010965]
+NNP -> 'July' [0.004386]
+NNP -> 'North' [0.002193]
+NNP -> 'Louis' [0.004386]
+NNP -> 'June' [0.002193]
+NNP -> 'J' [0.006579]
+NNP -> 'Carolina' [0.002193]
+NNP -> 'N' [0.004386]
+NNP -> 'Saint' [0.019737]
+NNP -> 'Tampa' [0.002193]
+NNP -> 'County' [0.013158]
+NNP -> 'Francisco' [0.043860]
+NNP -> 'Milwaukee' [0.002193]
+NNP -> 'Saturday' [0.002193]
+NNP -> 'Cincinnati' [0.002193]
+NNP -> 'T' [0.015351]
+NNP -> 'Westchester' [0.013158]
+NNP -> 'Tuesday' [0.002193]
+NNP -> 'Newark' [0.004386]
+NNP -> 'Lake' [0.017544]
+NNP -> 'Alaska' [0.002193]
+NNP -> 'Salt' [0.017544]
+NNP -> 'Jersey' [0.008772]
+NNP -> 'Friday' [0.004386]
+NNP -> 'Orlando' [0.002193]
+NNP -> 'La' [0.004386]
+NNP -> 'Delta' [0.004386]
+NNP -> 'New' [0.059211]
+NNP -> 'Las' [0.054825]
+NNP -> 'United' [0.010965]
+NNP -> 'International' [0.002193]
+NNP -> 'Jose' [0.013158]
+NNP -> 'C' [0.013158]
+NNP -> 'F' [0.010965]
+NNP -> 'Airlines' [0.037281]
+NNP -> 'W' [0.019737]
+NNP -> 'Ontario' [0.002193]
+NNP -> 'P' [0.002193]
+NNP -> 'Wednesday' [0.006579]
+NNP -> 'City' [0.081140]
+NNP -> 'S' [0.008772]
 
 
-# PP_Parent_ADJP Productions		Total Probability: 1.000
-PP_Parent_ADJP -> IN_Parent_PP ADJP_JJ_Parent_PP [0.500000]
-PP_Parent_ADJP -> IN_Parent_PP NP_Parent_PP [0.500000]
+# NP_Parent_ADVP Productions		Total Probability: 1.000
+NP_Parent_ADVP -> QP_Parent_NP NNS [1.000000]
+
+
+# VP_Parent_S_VP_PRIME Productions		Total Probability: 1.000
+VP_Parent_S_VP_PRIME -> VBP PP_Parent_VP [1.000000]
+
+
+# WHNP_Parent_SBAR Productions		Total Probability: 1.000
+WHNP_Parent_SBAR -> WHADJP_Parent_WHNP NNS [1.000000]
 
 
 # POS Productions		Total Probability: 1.000
 POS -> "'s" [1.000000]
 
 
+# WHNP_WHNP_Parent_SBARQ_PRIME Productions		Total Probability: 1.000
+WHNP_WHNP_Parent_SBARQ_PRIME -> WDT NNS [1.000000]
+
+
+# SQ_PRIME_Parent_SQ Productions		Total Probability: 1.000
+SQ_PRIME_Parent_SQ -> VBZ NP_NP_EX [0.040000]
+SQ_PRIME_Parent_SQ -> VBP NP_Parent_SQ_PRIME [0.100000]
+SQ_PRIME_Parent_SQ -> VBZ NP_NN [0.020000]
+SQ_PRIME_Parent_SQ -> VBP NP_PRP [0.100000]
+SQ_PRIME_Parent_SQ -> MD NP_Parent_SQ_PRIME [0.040000]
+SQ_PRIME_Parent_SQ -> MD NP_PRP [0.040000]
+SQ_PRIME_Parent_SQ -> SQ_PRIME_Parent_SQ_PRIME NP_Parent_SQ_PRIME [0.020000]
+SQ_PRIME_Parent_SQ -> SQ_PRIME_Parent_SQ_PRIME PP_Parent_SQ_PRIME [0.320000]
+SQ_PRIME_Parent_SQ -> VBZ NP_DT [0.020000]
+SQ_PRIME_Parent_SQ -> VBZ NP_Parent_SQ_PRIME [0.200000]
+SQ_PRIME_Parent_SQ -> VBP NP_DT [0.020000]
+SQ_PRIME_Parent_SQ -> SQ_PRIME_Parent_SQ_PRIME NP_PRP [0.020000]
+SQ_PRIME_Parent_SQ -> VBP NP_NP_EX [0.060000]
+
+
+# QP_PRIME_Parent_QP_PRIME Productions		Total Probability: 1.000
+QP_PRIME_Parent_QP_PRIME -> CD CD [0.250000]
+QP_PRIME_Parent_QP_PRIME -> RB JJR [0.250000]
+QP_PRIME_Parent_QP_PRIME -> QP_PRIME_Parent_QP_PRIME CD [0.250000]
+QP_PRIME_Parent_QP_PRIME -> QP_PRIME_Parent_QP_PRIME IN [0.250000]
+
+
+# TO Productions		Total Probability: 1.000
+TO -> 'to' [1.000000]
+
+
+# PP_Parent_SQ Productions		Total Probability: 1.000
+PP_Parent_SQ -> TO NP_NNP [0.444444]
+PP_Parent_SQ -> IN NP_NN [0.055556]
+PP_Parent_SQ -> IN NP_Parent_PP [0.055556]
+PP_Parent_SQ -> IN NP_NNP [0.111111]
+PP_Parent_SQ -> TO NP_Parent_PP [0.333333]
+
+
+# NP_Parent_X_S_VP Productions		Total Probability: 1.000
+NP_Parent_X_S_VP -> NP_PRIME_Parent_NP PP_Parent_NP [1.000000]
+
+
+# X_Parent_FRAG Productions		Total Probability: 1.000
+X_Parent_FRAG -> WP IN [0.500000]
+X_Parent_FRAG -> WRB IN [0.500000]
+
+
+# JJR Productions		Total Probability: 1.000
+JJR -> 'less' [0.666667]
+JJR -> 'more' [0.333333]
+
+
+# NP_DT Productions		Total Probability: 1.000
+NP_DT -> 'those' [0.222222]
+NP_DT -> 'this' [0.111111]
+NP_DT -> 'these' [0.444444]
+NP_DT -> 'any' [0.111111]
+NP_DT -> 'that' [0.055556]
+NP_DT -> 'Any' [0.055556]
+
+
+# FRAG_Parent_TOP Productions		Total Probability: 1.000
+FRAG_Parent_TOP -> X_Parent_FRAG NP_Parent_FRAG [0.035714]
+FRAG_Parent_TOP -> ADVP_RB NP_NNP [0.035714]
+FRAG_Parent_TOP -> NP_Parent_FRAG INTJ_UH [0.035714]
+FRAG_Parent_TOP -> X_Parent_FRAG PP_Parent_FRAG [0.035714]
+FRAG_Parent_TOP -> FRAG_PRIME_Parent_FRAG PP_Parent_FRAG [0.178571]
+FRAG_Parent_TOP -> NP_Parent_FRAG NP_Parent_FRAG [0.071429]
+FRAG_Parent_TOP -> WHNP_Parent_FRAG PP_Parent_FRAG [0.035714]
+FRAG_Parent_TOP -> PP_Parent_FRAG PP_Parent_FRAG [0.142857]
+FRAG_Parent_TOP -> PP_Parent_FRAG VP_Parent_FRAG [0.035714]
+FRAG_Parent_TOP -> NP_NNP NP_Parent_FRAG [0.035714]
+FRAG_Parent_TOP -> FRAG_PRIME_Parent_FRAG NP_Parent_FRAG [0.107143]
+FRAG_Parent_TOP -> NP_NNP PP_Parent_FRAG [0.214286]
+FRAG_Parent_TOP -> FRAG_PRIME_Parent_FRAG VP_Parent_FRAG [0.035714]
+
+
+# NP_PRIME_Parent_NP Productions		Total Probability: 1.000
+NP_PRIME_Parent_NP -> NP_PRIME_Parent_NP_PRIME VP_Parent_NP_PRIME [0.003831]
+NP_PRIME_Parent_NP -> NP_NNS VP_Parent_NP_PRIME [0.015326]
+NP_PRIME_Parent_NP -> NP_NNS PP_Parent_NP_PRIME [0.030651]
+NP_PRIME_Parent_NP -> NP_PRIME_Parent_NP_PRIME ADVP_RB [0.003831]
+NP_PRIME_Parent_NP -> NP_PRIME_Parent_NP_PRIME NNP [0.026820]
+NP_PRIME_Parent_NP -> DT ADJP_Parent_NP_PRIME [0.003831]
+NP_PRIME_Parent_NP -> DT JJ [0.034483]
+NP_PRIME_Parent_NP -> RB VBG [0.003831]
+NP_PRIME_Parent_NP -> NP_NN PP_Parent_NP_PRIME [0.015326]
+NP_PRIME_Parent_NP -> JJS NN [0.007663]
+NP_PRIME_Parent_NP -> SYM SYM [0.007663]
+NP_PRIME_Parent_NP -> NP_PRIME_Parent_NP_PRIME SYM [0.003831]
+NP_PRIME_Parent_NP -> QP_Parent_NP_PRIME NNS [0.003831]
+NP_PRIME_Parent_NP -> DT JJS [0.042146]
+NP_PRIME_Parent_NP -> CD NNS [0.003831]
+NP_PRIME_Parent_NP -> NP_PRIME_Parent_NP_PRIME PP_Parent_NP_PRIME [0.118774]
+NP_PRIME_Parent_NP -> DT NN [0.053640]
+NP_PRIME_Parent_NP -> NNP CD [0.003831]
+NP_PRIME_Parent_NP -> NP_PRIME_Parent_NP_PRIME X_TO [0.003831]
+NP_PRIME_Parent_NP -> NP_PRIME_Parent_NP_PRIME CD [0.088123]
+NP_PRIME_Parent_NP -> PDT DT [0.015326]
+NP_PRIME_Parent_NP -> NP_PRIME_Parent_NP_PRIME NN [0.065134]
+NP_PRIME_Parent_NP -> JJ NN [0.022989]
+NP_PRIME_Parent_NP -> DT NNP [0.007663]
+NP_PRIME_Parent_NP -> NP_NNP CC [0.030651]
+NP_PRIME_Parent_NP -> NP_NN CC [0.003831]
+NP_PRIME_Parent_NP -> NNP NNP [0.111111]
+NP_PRIME_Parent_NP -> NP_Parent_NP_PRIME VP_Parent_NP_PRIME [0.003831]
+NP_PRIME_Parent_NP -> NNP CC [0.007663]
+NP_PRIME_Parent_NP -> JJ NNP [0.003831]
+NP_PRIME_Parent_NP -> JJ JJ [0.003831]
+NP_PRIME_Parent_NP -> NN NN [0.007663]
+NP_PRIME_Parent_NP -> NN NNP [0.003831]
+NP_PRIME_Parent_NP -> NP_Parent_NP_PRIME PP_Parent_NP_PRIME [0.145594]
+NP_PRIME_Parent_NP -> CD NN [0.011494]
+NP_PRIME_Parent_NP -> CD RB [0.015326]
+NP_PRIME_Parent_NP -> NP_Parent_NP_PRIME CC [0.045977]
+NP_PRIME_Parent_NP -> CD CD [0.019157]
+
+
 # NP_PRIME_Parent_NP_PRIME Productions		Total Probability: 1.000
+NP_PRIME_Parent_NP_PRIME -> JJ NN [0.016393]
+NP_PRIME_Parent_NP_PRIME -> NP_PRIME_Parent_NP_PRIME JJ [0.024590]
+NP_PRIME_Parent_NP_PRIME -> NP_Parent_NP_PRIME CC [0.016393]
+NP_PRIME_Parent_NP_PRIME -> DT CD [0.024590]
+NP_PRIME_Parent_NP_PRIME -> DT JJ [0.057377]
+NP_PRIME_Parent_NP_PRIME -> DT JJS [0.024590]
+NP_PRIME_Parent_NP_PRIME -> NNP NNP [0.032787]
+NP_PRIME_Parent_NP_PRIME -> RB DT [0.008197]
+NP_PRIME_Parent_NP_PRIME -> NN NNP [0.040984]
+NP_PRIME_Parent_NP_PRIME -> NP_PRIME_Parent_NP_PRIME SYM [0.049180]
 NP_PRIME_Parent_NP_PRIME -> NP_Parent_NP_PRIME NP_Parent_NP_PRIME [0.016393]
-NP_PRIME_Parent_NP_PRIME -> DT_Parent_NP_PRIME JJS_Parent_NP_PRIME [0.024590]
-NP_PRIME_Parent_NP_PRIME -> NP_PRIME_Parent_NP_PRIME NNP_Parent_NP_PRIME [0.090164]
-NP_PRIME_Parent_NP_PRIME -> NP_PRIME_Parent_NP_PRIME NN_Parent_NP_PRIME [0.016393]
-NP_PRIME_Parent_NP_PRIME -> DT_Parent_NP_PRIME NNP_Parent_NP_PRIME [0.049180]
-NP_PRIME_Parent_NP_PRIME -> NP_NNS_Parent_NP_PRIME PP_Parent_NP_PRIME [0.024590]
-NP_PRIME_Parent_NP_PRIME -> NP_Parent_NP_PRIME NN_Parent_NP_PRIME [0.016393]
-NP_PRIME_Parent_NP_PRIME -> NN_Parent_NP_PRIME NNP_Parent_NP_PRIME [0.040984]
-NP_PRIME_Parent_NP_PRIME -> DT_Parent_NP_PRIME JJ_Parent_NP_PRIME [0.057377]
-NP_PRIME_Parent_NP_PRIME -> NN_Parent_NP_PRIME NN_Parent_NP_PRIME [0.008197]
-NP_PRIME_Parent_NP_PRIME -> DT_Parent_NP_PRIME CD_Parent_NP_PRIME [0.024590]
-NP_PRIME_Parent_NP_PRIME -> NNP_Parent_NP_PRIME NNP_Parent_NP_PRIME [0.032787]
-NP_PRIME_Parent_NP_PRIME -> DT_Parent_NP_PRIME NN_Parent_NP_PRIME [0.040984]
-NP_PRIME_Parent_NP_PRIME -> NNP_Parent_NP_PRIME CD_Parent_NP_PRIME [0.016393]
-NP_PRIME_Parent_NP_PRIME -> CD_Parent_NP_PRIME CC_Parent_NP_PRIME [0.016393]
-NP_PRIME_Parent_NP_PRIME -> JJ_Parent_NP_PRIME NN_Parent_NP_PRIME [0.016393]
-NP_PRIME_Parent_NP_PRIME -> CD_Parent_NP_PRIME CD_Parent_NP_PRIME [0.008197]
-NP_PRIME_Parent_NP_PRIME -> NP_PRIME_Parent_NP_PRIME PP_Parent_NP_PRIME [0.024590]
-NP_PRIME_Parent_NP_PRIME -> JJS_Parent_NP_PRIME JJ_Parent_NP_PRIME [0.016393]
-NP_PRIME_Parent_NP_PRIME -> NN_Parent_NP_PRIME CD_Parent_NP_PRIME [0.016393]
-NP_PRIME_Parent_NP_PRIME -> NP_PRIME_Parent_NP_PRIME JJ_Parent_NP_PRIME [0.024590]
-NP_PRIME_Parent_NP_PRIME -> NP_PRIME_Parent_NP_PRIME CD_Parent_NP_PRIME [0.122951]
-NP_PRIME_Parent_NP_PRIME -> RB_Parent_NP_PRIME DT_Parent_NP_PRIME [0.008197]
+NP_PRIME_Parent_NP_PRIME -> NP_Parent_NP_PRIME NP_NN [0.016393]
+NP_PRIME_Parent_NP_PRIME -> NP_NNS PP_Parent_NP_PRIME [0.024590]
+NP_PRIME_Parent_NP_PRIME -> NP_PRIME_Parent_NP_PRIME CD [0.122951]
+NP_PRIME_Parent_NP_PRIME -> NNP CD [0.016393]
+NP_PRIME_Parent_NP_PRIME -> DT NN [0.040984]
+NP_PRIME_Parent_NP_PRIME -> JJS JJ [0.016393]
+NP_PRIME_Parent_NP_PRIME -> NP_PRIME_Parent_NP_PRIME NNP [0.090164]
+NP_PRIME_Parent_NP_PRIME -> CD CC [0.016393]
+NP_PRIME_Parent_NP_PRIME -> NP_PRIME_Parent_NP_PRIME NN [0.016393]
+NP_PRIME_Parent_NP_PRIME -> DT NNP [0.049180]
+NP_PRIME_Parent_NP_PRIME -> CD CD [0.008197]
+NP_PRIME_Parent_NP_PRIME -> NN CD [0.016393]
+NP_PRIME_Parent_NP_PRIME -> NN NN [0.008197]
 NP_PRIME_Parent_NP_PRIME -> NP_Parent_NP_PRIME PP_Parent_NP_PRIME [0.204918]
-NP_PRIME_Parent_NP_PRIME -> NP_Parent_NP_PRIME CC_Parent_NP_PRIME [0.016393]
-NP_PRIME_Parent_NP_PRIME -> NP_Parent_NP_PRIME NP_NN_Parent_NP_PRIME [0.016393]
-NP_PRIME_Parent_NP_PRIME -> NP_PRIME_Parent_NP_PRIME SYM_Parent_NP_PRIME [0.049180]
+NP_PRIME_Parent_NP_PRIME -> NP_Parent_NP_PRIME NN [0.016393]
+NP_PRIME_Parent_NP_PRIME -> NP_PRIME_Parent_NP_PRIME PP_Parent_NP_PRIME [0.024590]
+
+
+# S_Parent_SBAR Productions		Total Probability: 1.000
+S_Parent_SBAR -> NP_NNP VP_VBZ [1.000000]
+
+
+# SBAR_Parent_NP Productions		Total Probability: 1.000
+SBAR_Parent_NP -> WHNP_WDT S_Parent_SBAR [0.058824]
+SBAR_Parent_NP -> WHNP_WDT S_VP_Parent_SBAR [0.882353]
+SBAR_Parent_NP -> WHNP_XXX S_VP_Parent_SBAR [0.058824]
+
+
+# FRAG_NP_PRIME_Parent_FRAG_NP_PRIME Productions		Total Probability: 1.000
+FRAG_NP_PRIME_Parent_FRAG_NP_PRIME -> NP_NNS PP_Parent_FRAG_NP_PRIME [0.400000]
+FRAG_NP_PRIME_Parent_FRAG_NP_PRIME -> FRAG_NP_PRIME_Parent_FRAG_NP_PRIME CD [0.057143]
+FRAG_NP_PRIME_Parent_FRAG_NP_PRIME -> FRAG_NP_PRIME_Parent_FRAG_NP_PRIME PP_Parent_FRAG_NP_PRIME [0.085714]
+FRAG_NP_PRIME_Parent_FRAG_NP_PRIME -> FRAG_NP_PRIME_Parent_FRAG_NP_PRIME NNP [0.057143]
+FRAG_NP_PRIME_Parent_FRAG_NP_PRIME -> NN NN [0.057143]
+FRAG_NP_PRIME_Parent_FRAG_NP_PRIME -> NP_NN PP_Parent_FRAG_NP_PRIME [0.057143]
+FRAG_NP_PRIME_Parent_FRAG_NP_PRIME -> NP_Parent_FRAG_NP_PRIME PP_Parent_FRAG_NP_PRIME [0.142857]
+FRAG_NP_PRIME_Parent_FRAG_NP_PRIME -> JJS JJ [0.057143]
+FRAG_NP_PRIME_Parent_FRAG_NP_PRIME -> FRAG_NP_PRIME_Parent_FRAG_NP_PRIME SYM [0.085714]
+
+
+# PP_Parent_FRAG Productions		Total Probability: 1.000
+PP_Parent_FRAG -> TO NP_NNP [0.363636]
+PP_Parent_FRAG -> TO NP_Parent_PP [0.136364]
+PP_Parent_FRAG -> IN NP_NNP [0.227273]
+PP_Parent_FRAG -> IN NP_Parent_PP [0.227273]
+PP_Parent_FRAG -> IN NP_NN [0.045455]
+
+
+# NP_Parent_NP Productions		Total Probability: 1.000
+NP_Parent_NP -> NNP NNP [0.247059]
+NP_Parent_NP -> JJ NNP [0.023529]
+NP_Parent_NP -> NP_PRIME_Parent_NP NNS [0.058824]
+NP_Parent_NP -> CD CD [0.011765]
+NP_Parent_NP -> JJ NN [0.011765]
+NP_Parent_NP -> NN NN [0.023529]
+NP_Parent_NP -> NP_PRIME_Parent_NP CD [0.035294]
+NP_Parent_NP -> NP_PRIME_Parent_NP NNP [0.035294]
+NP_Parent_NP -> CD NN [0.035294]
+NP_Parent_NP -> NNP NN [0.011765]
+NP_Parent_NP -> DT NN [0.141176]
+NP_Parent_NP -> NNP POS [0.011765]
+NP_Parent_NP -> DT NNS [0.094118]
+NP_Parent_NP -> NP_Parent_NP NNS [0.011765]
+NP_Parent_NP -> JJS NN [0.011765]
+NP_Parent_NP -> DT JJ [0.023529]
+NP_Parent_NP -> CD RB [0.023529]
+NP_Parent_NP -> NP_PRIME_Parent_NP PP_Parent_NP [0.011765]
+NP_Parent_NP -> NP_PRIME_Parent_NP NN [0.176471]
+
+
+# SQ_Parent_TOP Productions		Total Probability: 1.000
+SQ_Parent_TOP -> SQ_PRIME_Parent_SQ NP_Parent_SQ [0.280000]
+SQ_Parent_TOP -> VBZ NP_Parent_SQ [0.040000]
+SQ_Parent_TOP -> SQ_PRIME_Parent_SQ PP_Parent_SQ [0.080000]
+SQ_Parent_TOP -> SQ_PRIME_Parent_SQ VP_Parent_SQ [0.560000]
+SQ_Parent_TOP -> SQ_PRIME_Parent_SQ ADJP_JJ [0.040000]
+
+
+# NP_NN Productions		Total Probability: 1.000
+NP_NN -> 'Flight' [0.067797]
+NP_NN -> 'lunch' [0.050847]
+NP_NN -> 'today' [0.016949]
+NP_NN -> 'breakfast' [0.016949]
+NP_NN -> 'Airline' [0.033898]
+NP_NN -> 'airplane' [0.016949]
+NP_NN -> 'stay' [0.016949]
+NP_NN -> 'Price' [0.135593]
+NP_NN -> 'cost' [0.016949]
+NP_NN -> 'noon' [0.084746]
+NP_NN -> 'aircraft' [0.050847]
+NP_NN -> 'dinner' [0.271186]
+NP_NN -> 'Departure' [0.016949]
+NP_NN -> 'flight' [0.050847]
+NP_NN -> 'tomorrow' [0.135593]
+NP_NN -> 'price' [0.016949]
+
+
+# PP_Parent_FRAG_VP Productions		Total Probability: 1.000
+PP_Parent_FRAG_VP -> IN NP_NNPS [0.100000]
+PP_Parent_FRAG_VP -> IN NP_Parent_PP [0.900000]
+
+
+# PP_Parent_S_VP_PRIME Productions		Total Probability: 1.000
+PP_Parent_S_VP_PRIME -> IN NP_NNP [0.500000]
+PP_Parent_S_VP_PRIME -> IN NP_Parent_PP [0.500000]
+
+
+# SQ_Parent_SBARQ Productions		Total Probability: 1.000
+SQ_Parent_SBARQ -> SQ_PRIME_Parent_SQ VP_Parent_SQ [0.048387]
+SQ_Parent_SBARQ -> VBZ NP_PRP [0.032258]
+SQ_Parent_SBARQ -> SQ_PRIME_Parent_SQ VP_VB [0.096774]
+SQ_Parent_SBARQ -> VBZ NP_DT [0.016129]
+SQ_Parent_SBARQ -> SQ_PRIME_Parent_SQ PP_Parent_SQ [0.258065]
+SQ_Parent_SBARQ -> VBZ NP_Parent_SQ [0.467742]
+SQ_Parent_SBARQ -> VBP NP_Parent_SQ [0.064516]
+SQ_Parent_SBARQ -> SQ_PRIME_Parent_SQ VP_NN [0.016129]
+
+
+# QP_PRIME_Parent_QP Productions		Total Probability: 1.000
+QP_PRIME_Parent_QP -> CD CD [0.111111]
+QP_PRIME_Parent_QP -> RBR IN [0.444444]
+QP_PRIME_Parent_QP -> QP_PRIME_Parent_QP_PRIME CD [0.222222]
+QP_PRIME_Parent_QP -> IN JJS [0.222222]
+
+
+# VP_Parent_SQ_VP_PRIME Productions		Total Probability: 1.000
+VP_Parent_SQ_VP_PRIME -> VBP PP_Parent_VP [0.500000]
+VP_Parent_SQ_VP_PRIME -> VP_PRIME_Parent_VP PP_Parent_VP [0.500000]
+
+
+# QP_Parent_NP_PRIME Productions		Total Probability: 1.000
+QP_Parent_NP_PRIME -> QP_PRIME_Parent_QP CD [1.000000]
+
+
+# FRAG_NP_PRIME_Parent_FRAG_NP Productions		Total Probability: 1.000
+FRAG_NP_PRIME_Parent_FRAG_NP -> FRAG_NP_PRIME_Parent_FRAG_NP_PRIME CD [0.025641]
+FRAG_NP_PRIME_Parent_FRAG_NP -> FRAG_NP_PRIME_Parent_FRAG_NP_PRIME NN [0.025641]
+FRAG_NP_PRIME_Parent_FRAG_NP -> FRAG_NP_PRIME_Parent_FRAG_NP_PRIME NP_Parent_FRAG_NP_PRIME [0.012821]
+FRAG_NP_PRIME_Parent_FRAG_NP -> NP_Parent_FRAG_NP_PRIME CC [0.012821]
+FRAG_NP_PRIME_Parent_FRAG_NP -> NP_NNP PP_Parent_FRAG_NP_PRIME [0.012821]
+FRAG_NP_PRIME_Parent_FRAG_NP -> FRAG_NP_PRIME_Parent_FRAG_NP_PRIME ADVP_RB [0.012821]
+FRAG_NP_PRIME_Parent_FRAG_NP -> JJ NN [0.025641]
+FRAG_NP_PRIME_Parent_FRAG_NP -> FRAG_NP_PRIME_Parent_FRAG_NP_PRIME PP_Parent_FRAG_NP_PRIME [0.243590]
+FRAG_NP_PRIME_Parent_FRAG_NP -> NN NN [0.012821]
+FRAG_NP_PRIME_Parent_FRAG_NP -> NP_NNS PP_Parent_FRAG_NP_PRIME [0.371795]
+FRAG_NP_PRIME_Parent_FRAG_NP -> NP_Parent_FRAG_NP_PRIME PP_Parent_FRAG_NP_PRIME [0.217949]
+FRAG_NP_PRIME_Parent_FRAG_NP -> NP_NN PP_Parent_FRAG_NP_PRIME [0.025641]
+
+
+# VP_VB Productions		Total Probability: 1.000
+VP_VB -> 'use' [0.142857]
+VP_VB -> 'leave' [0.142857]
+VP_VB -> 'cost' [0.428571]
+VP_VB -> 'stop' [0.285714]
+
+
+# S_VP_VBG Productions		Total Probability: 1.000
+S_VP_VBG -> 'arriving' [1.000000]
+
+
+# PP_Parent_ADJP Productions		Total Probability: 1.000
+PP_Parent_ADJP -> IN ADJP_JJ [0.500000]
+PP_Parent_ADJP -> IN NP_Parent_PP [0.500000]
+
+
+# NP_Parent_FRAG Productions		Total Probability: 1.000
+NP_Parent_FRAG -> NP_PRIME_Parent_NP NNP [0.100000]
+NP_Parent_FRAG -> NP_Parent_NP SBAR_Parent_NP [0.100000]
+NP_Parent_FRAG -> JJS NN [0.200000]
+NP_Parent_FRAG -> NNP JJ [0.100000]
+NP_Parent_FRAG -> CD NN [0.100000]
+NP_Parent_FRAG -> JJ NN [0.400000]
+
+
+# VBD Productions		Total Probability: 1.000
+VBD -> 'meant' [1.000000]
+
+
+# VP_Parent_SQ Productions		Total Probability: 1.000
+VP_Parent_SQ -> VP_PRIME_Parent_VP PP_Parent_VP [0.117647]
+VP_Parent_SQ -> VB PP_Parent_VP [0.117647]
+VP_Parent_SQ -> VP_PRIME_Parent_VP NP_Parent_VP [0.058824]
+VP_Parent_SQ -> VBN PP_Parent_VP [0.058824]
+VP_Parent_SQ -> VB NP_NN [0.411765]
+VP_Parent_SQ -> VB NP_NNS [0.058824]
+VP_Parent_SQ -> VB NP_Parent_VP [0.176471]
+
+
+# ADVP_Parent_VP_PRIME Productions		Total Probability: 1.000
+ADVP_Parent_VP_PRIME -> RB PP_Parent_ADVP [1.000000]
+
+
+# SQ_PRIME_Parent_SQ_PRIME Productions		Total Probability: 1.000
+SQ_PRIME_Parent_SQ_PRIME -> SQ_PRIME_Parent_SQ_PRIME PP_Parent_SQ_PRIME [0.095238]
+SQ_PRIME_Parent_SQ_PRIME -> X_Parent_SQ_PRIME VBZ [0.047619]
+SQ_PRIME_Parent_SQ_PRIME -> VBP NP_NP_EX [0.761905]
+SQ_PRIME_Parent_SQ_PRIME -> INTJ_UH MD [0.047619]
+SQ_PRIME_Parent_SQ_PRIME -> SQ_PRIME_Parent_SQ_PRIME NP_Parent_SQ_PRIME [0.047619]
+
+
+# WHNP_Parent_FRAG_WHNP_PRIME Productions		Total Probability: 1.000
+WHNP_Parent_FRAG_WHNP_PRIME -> WDT NNS [1.000000]
+
+
+# WHNP_WDT Productions		Total Probability: 1.000
+WHNP_WDT -> 'that' [0.354167]
+WHNP_WDT -> 'Which' [0.645833]
+
+
+# X_TO Productions		Total Probability: 1.000
+X_TO -> 'to' [1.000000]
+
+
+# NP_Parent_S_VP Productions		Total Probability: 1.000
+NP_Parent_S_VP -> JJ NN [0.009804]
+NP_Parent_S_VP -> NP_Parent_NP ADJP_JJ [0.009804]
+NP_Parent_S_VP -> DT NNS [0.137255]
+NP_Parent_S_VP -> NP_PRIME_Parent_NP SYM [0.009804]
+NP_Parent_S_VP -> NP_Parent_NP SBAR_Parent_NP [0.058824]
+NP_Parent_S_VP -> NP_Parent_NP PP_Parent_NP [0.058824]
+NP_Parent_S_VP -> NP_NNS PP_Parent_NP [0.019608]
+NP_Parent_S_VP -> NP_PRIME_Parent_NP VP_Parent_NP [0.019608]
+NP_Parent_S_VP -> NP_PRIME_Parent_NP NP_Parent_NP [0.029412]
+NP_Parent_S_VP -> NP_PRIME_Parent_NP NN [0.029412]
+NP_Parent_S_VP -> NP_NNS SBAR_Parent_NP [0.019608]
+NP_Parent_S_VP -> NP_PRIME_Parent_NP NNS [0.068627]
+NP_Parent_S_VP -> NP_PRIME_Parent_NP CD [0.009804]
+NP_Parent_S_VP -> DT NN [0.049020]
+NP_Parent_S_VP -> NP_PRIME_Parent_NP SBAR_Parent_NP [0.029412]
+NP_Parent_S_VP -> NP_PRIME_Parent_NP PP_Parent_NP [0.362745]
+NP_Parent_S_VP -> NP_NN PP_Parent_NP [0.009804]
+NP_Parent_S_VP -> NP_PRIME_Parent_NP ADVP_Parent_NP [0.029412]
+NP_Parent_S_VP -> NP_NNS VP_Parent_NP [0.009804]
+NP_Parent_S_VP -> NP_Parent_NP VP_Parent_NP [0.029412]
+
+
+# SBARQ_Parent_TOP Productions		Total Probability: 1.000
+SBARQ_Parent_TOP -> WHNP_Parent_SBARQ SQ_VP_Parent_SBARQ [0.413223]
+SBARQ_Parent_TOP -> WHNP_WHNP_Parent_SBARQ SQ_Parent_SBARQ [0.157025]
+SBARQ_Parent_TOP -> WHADVP_WRB SQ_Parent_SBARQ [0.016529]
+SBARQ_Parent_TOP -> WHNP_WP SQ_Parent_SBARQ [0.214876]
+SBARQ_Parent_TOP -> SBARQ_PRIME_Parent_SBARQ SQ_VP_Parent_SBARQ [0.008264]
+SBARQ_Parent_TOP -> WHNP_WDT SQ_VP_Parent_SBARQ [0.057851]
+SBARQ_Parent_TOP -> WHNP_Parent_SBARQ SQ_Parent_SBARQ [0.082645]
+SBARQ_Parent_TOP -> WHNP_WDT S_VP_Parent_SBARQ [0.008264]
+SBARQ_Parent_TOP -> WHNP_WDT SQ_Parent_SBARQ [0.041322]
+
+
+# WHNP_Parent_WHNP Productions		Total Probability: 1.000
+WHNP_Parent_WHNP -> WDT NN [0.666667]
+WHNP_Parent_WHNP -> WRB RB [0.166667]
+WHNP_Parent_WHNP -> WDT NNS [0.166667]
+
+
+# VP_Parent_NP Productions		Total Probability: 1.000
+VP_Parent_NP -> VBG NP_Parent_VP [0.333333]
+VP_Parent_NP -> VBN PP_Parent_VP [0.066667]
+VP_Parent_NP -> VP_PRIME_Parent_VP VP_Parent_VP [0.066667]
+VP_Parent_NP -> VP_PRIME_Parent_VP PP_Parent_VP [0.133333]
+VP_Parent_NP -> VBG PP_Parent_VP [0.333333]
+VP_Parent_NP -> VBG NP_NNP [0.066667]
+
+
+# FRAG_ADJP_JJS Productions		Total Probability: 1.000
+FRAG_ADJP_JJS -> 'Cheapest' [1.000000]
+
+
+# NP_Parent_SQ_VP Productions		Total Probability: 1.000
+NP_Parent_SQ_VP -> DT JJS [0.166667]
+NP_Parent_SQ_VP -> NN NNS [0.166667]
+NP_Parent_SQ_VP -> NNP NN [0.166667]
+NP_Parent_SQ_VP -> QP_Parent_NP NN [0.166667]
+NP_Parent_SQ_VP -> NP_Parent_NP PP_Parent_NP [0.333333]
+
+
+# FRAG_VP_PRIME_Parent_FRAG_VP Productions		Total Probability: 1.000
+FRAG_VP_PRIME_Parent_FRAG_VP -> VBG NP_Parent_FRAG_VP_PRIME [0.285714]
+FRAG_VP_PRIME_Parent_FRAG_VP -> VBG NP_NNP [0.285714]
+FRAG_VP_PRIME_Parent_FRAG_VP -> VBG PP_Parent_FRAG_VP_PRIME [0.428571]
+
+
+# FRAG_PRIME_Parent_FRAG_PRIME Productions		Total Probability: 1.000
+FRAG_PRIME_Parent_FRAG_PRIME -> NP_Parent_FRAG_PRIME NP_Parent_FRAG_PRIME [0.500000]
+FRAG_PRIME_Parent_FRAG_PRIME -> NP_NN PP_Parent_FRAG_PRIME [0.500000]
+
+
+# SBARQ_PRIME_Parent_SBARQ Productions		Total Probability: 1.000
+SBARQ_PRIME_Parent_SBARQ -> PP_Parent_SBARQ_PRIME WHNP_WHNP_Parent_SBARQ_PRIME [1.000000]
+
+
+# VP_Parent_S_VP Productions		Total Probability: 1.000
+VP_Parent_S_VP -> VP_PRIME_Parent_VP PP_Parent_VP [0.300000]
+VP_Parent_S_VP -> VP_PRIME_Parent_VP ADVP_Parent_VP [0.050000]
+VP_Parent_S_VP -> VB S_VP_Parent_VP [0.050000]
+VP_Parent_S_VP -> VB NP_Parent_VP [0.150000]
+VP_Parent_S_VP -> VB S_Parent_VP [0.050000]
+VP_Parent_S_VP -> VP_PRIME_Parent_VP ADJP_Parent_VP [0.050000]
+VP_Parent_S_VP -> VBP NP_Parent_VP [0.050000]
+VP_Parent_S_VP -> VB PP_Parent_VP [0.100000]
+VP_Parent_S_VP -> VP_PRIME_Parent_VP NP_Parent_VP [0.200000]
+
+
+# VP_Parent_S Productions		Total Probability: 1.000
+VP_Parent_S -> VBD NP_Parent_VP [0.021277]
+VP_Parent_S -> MD VP_Parent_VP [0.404255]
+VP_Parent_S -> VBP S_VP_Parent_VP [0.106383]
+VP_Parent_S -> VB NP_Parent_VP [0.085106]
+VP_Parent_S -> VBZ NP_Parent_VP [0.021277]
+VP_Parent_S -> VP_PRIME_Parent_VP NP_Parent_VP [0.021277]
+VP_Parent_S -> VBP PP_Parent_VP [0.021277]
+VP_Parent_S -> VBP NP_Parent_VP [0.297872]
+VP_Parent_S -> VBG PP_Parent_VP [0.021277]
 
 
 # PP_Parent_NP_PRIME Productions		Total Probability: 1.000
-PP_Parent_NP_PRIME -> TO_Parent_PP NP_Parent_PP [0.089286]
-PP_Parent_NP_PRIME -> TO_Parent_PP NP_NNP_Parent_PP [0.133929]
-PP_Parent_NP_PRIME -> IN_Parent_PP NP_NNP_Parent_PP [0.535714]
-PP_Parent_NP_PRIME -> IN_Parent_PP NP_Parent_PP [0.241071]
+PP_Parent_NP_PRIME -> IN NP_Parent_PP [0.241071]
+PP_Parent_NP_PRIME -> IN NP_NNP [0.535714]
+PP_Parent_NP_PRIME -> TO NP_Parent_PP [0.089286]
+PP_Parent_NP_PRIME -> TO NP_NNP [0.133929]
+
+
+# X_S_VP_Parent_TOP Productions		Total Probability: 1.000
+X_S_VP_Parent_TOP -> X_S_VP_PRIME_Parent_X_S_VP NP_Parent_X_S_VP [1.000000]
+
+
+# S_VP_Parent_SBAR Productions		Total Probability: 1.000
+S_VP_Parent_SBAR -> VBP NP_NN [0.117647]
+S_VP_Parent_SBAR -> S_VP_PRIME_Parent_S_VP VP_Parent_S_VP [0.058824]
+S_VP_Parent_SBAR -> MD VP_Parent_S_VP [0.058824]
+S_VP_Parent_SBAR -> VBP PP_Parent_S_VP [0.176471]
+S_VP_Parent_SBAR -> TO VP_VB [0.058824]
+S_VP_Parent_SBAR -> VBP ADVP_Parent_S_VP [0.058824]
+S_VP_Parent_SBAR -> VBZ NP_Parent_S_VP [0.058824]
+S_VP_Parent_SBAR -> VBZ PP_Parent_S_VP [0.117647]
+S_VP_Parent_SBAR -> VBZ ADVP_RB [0.058824]
+S_VP_Parent_SBAR -> VBZ NP_NN [0.058824]
+S_VP_Parent_SBAR -> S_VP_PRIME_Parent_S_VP PP_Parent_S_VP [0.117647]
+S_VP_Parent_SBAR -> VBP NP_Parent_S_VP [0.058824]
+
+
+# QP_Parent_NP Productions		Total Probability: 1.000
+QP_Parent_NP -> RB CD [0.181818]
+QP_Parent_NP -> CC JJR [0.090909]
+QP_Parent_NP -> QP_PRIME_Parent_QP CD [0.727273]
+
+
+# NP_Parent_SQ_PRIME Productions		Total Probability: 1.000
+NP_Parent_SQ_PRIME -> NP_PRIME_Parent_NP CD [0.105263]
+NP_Parent_SQ_PRIME -> DT NNS [0.157895]
+NP_Parent_SQ_PRIME -> CD NN [0.052632]
+NP_Parent_SQ_PRIME -> NP_DT PP_Parent_NP [0.105263]
+NP_Parent_SQ_PRIME -> NP_PRIME_Parent_NP NN [0.210526]
+NP_Parent_SQ_PRIME -> DT NN [0.368421]
+
+
+# PP_PRIME_Parent_PP_PRIME Productions		Total Probability: 1.000
+PP_PRIME_Parent_PP_PRIME -> IN CC [1.000000]
+
+
+# PP_Parent_FRAG_WHNP_PRIME Productions		Total Probability: 1.000
+PP_Parent_FRAG_WHNP_PRIME -> TO NP_Parent_PP [0.080645]
+PP_Parent_FRAG_WHNP_PRIME -> IN NP_NNP [0.564516]
+PP_Parent_FRAG_WHNP_PRIME -> IN NP_Parent_PP [0.129032]
+PP_Parent_FRAG_WHNP_PRIME -> TO NP_NNP [0.225806]
+
+
+# PP_Parent_SQ_PRIME Productions		Total Probability: 1.000
+PP_Parent_SQ_PRIME -> TO NP_NNP [0.111111]
+PP_Parent_SQ_PRIME -> IN NP_Parent_PP [0.222222]
+PP_Parent_SQ_PRIME -> IN NP_NNP [0.666667]
+
+
+# WHADJP_Parent_WHNP Productions		Total Probability: 1.000
+WHADJP_Parent_WHNP -> WRB JJ [1.000000]
+
+
+# VP_Parent_VP_PRIME Productions		Total Probability: 1.000
+VP_Parent_VP_PRIME -> VBG PP_Parent_VP [1.000000]
+
+
+# NP_NNS Productions		Total Probability: 1.000
+NP_NNS -> 'flights' [0.256098]
+NP_NNS -> 'stops' [0.012195]
+NP_NNS -> 'meals' [0.012195]
+NP_NNS -> 'Fares' [0.024390]
+NP_NNS -> 'Airports' [0.024390]
+NP_NNS -> 'Flights' [0.609756]
+NP_NNS -> 'weekdays' [0.024390]
+NP_NNS -> 'costs' [0.012195]
+NP_NNS -> 'Wednesdays' [0.012195]
+NP_NNS -> 'fares' [0.012195]
+
+
+# NP_Parent_FRAG_NP_PRIME Productions		Total Probability: 1.000
+NP_Parent_FRAG_NP_PRIME -> NP_PRIME_Parent_NP NN [0.250000]
+NP_Parent_FRAG_NP_PRIME -> NP_PRIME_Parent_NP NP_Parent_NP [0.041667]
+NP_Parent_FRAG_NP_PRIME -> DT NNS [0.125000]
+NP_Parent_FRAG_NP_PRIME -> JJ NNS [0.041667]
+NP_Parent_FRAG_NP_PRIME -> JJ NN [0.041667]
+NP_Parent_FRAG_NP_PRIME -> NP_PRIME_Parent_NP PP_Parent_NP [0.041667]
+NP_Parent_FRAG_NP_PRIME -> JJS NN [0.208333]
+NP_Parent_FRAG_NP_PRIME -> NP_PRIME_Parent_NP NNS [0.083333]
+NP_Parent_FRAG_NP_PRIME -> NN NNS [0.125000]
+NP_Parent_FRAG_NP_PRIME -> NP_PRIME_Parent_NP RB [0.041667]
+
+
+# FRAG_NP_NNP Productions		Total Probability: 1.000
+FRAG_NP_NNP -> 'Tuesday' [1.000000]
+
+
+# FRAG_WHNP_Parent_TOP Productions		Total Probability: 1.000
+FRAG_WHNP_Parent_TOP -> FRAG_WHNP_PRIME_Parent_FRAG_WHNP PP_Parent_FRAG_WHNP [1.000000]
+
+
+# ADJP_Parent_FRAG_NP Productions		Total Probability: 1.000
+ADJP_Parent_FRAG_NP -> JJR PP_Parent_ADJP [1.000000]
+
+
+# FRAG_WHNP_PRIME_Parent_FRAG_WHNP_PRIME Productions		Total Probability: 1.000
+FRAG_WHNP_PRIME_Parent_FRAG_WHNP_PRIME -> FRAG_WHNP_PRIME_Parent_FRAG_WHNP_PRIME PP_Parent_FRAG_WHNP_PRIME [0.208333]
+FRAG_WHNP_PRIME_Parent_FRAG_WHNP_PRIME -> WHNP_Parent_FRAG_WHNP_PRIME PP_Parent_FRAG_WHNP_PRIME [0.750000]
+FRAG_WHNP_PRIME_Parent_FRAG_WHNP_PRIME -> NP_Parent_FRAG_WHNP_PRIME PP_Parent_FRAG_WHNP_PRIME [0.041667]
+
+
+# NP_Parent_PP_PRIME Productions		Total Probability: 1.000
+NP_Parent_PP_PRIME -> CD NNS [1.000000]
+
+
+# NP_Parent_FRAG_VP_PRIME Productions		Total Probability: 1.000
+NP_Parent_FRAG_VP_PRIME -> JJ NN [0.500000]
+NP_Parent_FRAG_VP_PRIME -> NNP NNS [0.500000]
+
+
+# VP_PRIME_Parent_VP_PRIME Productions		Total Probability: 1.000
+VP_PRIME_Parent_VP_PRIME -> VB ADVP_RB [0.166667]
+VP_PRIME_Parent_VP_PRIME -> VB PP_Parent_VP_PRIME [0.500000]
+VP_PRIME_Parent_VP_PRIME -> VBG PP_Parent_VP_PRIME [0.333333]
+
+
+# PP_Parent_VP_PRIME Productions		Total Probability: 1.000
+PP_Parent_VP_PRIME -> IN NP_Parent_PP [0.500000]
+PP_Parent_VP_PRIME -> IN NP_NNP [0.318182]
+PP_Parent_VP_PRIME -> TO NP_Parent_PP [0.090909]
+PP_Parent_VP_PRIME -> TO NP_NNP [0.090909]
+
+
+# VP_VBG Productions		Total Probability: 1.000
+VP_VBG -> 'returning' [1.000000]
+
+
+# NP_Parent_FRAG_WHNP_PRIME Productions		Total Probability: 1.000
+NP_Parent_FRAG_WHNP_PRIME -> WDT NNS [1.000000]
+
+
+# S_VP_Parent_TOP Productions		Total Probability: 1.000
+S_VP_Parent_TOP -> VB NP_NNS [0.027273]
+S_VP_Parent_TOP -> S_VP_PRIME_Parent_S_VP VP_Parent_S_VP [0.009091]
+S_VP_Parent_TOP -> VB NP_Parent_S_VP [0.181818]
+S_VP_Parent_TOP -> S_VP_PRIME_Parent_S_VP INTJ_UH [0.018182]
+S_VP_Parent_TOP -> VB NP_PRP [0.018182]
+S_VP_Parent_TOP -> S_VP_PRIME_Parent_S_VP NP_Parent_S_VP [0.727273]
+S_VP_Parent_TOP -> S_VP_PRIME_Parent_S_VP PP_Parent_S_VP [0.018182]
+
+
+# SBAR_Parent_TOP Productions		Total Probability: 1.000
+SBAR_Parent_TOP -> WHNP_Parent_SBAR SQ_Parent_SBAR [1.000000]
+
+
+# PP_Parent_FRAG_NP_PRIME Productions		Total Probability: 1.000
+PP_Parent_FRAG_NP_PRIME -> TO NP_Parent_PP [0.054348]
+PP_Parent_FRAG_NP_PRIME -> IN NP_NNP [0.565217]
+PP_Parent_FRAG_NP_PRIME -> IN NP_Parent_PP [0.239130]
+PP_Parent_FRAG_NP_PRIME -> TO NP_NNP [0.141304]
+
+
+# PP_Parent_PP Productions		Total Probability: 1.000
+PP_Parent_PP -> IN NP_NNP [0.333333]
+PP_Parent_PP -> IN NP_Parent_PP [0.333333]
+PP_Parent_PP -> TO NP_Parent_PP [0.333333]
+
+
+# S_Parent_VP Productions		Total Probability: 1.000
+S_Parent_VP -> NP_NN VP_VBN [1.000000]
+
+
+# WDT Productions		Total Probability: 1.000
+WDT -> 'What' [0.885417]
+WDT -> 'Which' [0.093750]
+WDT -> 'which' [0.010417]
+WDT -> 'what' [0.010417]
+
+
+# ADVP_Parent_NP Productions		Total Probability: 1.000
+ADVP_Parent_NP -> NP_Parent_ADVP RB [1.000000]
+
+
+# NP_Parent_FRAG_PRIME Productions		Total Probability: 1.000
+NP_Parent_FRAG_PRIME -> JJ NNP [0.200000]
+NP_Parent_FRAG_PRIME -> JJ NN [0.200000]
+NP_Parent_FRAG_PRIME -> NP_PRIME_Parent_NP NNP [0.200000]
+NP_Parent_FRAG_PRIME -> NP_PRIME_Parent_NP NP_Parent_NP [0.200000]
+NP_Parent_FRAG_PRIME -> NP_NN PP_Parent_NP [0.200000]
+
+
+# VB Productions		Total Probability: 1.000
+VB -> 'get' [0.005882]
+VB -> 'go' [0.005882]
+VB -> 'return' [0.011765]
+VB -> 'Give' [0.005882]
+VB -> 'Change' [0.005882]
+VB -> 'List' [0.017647]
+VB -> 'show' [0.017647]
+VB -> 'Show' [0.558824]
+VB -> 'Book' [0.005882]
+VB -> 'find' [0.005882]
+VB -> 'have' [0.035294]
+VB -> 'like' [0.088235]
+VB -> 'Explain' [0.023529]
+VB -> 'make' [0.005882]
+VB -> 'Tell' [0.005882]
+VB -> 'list' [0.023529]
+VB -> 'Display' [0.011765]
+VB -> 'display' [0.005882]
+VB -> 'stop' [0.005882]
+VB -> 'visit' [0.005882]
+VB -> 'be' [0.005882]
+VB -> 'arrive' [0.017647]
+VB -> 'serve' [0.041176]
+VB -> 'fly' [0.041176]
+VB -> 'Thank' [0.011765]
+VB -> 'leave' [0.017647]
+VB -> 'travel' [0.011765]
+
+
+# WHNP_WHNP_Parent_SBARQ Productions		Total Probability: 1.000
+WHNP_WHNP_Parent_SBARQ -> WDT NNS [0.947368]
+WHNP_WHNP_Parent_SBARQ -> WHADJP_Parent_WHNP_WHNP NNS [0.052632]
+
+
+# PRT_RP Productions		Total Probability: 1.000
+PRT_RP -> 'out' [1.000000]
+
+
+# PP_Parent_S_PRIME Productions		Total Probability: 1.000
+PP_Parent_S_PRIME -> IN NP_NNP [1.000000]
+
+
+# PP_Parent_S_VP Productions		Total Probability: 1.000
+PP_Parent_S_VP -> IN NP_Parent_PP [0.666667]
+PP_Parent_S_VP -> TO NP_Parent_PP [0.111111]
+PP_Parent_S_VP -> PP_PRIME_Parent_PP S_VP_VBG [0.111111]
+PP_Parent_S_VP -> TO NP_NNP [0.111111]
+
+
+# PP_Parent_FRAG_PRIME Productions		Total Probability: 1.000
+PP_Parent_FRAG_PRIME -> TO NP_Parent_PP [0.153846]
+PP_Parent_FRAG_PRIME -> TO NP_NNP [0.230769]
+PP_Parent_FRAG_PRIME -> IN NP_Parent_PP [0.153846]
+PP_Parent_FRAG_PRIME -> IN NP_NNP [0.461538]
 
 
 # WHNP_WP Productions		Total Probability: 1.000
 WHNP_WP -> 'What' [1.000000]
 
 
+# ADVP_RBS Productions		Total Probability: 1.000
+ADVP_RBS -> 'latest' [1.000000]
+
+
+# PP_PRIME_Parent_PP Productions		Total Probability: 1.000
+PP_PRIME_Parent_PP -> ADVP_RB IN [0.250000]
+PP_PRIME_Parent_PP -> NP_Parent_PP_PRIME IN [0.250000]
+PP_PRIME_Parent_PP -> PP_PRIME_Parent_PP_PRIME IN [0.250000]
+PP_PRIME_Parent_PP -> PP_Parent_PP_PRIME CC [0.250000]
+
+
+# VP_VBZ Productions		Total Probability: 1.000
+VP_VBZ -> 'has' [1.000000]
+
+
+# WP Productions		Total Probability: 1.000
+WP -> 'What' [1.000000]
+
+
+# SQ_VP_PRIME_Parent_SQ_VP Productions		Total Probability: 1.000
+SQ_VP_PRIME_Parent_SQ_VP -> VBP PP_Parent_SQ_VP_PRIME [0.300000]
+SQ_VP_PRIME_Parent_SQ_VP -> VP_Parent_SQ_VP_PRIME CC [0.100000]
+SQ_VP_PRIME_Parent_SQ_VP -> VBP NP_NNP [0.150000]
+SQ_VP_PRIME_Parent_SQ_VP -> SQ_VP_PRIME_Parent_SQ_VP_PRIME PP_Parent_SQ_VP_PRIME [0.450000]
+
+
+# NP_NNPS Productions		Total Probability: 1.000
+NP_NNPS -> 'Wednesdays' [1.000000]
+
+
+# PP_Parent_SQ_VP_PRIME Productions		Total Probability: 1.000
+PP_Parent_SQ_VP_PRIME -> TO NP_NNP [0.227273]
+PP_Parent_SQ_VP_PRIME -> PP_PRIME_Parent_PP NP_Parent_PP [0.045455]
+PP_Parent_SQ_VP_PRIME -> TO NP_Parent_PP [0.045455]
+PP_Parent_SQ_VP_PRIME -> IN NP_NNP [0.636364]
+PP_Parent_SQ_VP_PRIME -> IN NP_Parent_PP [0.045455]
+
+
+# PP_Parent_SQ_VP Productions		Total Probability: 1.000
+PP_Parent_SQ_VP -> PP_Parent_PP PP_Parent_PP [0.035714]
+PP_Parent_SQ_VP -> TO ADVP_RB [0.035714]
+PP_Parent_SQ_VP -> IN NP_NNP [0.392857]
+PP_Parent_SQ_VP -> IN NP_Parent_PP [0.357143]
+PP_Parent_SQ_VP -> TO NP_NNP [0.107143]
+PP_Parent_SQ_VP -> TO NP_Parent_PP [0.035714]
+PP_Parent_SQ_VP -> PP_PRIME_Parent_PP NP_Parent_PP [0.035714]
+
+
 # NP_Parent_TOP Productions		Total Probability: 1.000
-NP_Parent_TOP -> NP_NNS_Parent_NP VP_Parent_NP [0.333333]
+NP_Parent_TOP -> NP_NNS VP_Parent_NP [0.333333]
 NP_Parent_TOP -> NP_PRIME_Parent_NP PP_Parent_NP [0.333333]
-NP_Parent_TOP -> NNP_Parent_NP NN_Parent_NP [0.333333]
+NP_Parent_TOP -> NNP NN [0.333333]
 
 
-# NP_Parent_NP Productions		Total Probability: 1.000
-NP_Parent_NP -> JJ_Parent_NP NN_Parent_NP [0.011765]
-NP_Parent_NP -> CD_Parent_NP NN_Parent_NP [0.035294]
-NP_Parent_NP -> NP_PRIME_Parent_NP NNS_Parent_NP [0.058824]
-NP_Parent_NP -> NNP_Parent_NP POS_Parent_NP [0.011765]
-NP_Parent_NP -> NP_PRIME_Parent_NP NN_Parent_NP [0.176471]
-NP_Parent_NP -> NP_PRIME_Parent_NP PP_Parent_NP [0.011765]
-NP_Parent_NP -> NP_Parent_NP NNS_Parent_NP [0.011765]
-NP_Parent_NP -> JJS_Parent_NP NN_Parent_NP [0.011765]
-NP_Parent_NP -> JJ_Parent_NP NNP_Parent_NP [0.023529]
-NP_Parent_NP -> NNP_Parent_NP NN_Parent_NP [0.011765]
-NP_Parent_NP -> CD_Parent_NP RB_Parent_NP [0.023529]
-NP_Parent_NP -> NP_PRIME_Parent_NP CD_Parent_NP [0.035294]
-NP_Parent_NP -> CD_Parent_NP CD_Parent_NP [0.011765]
-NP_Parent_NP -> DT_Parent_NP NNS_Parent_NP [0.094118]
-NP_Parent_NP -> DT_Parent_NP JJ_Parent_NP [0.023529]
-NP_Parent_NP -> NP_PRIME_Parent_NP NNP_Parent_NP [0.035294]
-NP_Parent_NP -> DT_Parent_NP NN_Parent_NP [0.141176]
-NP_Parent_NP -> NN_Parent_NP NN_Parent_NP [0.023529]
-NP_Parent_NP -> NNP_Parent_NP NNP_Parent_NP [0.247059]
+# NP_Parent_S_VP_PRIME Productions		Total Probability: 1.000
+NP_Parent_S_VP_PRIME -> NP_PRIME_Parent_NP PP_Parent_NP [0.666667]
+NP_Parent_S_VP_PRIME -> NNP NNP [0.333333]
 
 
-# PUNC Productions		Total Probability: 1.000
-PUNC -> '?' [0.287938]
-PUNC -> '.' [0.712062]
+# ADJP_PRIME_Parent_ADJP Productions		Total Probability: 1.000
+ADJP_PRIME_Parent_ADJP -> RB RB [1.000000]
 
 
-# X_S_VP_Parent_TOP Productions		Total Probability: 1.000
-X_S_VP_Parent_TOP -> X_S_VP_PRIME_Parent_X_S_VP NP_Parent_X_S_VP [1.000000]
+# VP_Parent_FRAG Productions		Total Probability: 1.000
+VP_Parent_FRAG -> VBG PP_Parent_VP [1.000000]
+
+
+# SQ_Parent_SBAR Productions		Total Probability: 1.000
+SQ_Parent_SBAR -> VBP NP_NP_EX [1.000000]
+
+
+# ADVP_RB Productions		Total Probability: 1.000
+ADVP_RB -> 'home' [0.062500]
+ADVP_RB -> 'first' [0.062500]
+ADVP_RB -> 'also' [0.062500]
+ADVP_RB -> 'anywhere' [0.062500]
+ADVP_RB -> 'last' [0.062500]
+ADVP_RB -> 'daily' [0.250000]
+ADVP_RB -> 'Anytime' [0.062500]
+ADVP_RB -> 'Only' [0.125000]
+ADVP_RB -> 'here' [0.062500]
+ADVP_RB -> 'early' [0.062500]
+ADVP_RB -> 'Now' [0.125000]
+
+
+# NP_Parent_S Productions		Total Probability: 1.000
+NP_Parent_S -> DT NN [0.666667]
+NP_Parent_S -> NP_PRIME_Parent_NP NN [0.166667]
+NP_Parent_S -> NP_DT PP_Parent_NP [0.166667]
+
+
+# PP_Parent_FRAG_VP_PRIME Productions		Total Probability: 1.000
+PP_Parent_FRAG_VP_PRIME -> IN NP_Parent_PP [0.666667]
+PP_Parent_FRAG_VP_PRIME -> IN NP_NNS [0.333333]
+
+
+# S_Parent_S Productions		Total Probability: 1.000
+S_Parent_S -> NP_PRP VP_Parent_S [1.000000]
+
+
+# NP_NP_EX Productions		Total Probability: 1.000
+NP_NP_EX -> 'there' [1.000000]
+
+
+# PP_Parent_WHNP Productions		Total Probability: 1.000
+PP_Parent_WHNP -> IN NP_NN [0.173913]
+PP_Parent_WHNP -> IN NP_Parent_PP [0.434783]
+PP_Parent_WHNP -> IN NP_DT [0.391304]
+
+
+# JJS Productions		Total Probability: 1.000
+JJS -> 'latest' [0.162162]
+JJS -> 'least' [0.054054]
+JJS -> 'cheapest' [0.108108]
+JJS -> 'longest' [0.027027]
+JJS -> 'Earliest' [0.027027]
+JJS -> 'Lowest' [0.027027]
+JJS -> 'earliest' [0.108108]
+JJS -> 'Shortest' [0.081081]
+JJS -> 'Cheapest' [0.351351]
+JJS -> 'lowest' [0.054054]
+
+
+# ADJP_JJ Productions		Total Probability: 1.000
+ADJP_JJ -> 'last' [0.400000]
+ADJP_JJ -> 'Nonstop' [0.100000]
+ADJP_JJ -> 'nonstop' [0.200000]
+ADJP_JJ -> 'extra' [0.100000]
+ADJP_JJ -> 'available' [0.100000]
+ADJP_JJ -> 'possible' [0.100000]
+
+
+# VBG Productions		Total Probability: 1.000
+VBG -> 'Departing' [0.153846]
+VBG -> 'departing' [0.076923]
+VBG -> 'connecting' [0.025641]
+VBG -> 'leaving' [0.230769]
+VBG -> 'arriving' [0.358974]
+VBG -> 'living' [0.025641]
+VBG -> 'Leaving' [0.102564]
+VBG -> 'making' [0.025641]
+
+
+# INTJ_UH Productions		Total Probability: 1.000
+INTJ_UH -> 'Okay' [0.090909]
+INTJ_UH -> 'Thanks' [0.181818]
+INTJ_UH -> 'Hi' [0.090909]
+INTJ_UH -> 'oh' [0.090909]
+INTJ_UH -> 'oops' [0.090909]
+INTJ_UH -> 'please' [0.181818]
+INTJ_UH -> 'Please' [0.272727]
+
+
+# WHNP_XXX Productions		Total Probability: 1.000
+WHNP_XXX -> '0' [1.000000]
+
+
+# NP_Parent_VP Productions		Total Probability: 1.000
+NP_Parent_VP -> NP_PRIME_Parent_NP PP_Parent_NP [0.255814]
+NP_Parent_VP -> NP_PRIME_Parent_NP SBAR_Parent_NP [0.046512]
+NP_Parent_VP -> NP_Parent_NP NP_NN [0.023256]
+NP_Parent_VP -> NP_PRIME_Parent_NP VP_Parent_NP [0.139535]
+NP_Parent_VP -> NN NN [0.069767]
+NP_Parent_VP -> NP_PRIME_Parent_NP NN [0.069767]
+NP_Parent_VP -> NP_PRIME_Parent_NP NP_Parent_NP [0.023256]
+NP_Parent_VP -> NP_PRIME_Parent_NP NNS [0.069767]
+NP_Parent_VP -> NP_PRIME_Parent_NP NP_NN [0.023256]
+NP_Parent_VP -> NP_Parent_NP PP_Parent_NP [0.093023]
+NP_Parent_VP -> NP_PRIME_Parent_NP NNP [0.023256]
+NP_Parent_VP -> NNP NN [0.069767]
+NP_Parent_VP -> NP_PRIME_Parent_NP RB [0.046512]
+NP_Parent_VP -> JJ NNS [0.046512]
+
+
+# NP_Parent_NP_PRIME Productions		Total Probability: 1.000
+NP_Parent_NP_PRIME -> JJ NNS [0.011628]
+NP_Parent_NP_PRIME -> NP_NNP NP_NNP [0.011628]
+NP_Parent_NP_PRIME -> DT NN [0.232558]
+NP_Parent_NP_PRIME -> DT NNS [0.313953]
+NP_Parent_NP_PRIME -> NP_PRIME_Parent_NP NNS [0.104651]
+NP_Parent_NP_PRIME -> NP_PRIME_Parent_NP NNP [0.034884]
+NP_Parent_NP_PRIME -> NN NN [0.011628]
+NP_Parent_NP_PRIME -> NP_PRIME_Parent_NP CD [0.023256]
+NP_Parent_NP_PRIME -> NN NNS [0.011628]
+NP_Parent_NP_PRIME -> NP_PRIME_Parent_NP PP_Parent_NP [0.023256]
+NP_Parent_NP_PRIME -> NP_PRIME_Parent_NP NN [0.127907]
+NP_Parent_NP_PRIME -> NNP POS [0.023256]
+NP_Parent_NP_PRIME -> NNP NNP [0.058140]
+NP_Parent_NP_PRIME -> CD NN [0.011628]
+
+
+# S_Parent_S_PRIME Productions		Total Probability: 1.000
+S_Parent_S_PRIME -> NP_PRP VP_Parent_S [1.000000]
+
+
+# VP_Parent_FRAG_NP Productions		Total Probability: 1.000
+VP_Parent_FRAG_NP -> VBG NP_Parent_VP [0.250000]
+VP_Parent_FRAG_NP -> VP_PRIME_Parent_VP PP_Parent_VP [0.250000]
+VP_Parent_FRAG_NP -> VBG PP_Parent_VP [0.500000]
+
+
+# WHADJP_Parent_WHNP_WHNP Productions		Total Probability: 1.000
+WHADJP_Parent_WHNP_WHNP -> WRB JJ [1.000000]
+
+
+# SQ_VP_PRIME_Parent_SQ_VP_PRIME Productions		Total Probability: 1.000
+SQ_VP_PRIME_Parent_SQ_VP_PRIME -> VBP NP_NNP [0.222222]
+SQ_VP_PRIME_Parent_SQ_VP_PRIME -> VBP PP_Parent_SQ_VP_PRIME [0.777778]
 
 

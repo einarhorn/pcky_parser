@@ -81,7 +81,12 @@ class ParentAnnotatedPCFG(PCFG):
         productions = []
         updated_rhs = []
         for i in parse_tree:
-            updated_rhs.append(Nonterminal(i.label() + '_Parent_' + parse_tree.label()))
+            if parent_annotation_level == 'all':
+                updated_rhs.append(Nonterminal(i.label() + '_Parent_' + parse_tree.label()))
+            elif parent_annotation_level == 'non-preterminal' and len(i) == 1:
+                updated_rhs.append(Nonterminal(i.label()))
+            else:
+                updated_rhs.append(Nonterminal(i.label() + '_Parent_' + parse_tree.label()))
             productions += self.parse_productions(parse_tree=i, parent_label=parse_tree.label())
 
         if not parent_label:
