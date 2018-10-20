@@ -66,6 +66,16 @@ class ParentAnnotatedPCFG(PCFG):
         self._train_corpus = self._corpus
 
     def parse_productions(self, parse_tree, parent_label='', parent_annotation_level='non-preterminal'):
+        """
+        :type parse_tree: nltk.Tree
+        :type parent_label: str
+        :param parent_annotation_level: Should be one of 'all' and 'non-preterminal'
+                                        For the start_symbol, parent annotate as <original>_Parent_NULL
+                                        if 'all' -> Parent annotate all nonterminals as <original>_Parent_<parent>
+                                        if 'non-preterminal' -> Parent annotate only non-preterminals
+        :type parent_annotation_level: str
+        :rtype productions: list(nltk.Production)
+        """
         if not parse_tree:
             return []
         elif len(parse_tree) == 1:
@@ -114,6 +124,11 @@ class OOVHandledPCFG(ParentAnnotatedPCFG):
 
     @staticmethod
     def get_vocab(parsed_sentences):
+        """
+        :type parsed_sentences: list(str)
+        :return vocab: Unique words (leaves) in given parsed sentences
+        :rtype vocab: set(str)
+        """
         vocab = set([])
         for parse_str in parsed_sentences:
             parse_tree = Tree.fromstring(parse_str)
@@ -122,6 +137,10 @@ class OOVHandledPCFG(ParentAnnotatedPCFG):
         return vocab
 
     def _substitute_oov(self):
+        """
+            All leaves in validation corpus that are not present in train corpus are replaced by UNK.
+            The train corpus is updated following UNK substitution.
+        """
         added_corpus = []
         for parse_str in self._val_corpus:
             parse_tree = Tree.fromstring(parse_str)
@@ -146,14 +165,20 @@ def main():
         output_pcfg_filename = sys.argv[2]
         mode = sys.argv[3]
 
+        # Baseline
         if mode == 'naive':
             pcfg_obj = PCFG(corpus_file=treebank_filename)
             pcfg_obj.induce_pcfg()
             pcfg_obj.write_pcfg(output_filename=output_pcfg_filename)
+
+        # Parent annotated (by default parent annotate only non pre-terminals)
         elif mode == 'pa':
             improved_pcfg_obj = ParentAnnotatedPCFG(treebank_filename)
             improved_pcfg_obj.induce_pcfg()
             improved_pcfg_obj.write_pcfg(output_filename=output_pcfg_filename)
+
+        # UNK substitution followed by parent annotation (non pre-terminals only)
+        # By default a val set ratio of 0.1 is used.
         elif mode == 'pa+oov':
             oov_pcfg_obj = OOVHandledPCFG(treebank_file=treebank_filename)
             oov_pcfg_obj.induce_pcfg()
