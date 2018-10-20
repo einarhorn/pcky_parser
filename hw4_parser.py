@@ -28,21 +28,22 @@ class ProbTreeNode():
         return self.probability < other.probability
     
     def __str__(self):
-        return str(self.node)
+        return str(self.node).rstrip()
     
     def __repr__(self):
-        return str(self.node)
+        return str(self.node).rstrip()
     
 
     
 
 class PCKYParser:
-    def __init__(self, grammar):
+    def __init__(self, grammar, beam_size):
         """
         :param grammar: PCFG in Chomsky-Normal-Form
         :type grammar: nltk.PCFG
         """
         self.grammar = grammar
+        self.beam_size = beam_size
 
     def parse_sentence(self, sentence):
         """ Parse a raw sentence, and return a list of valid parses
@@ -79,22 +80,30 @@ class PCKYParser:
                     # sorted by decreasing probability
                     potential_subtrees = self.__calculate_intermediate_cell(table=table, i=i, j=j, k=k)
 
+                    # Prune the number of subtrees in i,j to the top <beam_size> entries
+
                     if len(potential_subtrees) > 0:
-                        best_subtree = potential_subtrees[0]
+                        table[i][j].extend(potential_subtrees)
+                        table[i][j].sort(key=lambda x: x.label(), reverse=True)
 
-                        # Store the most probable subtree in [i,j]
-                        # Note that we are making a *local* decision here,
-                        # this may not correspond to the global optimum
-                        if len(table[i][j]) is 0:
-                            table[i][j] = [best_subtree]
-                        elif table[i][j][0].label() < best_subtree.label():
-                            table[i][j] = [best_subtree]
+                        # If using beam search, prune the result size
+                        if self.beam_size != -1:
+                            table[i][j] = table[i][j][:self.beam_size]
+                            
 
-        # Return all top-level valid parses
+        # Get the list of successful parses
         top_level_entries = table[0][width-1]
         valid_parses = [entry for entry in top_level_entries
                         if entry.label() == self.grammar.start()]
-        return valid_parses
+
+        # Resort the top level parses
+        valid_parses.sort(key=lambda x: x.label(), reverse=True)
+
+        # Return the highest probability parse tree
+        if len(valid_parses) > 0:
+            return valid_parses[0]
+        else:
+            return None
 
     def __calculate_diagonal_cell(self, current_word):
         """ Return list of nltk.Tree objects, which correspond to nonterminals with current_word as a rhs terminal
@@ -169,6 +178,9 @@ class PCKYParser:
                 # Add to list of valid subtrees created so far
                 cell_contents += subtrees
 
+        # Sort cell_contents by their probabilities
+        cell_contents.sort(key=lambda x: x.label(), reverse=True)
+
         return cell_contents
 
     def __get_productions_with_rhs(self, first_rhs, second_rhs):
@@ -204,12 +216,12 @@ class PCKYParser:
         return tree.label().probability
 
 
-def main(grammar_filename, sentence_filename, output_filename):
+def main(grammar_filename, sentence_filename, output_filename, beam_search_size):
     # Load CNF grammar
     grammar = load(grammar_filename, format='pcfg')
 
     # Generate parser based on grammar
-    parser = PCKYParser(grammar=grammar)
+    parser = PCKYParser(grammar=grammar, beam_size=beam_search_size)
 
     # Iterate over sentences in sentence_filename, produce parses and write to file with output_filename
     with open(sentence_filename, 'r') as infile:
@@ -218,34 +230,32 @@ def main(grammar_filename, sentence_filename, output_filename):
             for line in infile.readlines():
                 # Strip any trailing whitespace from line (including newlines)
                 line = line.rstrip()
-                print(line)
-                outfile.write(line + '\n')
-                valid_parses = parser.parse_sentence(sentence=line)
-                for tree in valid_parses:
-                    print(tree)
-                    outfile.write(str(tree) + '\n')
-                print('Number of parses: %d' % len(valid_parses))
-                print()
-                number_parses.append(len(valid_parses))
-                outfile.write('Number of parses: %d\n\n' % len(valid_parses))
-            avg_number_parses = np.mean(number_parses)
-            print('Average number of parses: %.3f' % avg_number_parses)
+
+                valid_parse = parser.parse_sentence(sentence=line)
+                splitted = str(valid_parse).split()
+                flat_tree = ' '.join(splitted)
+                
+                if valid_parse is None:
+                    print()
+                    outfile.write('\n')
+                else:
+                    print(flat_tree)
+                    outfile.write(str(flat_tree) + '\n')
 
 
 if __name__ == "__main__":
     # Get number of args (-1 to exclude the original file being counted as arg)
     num_args = len(sys.argv) - 1
 
-    # Required number of args for program to run
-    required_args = 3
-
     # Verify correct number of args passed
-    if num_args >= required_args:
+    if num_args == 4:
         grammar_filename = sys.argv[1]
         sentence_filename = sys.argv[2]
         output_filename = sys.argv[3]
+        beam_search_size = int(sys.argv[4])
     else:
         print("Invalid number of arguments. Expected:", file=sys.stderr)
-        print("hw3_parser.sh <grammar_filename> <test_sentence_filename> <output_filename>", file=sys.stderr)
+        print("hw3_parser.sh <grammar_filename> <test_sentence_filename> <output_filename> <beam_search_size>", file=sys.stderr)
+        print("If no beam search required, set beam_search_size to -1", file=sys.stderr)
         sys.exit(-1)
-    main(grammar_filename, sentence_filename, output_filename)
+    main(grammar_filename, sentence_filename, output_filename, beam_search_size)
