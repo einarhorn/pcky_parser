@@ -149,12 +149,12 @@ def main():
             improved_pcfg_obj = ParentAnnotatedPCFG(treebank_filename)
             improved_pcfg_obj.induce_pcfg()
             improved_pcfg_obj.write_pcfg(output_filename=output_pcfg_filename)
-        elif mode == 'pa_all+oov':
+        elif mode == 'pa+oov':
             oov_pcfg_obj = OOVHandledPCFG(treebank_file=treebank_filename)
             oov_pcfg_obj.induce_pcfg()
             oov_pcfg_obj.write_pcfg(output_filename=output_pcfg_filename)
         else:
-            print('Invalid mode argument.\tExpected one of naive or improved.\tGiven: %s' % mode)
+            print('Invalid mode argument.\tExpected one of naive or pa or pa+oov.\tGiven: %s' % mode)
 
     else:
         print("Invalid number of arguments. Expected: %d\tGiven: %d" % (required_args, num_args),
