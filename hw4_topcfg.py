@@ -69,20 +69,20 @@ class ParentAnnotatedPCFG(PCFG):
         if not parse_tree:
             return []
         elif len(parse_tree) == 1:
-            updated_lhs = Nonterminal(parse_tree.label() + '_Parent:' + parent_label)
+            updated_lhs = Nonterminal(parse_tree.label() + '_Parent_' + parent_label)
             rhs = [parse_tree[0]]
             return [Production(lhs=updated_lhs, rhs=rhs)]
 
         productions = []
         updated_rhs = []
         for i in parse_tree:
-            updated_rhs.append(Nonterminal(i.label() + '_Parent:' + parse_tree.label()))
+            updated_rhs.append(Nonterminal(i.label() + '_Parent_' + parse_tree.label()))
             productions += self.parse_productions(parse_tree=i, parent_label=parse_tree.label())
 
         if not parent_label:
             parent_label = 'NULL'
 
-        updated_lhs = Nonterminal(parse_tree.label() + '_Parent:' + parent_label)
+        updated_lhs = Nonterminal(parse_tree.label() + '_Parent_' + parent_label)
         productions = [Production(lhs=updated_lhs, rhs=updated_rhs)] + productions
         return productions
 
