@@ -1,0 +1,12 @@
+Number of sentence        =     55
+Number of Error sentence  =      0
+Number of Skip  sentence  =     32
+Number of Valid sentence  =     23
+Bracketing Recall         =  93.97
+Bracketing Precision      =  93.97
+Bracketing FMeasure       =  93.97
+Complete match            =  78.26
+Average crossing          =   0.04
+No crossing               =  95.65
+2 or less crossing        = 100.00
+Tagging accuracy          =  98.15
